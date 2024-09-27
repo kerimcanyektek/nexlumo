@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|Lifena.csproj|C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|Lifena.csproj|c:\\users\\bahars\\source\\repos\\lifena\\lifena\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|Lifena.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|Lifena.csproj|c:\\users\\bahars\\source\\repos\\lifena\\lifena\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|Lifena.csproj|C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|Lifena.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|Lifena.csproj|c:\\users\\bahars\\source\\repos\\lifena\\lifena\\img\\demos\\business-consulting-5\\logo.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
-      "RelativeMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|Lifena.csproj|solutionrelative:img\\demos\\business-consulting-5\\logo.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,18 +30,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "logo.png - PNG [123x33, 32 bit, PNG]",
-              "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\img\\demos\\business-consulting-5\\logo.png",
-              "RelativeDocumentMoniker": "img\\demos\\business-consulting-5\\logo.png",
-              "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\img\\demos\\business-consulting-5\\logo.png - PNG [123x33, 32 bit, PNG]",
-              "RelativeToolTip": "img\\demos\\business-consulting-5\\logo.png - PNG [123x33, 32 bit, PNG]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
-              "WhenOpened": "2024-09-27T19:58:52.79Z",
-              "EditorCaption": " - PNG [123x33, 32 bit, PNG]"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\Views\\Home\\Index.cshtml",
@@ -54,8 +38,7 @@
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-26T18:52:33.624Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-26T18:52:33.624Z"
             },
             {
               "$type": "Document",
@@ -65,7 +48,7 @@
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAAEcAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAK0AAAAAAAAAAAAAALQAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-09-26T14:57:36.335Z",
               "EditorCaption": ""

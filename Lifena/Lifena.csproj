@@ -404,7 +404,9 @@
     <Content Include="img\demos\business-consulting-5\blog\blog-4-large.jpg" />
     <Content Include="img\demos\business-consulting-5\blog\blog-4-small.jpg" />
     <Content Include="img\demos\business-consulting-5\generic\generic-1.jpg" />
+    <Content Include="img\demos\business-consulting-5\generic\generic-1.png" />
     <Content Include="img\demos\business-consulting-5\generic\generic-2.jpg" />
+    <Content Include="img\demos\business-consulting-5\generic\generic-2.png" />
     <Content Include="img\demos\business-consulting-5\generic\generic-3.jpg" />
     <Content Include="img\demos\business-consulting-5\generic\generic-4.jpg" />
     <Content Include="img\demos\business-consulting-5\generic\generic-5.jpg" />

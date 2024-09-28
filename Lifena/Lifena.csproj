@@ -403,6 +403,10 @@
     <Content Include="img\demos\business-consulting-5\backgrounds\background-3.jpg" />
     <Content Include="img\demos\business-consulting-5\backgrounds\background-4.png" />
     <Content Include="img\demos\business-consulting-5\backgrounds\background-5.png" />
+    <Content Include="img\demos\business-consulting-5\backgrounds\sorular1.png" />
+    <Content Include="img\demos\business-consulting-5\backgrounds\sorular2.png" />
+    <Content Include="img\demos\business-consulting-5\backgrounds\sorular3.png" />
+    <Content Include="img\demos\business-consulting-5\backgrounds\sorular4.png" />
     <Content Include="img\demos\business-consulting-5\blog\blog-1-large.jpg" />
     <Content Include="img\demos\business-consulting-5\blog\blog-1-small.jpg" />
     <Content Include="img\demos\business-consulting-5\blog\blog-2-large.jpg" />
@@ -420,6 +424,12 @@
     <Content Include="img\demos\business-consulting-5\generic\generic-5.jpg" />
     <Content Include="img\demos\business-consulting-5\generic\generic-6.jpg" />
     <Content Include="img\demos\business-consulting-5\generic\generic-7.jpg" />
+    <Content Include="img\demos\business-consulting-5\hizmetler\bireyselm.png" />
+    <Content Include="img\demos\business-consulting-5\hizmetler\destek.png" />
+    <Content Include="img\demos\business-consulting-5\hizmetler\farkındalık.png" />
+    <Content Include="img\demos\business-consulting-5\hizmetler\grupk.png" />
+    <Content Include="img\demos\business-consulting-5\hizmetler\hedefb.png" />
+    <Content Include="img\demos\business-consulting-5\hizmetler\online.png" />
     <Content Include="img\demos\business-consulting-5\icons\icon-1.png" />
     <Content Include="img\demos\business-consulting-5\icons\icon-2.png" />
     <Content Include="img\demos\business-consulting-5\icons\icon-3.png" />

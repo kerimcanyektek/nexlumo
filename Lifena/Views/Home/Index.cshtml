@@ -1,569 +1,595 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
+<head>
+    <style>
+        .faq-icon {
+            width: 60px; /* Görselin genişliğini artırıyoruz */
+            height: 60px; /* Görselin yüksekliğini artırıyoruz */
+            vertical-align: middle;
+        }
 
-            <div class="custom-wrapper-1 p-relative">
-                <div class="container p-relative z-index-9">
-                    <div class="row justify-content-between align-items-center min-height-screen">
-                        <div class="col-xxl-5 text-center text-xxl-start custom-col-1 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="900">
-                            <h3 class="text-12">Life + Agenda = <mark class="bg-transparent p-0 mark mark-gradient mark-gradient-primary">Lifena</mark></h3>
-                            <p class="text-4 line-height-5">Yaşam hedefleri için bir plan.</p>
-                            <a href="#" class="btn btn-modern btn-secondary box-shadow-6 border-0 text-transform-none btn-dash mt-2 py-3 px-5">İletişime geçin</a>
-                        </div>
-                        <div class="col-xxl-5 align-self-end pb-4">
-                            <div class="card border-radius bg-color-light border-0 box-shadow-1 mb-5 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="700">
-                                <div class="card-body p-5 m-2 text-center">
-                                    <h4 class="card-title mb-2 text-6">Motivasyon danışmanlığı için isminizi bırakın!</h4>
+        .faq-icon-top-left {
+            transform: translateY(-15px); /* Üstte sol tarafta biraz daha yukarıda */
+        }
 
-                                    <form class="contact-form" action="~/php/contact-form.php" method="POST">
-                                        <div class="contact-form-success alert alert-success d-none mt-4">
-                                            <strong>Success!</strong> Your message has been sent to us.
-                                        </div>
+        .faq-icon-bottom-left {
+            transform: translateY(15px); /* Altta sol tarafta biraz daha aşağıda */
+        }
 
-                                        <div class="contact-form-error alert alert-danger d-none mt-4">
-                                            <strong>Error!</strong> There was an error sending your message.
-                                            <span class="mail-error-message text-1 d-block"></span>
-                                        </div>
+        .faq-icon-top-right {
+            transform: translateY(-15px); /* Üstte sağ tarafta biraz daha yukarıda */
+        }
 
-                                        <div class="row">
-                                            <div class="form-group col text-start">
-                                                <input type="text" value="" placeholder="isim ve soyisim*" data-msg-required="Please enter your name." maxlength="100" class="form-control text-2-5 p-3" name="name" required>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="form-group col text-start">
-                                                <input type="text" value="" placeholder="telefon numarası*" data-msg-required="Please enter your phone" maxlength="100" class="form-control text-2-5 p-3" name="phone" required>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="form-group col">
-                                                <div class="d-grid gap-2">
-                                                    <input type="submit" value="Gönder" class="btn border-0 btn-tertiary bg-hover-primary text-color-hover-light text-color-primary text-3-5 p-3" data-loading-text="Loading...">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col pt-4">
-                                                <div class="hstack gap-3">
-                                                    <div class="ms-auto">
-                                                        <i class="icons icon-envelope text-4 p-relative top-5 me-2"></i>
-                                                        <a href=" hello@grodea.com " class="text-decoration-none text-2 text-dark text-color-hover-primary ws-nowrap font-weight-semi-bold"> hello@grodea.com </a>
-                                                    </div>
-                                                    <div class="vr"></div>
-                                                    <div class="me-auto">
-                                                        <i class="icons icon-phone text-4 p-relative top-5 me-2"></i>
-                                                        <a href="tel:+1234567890" class="text-decoration-none text-2 text-dark text-color-hover-primary ws-nowrap font-weight-semi-bold">888 123 4567</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        .faq-icon-bottom-right {
+            transform: translateY(15px); /* Altta sağ tarafta biraz daha aşağıda */
+        }
 
-                <div class="hero d-none d-lg-block text-center pt-5">
-                    <div class="pt-4 mt-2 z-index-8 p-relative appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="500">
-                        <img class="img-fluid mt-5" src="~/img/demos/business-consulting-5/backgrounds/arkaplan.png" alt="" style="height: 300px;" />
-
-                    </div>
-                    <div class="p-absolute custom-el-pos-1 d-none z-index-8 d-xl-block appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="500">
-                        <div data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 1.8, 'transition': true, 'transitionDuration': 1000}">
-                            <img class="img-fluid" src="~/img/demos/business-consulting-5/backgrounds/background-4.png" alt="" />
-                        </div>
-                    </div>
-                    <div class="p-absolute custom-el-pos-2 d-none z-index-8 d-xl-block appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="500">
-                        <div data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 1.2, 'transition': true, 'transitionDuration': 1000}">
-                            <img class="img-fluid" src="~/img/demos/business-consulting-5/backgrounds/background-5.png" alt="" />
-                        </div>
-                    </div>
-
-                    <div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="200">
-                        <div class="p-absolute z-index-6 top-0 right-0">
-                            <img width="1100" height="770" src="~/img/demos/business-consulting-5/svg/hero-bg-1.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-quaternary'}" />
-                        </div>
-
-                        <div class="p-absolute z-index-5 top-0 right-0">
-                            <img width="1100" height="770" src="~/img/demos/business-consulting-5/svg/hero-bg-2.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-tertiary'}" />
-                        </div>
-
-                        <div class="p-absolute z-index-4 top-0 right-0">
-                            <img width="1100" height="770" src="~/img/demos/business-consulting-5/svg/hero-bg-3.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': ''}" />
-                        </div>
-
-                        <div class="p-absolute z-index-3 top-0 right-0">
-                            <img width="1100" height="770" src="~/img/demos/business-consulting-5/svg/hero-bg-4.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary'}" />
-                        </div>
-
-                        <div class="p-absolute z-index-2 top-0 right-0">
-                            <img width="1100" height="770" src="~/img/demos/business-consulting-5/svg/hero-bg-5.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': ''}" />
-                        </div>
-
-                        <div class="p-absolute z-index-1 top-0 right-0">
-                            <img width="1100" height="770" src="~/img/demos/business-consulting-5/svg/hero-bg-6.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-secondary'}" />
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="marquee custom-marquee p-absolute" data-duration="120000" data-gap="10" data-duplicated="true" data-startVisible="true">
-                    <p class="m-0 py-2 custom-outline-text-style-1">LiFENA</p>
-                </div>
+        h3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<div class="custom-wrapper-1 p-relative">
+    <div class="container p-relative z-index-9">
+        <div class="row justify-content-between align-items-center min-height-screen">
+            <div class="col-xxl-5 text-center text-xxl-start custom-col-1 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="900">
+                <h3 class="text-12">Life + Agenda = <mark class="bg-transparent p-0 mark mark-gradient mark-gradient-primary">Lifena</mark></h3>
+                <p class="text-4 line-height-5">Hayatınızın Hedeflerinizle Buluştuğu Yer</p>
+                <a href="#" class="btn btn-modern btn-secondary box-shadow-6 border-0 text-transform-none btn-dash mt-2 py-3 px-5">İletişime geçin</a>
             </div>
-            <div class="container">
-                <div class="row align-items-center justify-content-around mt-5">
-                    <div class="col-lg-4 text-end p-relative pt-5 max-width-custom-1">
-                        <div class="col-lg-5 text-end p-relative pt-5 max-width-custom-1">
-                            <div class="p-absolute left-0" style="top: -30px;">
-                                <div data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
-                                    <img width="470" height="451" src="~/img/demos/business-consulting-5/svg/icon-bg-2.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': ''}" />
-                                </div>
-                            </div>
-                            <div data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}" style="top: -150px;">
-                                <img width="376" height="350" src="~/img/demos/business-consulting-5/about/hakkımızda1.png" alt="Açıklama" style="border-radius: 50%; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5 text-center text-lg-start">
-                        <h3 class="mt-5 pt-4">Hakkımızda</h3>
-                        <p>Lifena, Grodea şirketi bünyesinde geliştirilmiş bir motivasyon ve yaşam koçluğu platformudur. Amacımız, insanların günlük yaşamlarında karşılaştıkları zorlukları aşmalarına yardımcı olmak ve içsel motivasyonlarını artırmalarını sağlamaktır. Biz, her bireyin içinde büyük bir potansiyel olduğuna inanıyoruz ve bu potansiyeli açığa çıkarmak için rehberlik etmeyi amaçlıyoruz.</p>
-                        <a href="/Home/About" class="btn btn-modern btn-primary box-shadow-6 border-0 text-transform-none btn-dash mt-2 py-3 px-5">Daha fazla</a>
-                    </div>
-                </div>
+            <div class="col-xxl-5 align-self-end pb-4">
+                <div class="card border-radius bg-color-light border-0 box-shadow-1 mb-5 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="700">
+                    <div class="card-body p-5 m-2 text-center">
+                        <h4 class="card-title mb-2 text-6">Motivasyon danışmanlığı için isminizi bırakın!</h4>
 
-                <div class="row align-items-center justify-content-around mt-5">
-                    <div class="col-lg-5 text-center text-lg-start">
-                        <h3 class="mt-5 pt-4">Motivasyonumuzu beraber<br>kazanalım!</h3>
-                        <p>Başarıya giden yolda en büyük adım, motivasyonumuzu kaybetmeden ilerlemektir. Her birimizin yolculuğu farklı olsa da, ortak bir noktada buluşuyoruz: Hepimiz daha iyi bir versiyonumuz olmak için çabalıyoruz. İşte tam bu noktada Lifena devreye giriyor. Beraber daha güçlü adımlar atabilir, motivasyonumuzu hep birlikte kazanabiliriz! Bu platform, yalnız olmadığınızı hissetmeniz ve hayatınızda gerçek değişimler yapabilmeniz için size rehberlik edecek.</p>
-                        <p>Yolculuğumuza katılın ve hayatınızın kontrolünü yeniden elinize alın! </p>
-                        <a href="/Home/Services" class="btn btn-modern btn-secondary box-shadow-6 border-0 text-transform-none btn-dash mt-2 py-3 px-5">Daha fazla</a>
-                    </div>
-                    <div class="col-lg-4 p-relative pt-5 max-width-custom-1">
-                        <div class="p-absolute left-0" style="top: -150px;">
-                            <div data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
-                                <img width="470" height="451" src="~/img/demos/business-consulting-5/svg/icon-bg-2.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': ''}" />
-                            </div>
-                        </div>
-                        <div data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}" style="margin-top: -150px;">
-                            <img width="376" height="350" src="~/img/demos/business-consulting-5/about/hakkımızda2.png" alt="Açıklama" style="border-radius: 50%; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);" />
-                        </div>
-                    </div>
-                </div>
-                <div class="row mt-5">
-                    <div class="col text-center">
-                        <h3 class="mt-5 pt-4">Hakkımızdaki düşünceler..</h3>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container-fluid my-5 py-5">
-                <div class="row px-5 mb-4">
-                    <div class="col-md-6 col-xl-1-5 mb-4 mb-xl-0">
-
-                        <div data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
-                            <div class="card border-radius-0 bg-color-light border-0 box-shadow-1">
-                                <div class="card-body py-3 px-2">
-                                    <div class="testimonial testimonial-style-4 border-0 box-shadow-none m-0 p-0">
-                                        <div class="testimonial-author pb-3">
-                                            <div class="testimonial-author-thumbnail">
-                                                <img src="~/img/clients/client-1.jpg" class="img-fluid rounded-circle" alt="">
-                                            </div>
-                                            <p><strong class="font-weight-bold">John Smith</strong><span>CEO & Founder - Okler</span></p>
-                                        </div>
-                                        <div class="px-4 mx-2 pt-2 pb-3">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit vehicula est, in consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                            <p class="mb-0"><i class="fas fa-star text-color-primary text-2"></i><i class="fas fa-star text-color-primary text-2"></i><i class="fas fa-star text-color-primary text-2"></i><i class="fas fa-star text-color-primary text-2"></i><i class="fas fa-star text-color-primary text-2"></i></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-md-6 col-xl-1-5 mb-4 mb-xl-0">
-
-                        <div data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
-                            <div class="card border-radius-0 bg-color-light border-0 box-shadow-1">
-                                <div class="card-body py-3 px-2">
-                                    <div class="testimonial testimonial-style-4 border-0 box-shadow-none m-0 p-0">
-                                        <div class="testimonial-author pb-3">
-                                            <div class="testimonial-author-thumbnail">
-                                                <img src="~/img/clients/client-2.jpg" class="img-fluid rounded-circle" alt="">
-                                            </div>
-                                            <p><strong class="font-weight-bold">John Smith</strong><span>CEO & Founder - Okler</span></p>
-                                        </div>
-                                        <div class="px-4 mx-2 pt-2 pb-3">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit vehicula est, in consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                            <p class="mb-0"><i class="fas fa-star text-color-primary text-2"></i><i class="fas fa-star text-color-primary text-2"></i><i class="fas fa-star text-color-primary text-2"></i><i class="fas fa-star text-color-primary text-2"></i><i class="fas fa-star text-color-primary text-2"></i></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-md-6 col-xl-1-5 mb-4 mb-xl-0">
-
-                        <div data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
-                            <div class="card border-radius-0 bg-color-light border-0 box-shadow-1">
-                                <div class="card-body py-3 px-2">
-                                    <div class="testimonial testimonial-style-4 border-0 box-shadow-none m-0 p-0">
-                                        <div class="testimonial-author pb-3">
-                                            <div class="testimonial-author-thumbnail">
-                                                <img src="~/img/clients/client-3.jpg" class="img-fluid rounded-circle" alt="">
-                                            </div>
-                                            <p><strong class="font-weight-bold">John Smith</strong><span>CEO & Founder - Okler</span></p>
-                                        </div>
-                                        <div class="px-4 mx-2 pt-2 pb-3">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit vehicula est, in consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                            <p class="mb-0"><i class="fas fa-star text-color-primary text-2"></i><i class="fas fa-star text-color-primary text-2"></i><i class="fas fa-star text-color-primary text-2"></i><i class="fas fa-star text-color-primary text-2"></i><i class="fas fa-star text-color-primary text-2"></i></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-md-6 col-xl-1-5 mb-4 mb-xl-0">
-
-                        <div data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
-                            <div class="card border-radius-0 bg-color-light border-0 box-shadow-1">
-                                <div class="card-body py-3 px-2">
-                                    <div class="testimonial testimonial-style-4 border-0 box-shadow-none m-0 p-0">
-                                        <div class="testimonial-author pb-3">
-                                            <div class="testimonial-author-thumbnail">
-                                                <img src="~/img/clients/client-4.jpg" class="img-fluid rounded-circle" alt="">
-                                            </div>
-                                            <p><strong class="font-weight-bold">John Smith</strong><span>CEO & Founder - Okler</span></p>
-                                        </div>
-                                        <div class="px-4 mx-2 pt-2 pb-3">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit vehicula est, in consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                            <p class="mb-0"><i class="fas fa-star text-color-primary text-2"></i><i class="fas fa-star text-color-primary text-2"></i><i class="fas fa-star text-color-primary text-2"></i><i class="fas fa-star text-color-primary text-2"></i><i class="fas fa-star text-color-primary text-2"></i></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-md-6 col-xl-1-5 mb-4 mb-xl-0">
-
-                        <div data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
-                            <div class="card border-radius-0 bg-color-light border-0 box-shadow-1">
-                                <div class="card-body py-3 px-2">
-                                    <div class="testimonial testimonial-style-4 border-0 box-shadow-none m-0 p-0">
-                                        <div class="testimonial-author pb-3">
-                                            <div class="testimonial-author-thumbnail">
-                                                <img src="~/img/clients/client-2.jpg" class="img-fluid rounded-circle" alt="">
-                                            </div>
-                                            <p><strong class="font-weight-bold">John Smith</strong><span>CEO & Founder - Okler</span></p>
-                                        </div>
-                                        <div class="px-4 mx-2 pt-2 pb-3">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit vehicula est, in consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                            <p class="mb-0"><i class="fas fa-star text-color-primary text-2"></i><i class="fas fa-star text-color-primary text-2"></i><i class="fas fa-star text-color-primary text-2"></i><i class="fas fa-star text-color-primary text-2"></i><i class="fas fa-star text-color-primary text-2"></i></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <section class="section border-0 bg-quaternary p-relative my-5">
-
-                <div class="parallax m-0 p-absolute top-0 left-0 w-100 h-100" data-plugin-parallax data-plugin-options="{'speed': 1.5, 'parallaxHeight': '100%', 'parallaxScale': true}" data-image-src="~/img/demos/business-consulting-5/backgrounds/background-1.jpg" style="max-width: 700px; max-height: 640px;">
-                </div>
-
-                <div class="container mt-5">
-                    <div class="row justify-content-end">
-                        <div class="col-lg-7">
-                            <h3 class="my-5 ps-lg-5 ms-lg-4">Sık Sorulan Sorular</h3>
-                        </div>
-                    </div>
-                    <div class="row justify-content-end">
-                        <div class="col-lg-11 bg-color-light border-radius">
-
-                            <div class="p-5 my-4">
-                                <div class="row justify-content-between">
-                                    <div class="col-lg-4">
-                                        <div class="tabs tabs-vertical tabs-right tabs-navigation tabs-navigation-simple tabs-navigation-custom">
-                                            <ul class="nav nav-tabs col-sm-3">
-                                                <li class="nav-item">
-                                                    <a class="nav-link active" href="#tabsNavigationVertSimple1" data-bs-toggle="tab">Analytics Insights</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="#tabsNavigationVertSimple2" data-bs-toggle="tab">Technology Transformation</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="#tabsNavigationVertSimple3" data-bs-toggle="tab">Data Stewardship</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="#tabsNavigationVertSimple4" data-bs-toggle="tab">Campaign Optimization</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="#tabsNavigationVertSimple5" data-bs-toggle="tab">Lead Management</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-7">
-                                        <div class="tab-pane tab-pane-navigation active" id="tabsNavigationVertSimple1">
-                                            <p>Lorem ipsum dolor sit amet, adipiscing elit. Proin eget eleifend dolor, et maximus enim. Donec metus tellus, ornare in fermentum in, vulputate ut lorem, donec metus tellus, ornare in fermentum in, vulputate ut lorem.</p>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget eleifend dolor, et maximus enim.</p>
-                                            <a href="#" class="btn btn-modern btn-secondary box-shadow-6 border-0 text-transform-none btn-dash mt-2 py-3 px-5">Learn More</a>
-                                        </div>
-                                        <div class="tab-pane tab-pane-navigation" id="tabsNavigationVertSimple2">
-                                            <p>Do Lorem ipsum dolor sit amet, consectetur elit. Proin eget eleifend dolor, et maximus enim. Donec metus tellus, ornare in fermentum in, vulputate ut lorem, donec metus tellus, ornare in fermentum in, vulputate ut lorem.</p>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget eleifend dolor, et maximus enim.</p>
-                                            <a href="#" class="btn btn-modern btn-secondary box-shadow-6 border-0 text-transform-none btn-dash mt-2 py-3 px-5">Learn More</a>
-                                        </div>
-                                        <div class="tab-pane tab-pane-navigation" id="tabsNavigationVertSimple3">
-                                            <p>Ipsum dolor sit amet, consectetur adipiscing elit. Proin eget eleifend dolor, et maximus enim. Donec metus tellus, ornare in fermentum in, vulputate ut lorem, donec metus tellus, ornare in fermentum in, vulputate ut lorem.</p>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget eleifend dolor, et maximus enim.</p>
-                                            <a href="#" class="btn btn-modern btn-secondary box-shadow-6 border-0 text-transform-none btn-dash mt-2 py-3 px-5">Learn More</a>
-                                        </div>
-                                        <div class="tab-pane tab-pane-navigation" id="tabsNavigationVertSimple4">
-                                            <p>Dolor sit amet, consectetur adipiscing elit. Proin eget eleifend dolor, et maximus enim. Donec metus tellus, ornare in fermentum in, vulputate ut lorem, donec metus tellus, ornare in fermentum in, vulputate ut lorem.</p>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget eleifend dolor, et maximus enim.</p>
-                                            <a href="#" class="btn btn-modern btn-secondary box-shadow-6 border-0 text-transform-none btn-dash mt-2 py-3 px-5">Learn More</a>
-                                        </div>
-                                        <div class="tab-pane tab-pane-navigation" id="tabsNavigationVertSimple5">
-                                            <p>Sit amet, consectetur adipiscing elit. Proin eget eleifend dolor, et maximus enim. Donec metus tellus, ornare in fermentum in, vulputate ut lorem, donec metus tellus, ornare in fermentum in, vulputate ut lorem.</p>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget eleifend dolor, et maximus enim.</p>
-                                            <a href="#" class="btn btn-modern btn-secondary box-shadow-6 border-0 text-transform-none btn-dash mt-2 py-3 px-5">Learn More</a>
-                                        </div>
-                                    </div>
-                                </div>
-
+                        <form class="contact-form" action="~/php/contact-form.php" method="POST">
+                            <div class="contact-form-success alert alert-success d-none mt-4">
+                                <strong>Success!</strong> Your message has been sent to us.
                             </div>
 
-                        </div>
-                    </div>
-                    <div class="row justify-content-end pt-5 pb-4">
-                        <div class="col-lg-11">
+                            <div class="contact-form-error alert alert-danger d-none mt-4">
+                                <strong>Error!</strong> There was an error sending your message.
+                                <span class="mail-error-message text-1 d-block"></span>
+                            </div>
+
                             <div class="row">
-                                <div class="col-lg-6 mb-4 mb-lg-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="flex-shrink-0">
-                                            <img src="~/img/demos/business-consulting-5/icons/icon-1.png" class="img-fluid" alt="">
+                                <div class="form-group col text-start">
+                                    <input type="text" value="" placeholder="isim ve soyisim*" data-msg-required="Please enter your name." maxlength="100" class="form-control text-2-5 p-3" name="name" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col text-start">
+                                    <input type="text" value="" placeholder="telefon numarası*" data-msg-required="Please enter your phone" maxlength="100" class="form-control text-2-5 p-3" name="phone" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col">
+                                    <div class="d-grid gap-2">
+                                        <input type="submit" value="Gönder" class="btn border-0 btn-tertiary bg-hover-primary text-color-hover-light text-color-primary text-3-5 p-3" data-loading-text="Loading...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col pt-4">
+                                    <div class="hstack gap-3">
+                                        <div class="ms-auto">
+                                            <i class="icons icon-envelope text-4 p-relative top-5 me-2"></i>
+                                            <a href=" hello@grodea.com " class="text-decoration-none text-2 text-dark text-color-hover-primary ws-nowrap font-weight-semi-bold"> hello@grodea.com </a>
                                         </div>
-                                        <div class="flex-grow-1 ms-4">
-                                            <h4 class="text-4">Lead Management</h4>
-                                            <p class="text-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget eleifend dolor, et maximus enim.</p>
+                                        <div class="vr"></div>
+                                        <div class="me-auto">
+                                            <i class="icons icon-phone text-4 p-relative top-5 me-2"></i>
+                                            <a href="tel:+1234567890" class="text-decoration-none text-2 text-dark text-color-hover-primary ws-nowrap font-weight-semi-bold">888 123 4567</a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
-                                    <div class="d-flex align-items-center">
-                                        <div class="flex-shrink-0">
-                                            <img src="~/img/demos/business-consulting-5/icons/icon-2.png" class="img-fluid" alt="">
-                                        </div>
-                                        <div class="flex-grow-1 ms-4">
-                                            <h4 class="text-4">Conversion Optimization</h4>
-                                            <p class="text-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget eleifend dolor, et maximus enim.</p>
-                                        </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero d-none d-lg-block text-center pt-5">
+        <div class="pt-4 mt-2 z-index-8 p-relative appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="500">
+            <img class="img-fluid mt-5" src="~/img/demos/business-consulting-5/backgrounds/arkaplan.png" alt="" style="height: 300px;" />
+
+        </div>
+        <div class="p-absolute custom-el-pos-1 d-none z-index-8 d-xl-block appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="500">
+            <div data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 1.8, 'transition': true, 'transitionDuration': 1000}">
+                <img class="img-fluid" src="~/img/demos/business-consulting-5/backgrounds/background-4.png" alt="" />
+            </div>
+        </div>
+        <div class="p-absolute custom-el-pos-2 d-none z-index-8 d-xl-block appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="500">
+            <div data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 1.2, 'transition': true, 'transitionDuration': 1000}">
+                <img class="img-fluid" src="~/img/demos/business-consulting-5/backgrounds/background-5.png" alt="" />
+            </div>
+        </div>
+
+        <div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="200">
+            <div class="p-absolute z-index-6 top-0 right-0">
+                <img width="1100" height="770" src="~/img/demos/business-consulting-5/svg/hero-bg-1.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-quaternary'}" />
+            </div>
+
+            <div class="p-absolute z-index-5 top-0 right-0">
+                <img width="1100" height="770" src="~/img/demos/business-consulting-5/svg/hero-bg-2.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-tertiary'}" />
+            </div>
+
+            <div class="p-absolute z-index-4 top-0 right-0">
+                <img width="1100" height="770" src="~/img/demos/business-consulting-5/svg/hero-bg-3.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': ''}" />
+            </div>
+
+            <div class="p-absolute z-index-3 top-0 right-0">
+                <img width="1100" height="770" src="~/img/demos/business-consulting-5/svg/hero-bg-4.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary'}" />
+            </div>
+
+            <div class="p-absolute z-index-2 top-0 right-0">
+                <img width="1100" height="770" src="~/img/demos/business-consulting-5/svg/hero-bg-5.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': ''}" />
+            </div>
+
+            <div class="p-absolute z-index-1 top-0 right-0">
+                <img width="1100" height="770" src="~/img/demos/business-consulting-5/svg/hero-bg-6.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-secondary'}" />
+            </div>
+        </div>
+
+    </div>
+
+    <div class="marquee custom-marquee p-absolute" data-duration="120000" data-gap="10" data-duplicated="true" data-startVisible="true">
+        <p class="m-0 py-2 custom-outline-text-style-1">LiFENA</p>
+    </div>
+</div>
+<div class="container">
+    <div class="row align-items-center justify-content-around mt-5">
+        <div class="col-lg-4 text-end p-relative pt-5 max-width-custom-1">
+            <div class="col-lg-5 text-end p-relative pt-5 max-width-custom-1">
+                <div class="p-absolute left-0" style="top: -30px;">
+                    <div data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
+                        <img width="470" height="451" src="~/img/demos/business-consulting-5/svg/icon-bg-2.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': ''}" />
+                    </div>
+                </div>
+                <div data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}" style="top: -150px;">
+                    <img width="376" height="350" src="~/img/demos/business-consulting-5/about/hakkımızda1.png" alt="Açıklama" style="border-radius: 50%; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);" />
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 text-center text-lg-start">
+            <h3 class="mt-5 pt-4">Hakkımızda</h3>
+            <p>Lifena, Grodea şirketi bünyesinde geliştirilmiş bir motivasyon ve yaşam koçluğu platformudur. Amacımız, insanların günlük yaşamlarında karşılaştıkları zorlukları aşmalarına yardımcı olmak ve içsel motivasyonlarını artırmalarını sağlamaktır. Biz, her bireyin içinde büyük bir potansiyel olduğuna inanıyoruz ve bu potansiyeli açığa çıkarmak için rehberlik etmeyi amaçlıyoruz.</p>
+            <a href="/Home/About" class="btn btn-modern btn-primary box-shadow-6 border-0 text-transform-none btn-dash mt-2 py-3 px-5">Daha fazla</a>
+        </div>
+    </div>
+
+    <div class="row align-items-center justify-content-around mt-5">
+        <div class="col-lg-5 text-center text-lg-start">
+            <h3 class="mt-5 pt-4">Motivasyonumuzu beraber<br>kazanalım!</h3>
+            <p>Başarıya giden yolda en büyük adım, motivasyonumuzu kaybetmeden ilerlemektir. Her birimizin yolculuğu farklı olsa da, ortak bir noktada buluşuyoruz: Hepimiz daha iyi bir versiyonumuz olmak için çabalıyoruz. İşte tam bu noktada Lifena devreye giriyor. Beraber daha güçlü adımlar atabilir, motivasyonumuzu hep birlikte kazanabiliriz! Bu platform, yalnız olmadığınızı hissetmeniz ve hayatınızda gerçek değişimler yapabilmeniz için size rehberlik edecek.</p>
+            <p>Yolculuğumuza katılın ve hayatınızın kontrolünü yeniden elinize alın! </p>
+            <a href="/Home/Services" class="btn btn-modern btn-secondary box-shadow-6 border-0 text-transform-none btn-dash mt-2 py-3 px-5">Daha fazla</a>
+        </div>
+        <div class="col-lg-4 p-relative pt-5 max-width-custom-1">
+            <div class="p-absolute left-0" style="top: -150px;">
+                <div data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
+                    <img width="470" height="451" src="~/img/demos/business-consulting-5/svg/icon-bg-2.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': ''}" />
+                </div>
+            </div>
+            <div data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}" style="margin-top: -150px;">
+                <img width="376" height="350" src="~/img/demos/business-consulting-5/about/hakkımızda2.png" alt="Açıklama" style="border-radius: 50%; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);" />
+            </div>
+        </div>
+    </div>
+    @*<div class="row mt-5">
+            <div class="col text-center">
+                <h3 class="mt-5 pt-4">Hakkımızdaki düşünceler..</h3>
+            </div>
+        </div>*@
+</div>
+@*
+    <div class="container-fluid my-5 py-5">
+        <div class="row px-5 mb-4">
+            <div class="col-md-6 col-xl-1-5 mb-4 mb-xl-0">
+
+                <div data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
+                    <div class="card border-radius-0 bg-color-light border-0 box-shadow-1">
+                        <div class="card-body py-3 px-2">
+                            <div class="testimonial testimonial-style-4 border-0 box-shadow-none m-0 p-0">
+                                <div class="testimonial-author pb-3">
+                                    <div class="testimonial-author-thumbnail">
+                                        <img src="~/img/clients/client-1.jpg" class="img-fluid rounded-circle" alt="">
                                     </div>
+                                    <p><strong class="font-weight-bold">John Smith</strong><span>CEO & Founder - Okler</span></p>
+                                </div>
+                                <div class="px-4 mx-2 pt-2 pb-3">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit vehicula est, in consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    <p class="mb-0"><i class="fas fa-star text-color-primary text-2"></i><i class="fas fa-star text-color-primary text-2"></i><i class="fas fa-star text-color-primary text-2"></i><i class="fas fa-star text-color-primary text-2"></i><i class="fas fa-star text-color-primary text-2"></i></p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
 
-            <div class="container my-5 py-5">
+            </div>
+            <div class="col-md-6 col-xl-1-5 mb-4 mb-xl-0">
+
+                <div data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
+                    <div class="card border-radius-0 bg-color-light border-0 box-shadow-1">
+                        <div class="card-body py-3 px-2">
+                            <div class="testimonial testimonial-style-4 border-0 box-shadow-none m-0 p-0">
+                                <div class="testimonial-author pb-3">
+                                    <div class="testimonial-author-thumbnail">
+                                        <img src="~/img/clients/client-2.jpg" class="img-fluid rounded-circle" alt="">
+                                    </div>
+                                    <p><strong class="font-weight-bold">John Smith</strong><span>CEO & Founder - Okler</span></p>
+                                </div>
+                                <div class="px-4 mx-2 pt-2 pb-3">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit vehicula est, in consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    <p class="mb-0"><i class="fas fa-star text-color-primary text-2"></i><i class="fas fa-star text-color-primary text-2"></i><i class="fas fa-star text-color-primary text-2"></i><i class="fas fa-star text-color-primary text-2"></i><i class="fas fa-star text-color-primary text-2"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-6 col-xl-1-5 mb-4 mb-xl-0">
+
+                <div data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
+                    <div class="card border-radius-0 bg-color-light border-0 box-shadow-1">
+                        <div class="card-body py-3 px-2">
+                            <div class="testimonial testimonial-style-4 border-0 box-shadow-none m-0 p-0">
+                                <div class="testimonial-author pb-3">
+                                    <div class="testimonial-author-thumbnail">
+                                        <img src="~/img/clients/client-3.jpg" class="img-fluid rounded-circle" alt="">
+                                    </div>
+                                    <p><strong class="font-weight-bold">John Smith</strong><span>CEO & Founder - Okler</span></p>
+                                </div>
+                                <div class="px-4 mx-2 pt-2 pb-3">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit vehicula est, in consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    <p class="mb-0"><i class="fas fa-star text-color-primary text-2"></i><i class="fas fa-star text-color-primary text-2"></i><i class="fas fa-star text-color-primary text-2"></i><i class="fas fa-star text-color-primary text-2"></i><i class="fas fa-star text-color-primary text-2"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-6 col-xl-1-5 mb-4 mb-xl-0">
+
+                <div data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
+                    <div class="card border-radius-0 bg-color-light border-0 box-shadow-1">
+                        <div class="card-body py-3 px-2">
+                            <div class="testimonial testimonial-style-4 border-0 box-shadow-none m-0 p-0">
+                                <div class="testimonial-author pb-3">
+                                    <div class="testimonial-author-thumbnail">
+                                        <img src="~/img/clients/client-4.jpg" class="img-fluid rounded-circle" alt="">
+                                    </div>
+                                    <p><strong class="font-weight-bold">John Smith</strong><span>CEO & Founder - Okler</span></p>
+                                </div>
+                                <div class="px-4 mx-2 pt-2 pb-3">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit vehicula est, in consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    <p class="mb-0"><i class="fas fa-star text-color-primary text-2"></i><i class="fas fa-star text-color-primary text-2"></i><i class="fas fa-star text-color-primary text-2"></i><i class="fas fa-star text-color-primary text-2"></i><i class="fas fa-star text-color-primary text-2"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-6 col-xl-1-5 mb-4 mb-xl-0">
+
+                <div data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
+                    <div class="card border-radius-0 bg-color-light border-0 box-shadow-1">
+                        <div class="card-body py-3 px-2">
+                            <div class="testimonial testimonial-style-4 border-0 box-shadow-none m-0 p-0">
+                                <div class="testimonial-author pb-3">
+                                    <div class="testimonial-author-thumbnail">
+                                        <img src="~/img/clients/client-2.jpg" class="img-fluid rounded-circle" alt="">
+                                    </div>
+                                    <p><strong class="font-weight-bold">John Smith</strong><span>CEO & Founder - Okler</span></p>
+                                </div>
+                                <div class="px-4 mx-2 pt-2 pb-3">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit vehicula est, in consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    <p class="mb-0"><i class="fas fa-star text-color-primary text-2"></i><i class="fas fa-star text-color-primary text-2"></i><i class="fas fa-star text-color-primary text-2"></i><i class="fas fa-star text-color-primary text-2"></i><i class="fas fa-star text-color-primary text-2"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>*@
+
+<section class="section border-0 bg-quaternary p-relative my-5">
+    <div class="container mt-5">
+        <div class="row justify-content-end">
+            <div class="col-lg-7">
+                <h3 class="my-5 ps-lg-5 ms-lg-4">
+                    <img src="~/img/demos/business-consulting-5/backgrounds/sorular1.png" alt="Soru İşareti" class="faq-icon faq-icon-top-left">
+                    <img src="~/img/demos/business-consulting-5/backgrounds/sorular2.png" alt="Soru İşareti" class="faq-icon faq-icon-bottom-left">
+                    Sık sorulan sorular
+                    <img src="~/img/demos/business-consulting-5/backgrounds/sorular3.png" alt="Soru İşareti" class="faq-icon faq-icon-top-right">
+                    <img src="~/img/demos/business-consulting-5/backgrounds/sorular4.png" alt="Soru İşareti" class="faq-icon faq-icon-bottom-right">
+                </h3>
+            </div>
+        </div>
+        <div class="row justify-content-end">
+            <div class="col-lg-12 bg-color-light border-radius">
+                <div class="p-5 my-4">
+                    <div class="row justify-content-between">
+                        <div class="col-lg-5">
+                            <div class="tabs tabs-vertical tabs-right tabs-navigation tabs-navigation-simple tabs-navigation-custom">
+                                <ul class="nav nav-tabs col-sm-3">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="#tabsNavigationVertSimple1" data-bs-toggle="tab">Lifena nedir?</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#tabsNavigationVertSimple2" data-bs-toggle="tab">Lifena'da hangi hizmetler sunuluyor?</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#tabsNavigationVertSimple3" data-bs-toggle="tab">Yaşam koçluğu hizmeti nedir ve nasıl fayda sağlar?</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#tabsNavigationVertSimple4" data-bs-toggle="tab">Motivasyon ve kişisel gelişim nasıl destekleniyor?</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#tabsNavigationVertSimple5" data-bs-toggle="tab">Lifena hizmetlerinden kimler faydalanabilir?</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="tab-pane tab-pane-navigation active" id="tabsNavigationVertSimple1">
+                                <p>Lifena, bireylerin hayatlarına pozitif bir değişim katmayı amaçlayan bir motivasyon ve yaşam koçluğu platformudur.</p>
+                                <p> Grodea şirketi bünyesinde geliştirilen bu platform, kullanıcıların hem kişisel gelişimlerine hem de profesyonel hayatlarına rehberlik etmeyi hedefler.</p>
+                                <a href="/Home/About" class="btn btn-modern btn-secondary box-shadow-6 border-0 text-transform-none btn-dash mt-2 py-3 px-5">Daha fazla</a>
+                            </div>
+                            <div class="tab-pane tab-pane-navigation" id="tabsNavigationVertSimple2">
+                                <p>Lifena, bireylere kişisel gelişim, motivasyon artırma, farkındalık kazanma, stres yönetimi ve rehberlik hizmetleri sunmaktadır. </p>
+                                <p>Ayrıca, blog yazıları ve başarı hikayeleri ile kullanıcıları motive etmeyi amaçlar.</p>
+                                <a href="/Home/Services" class="btn btn-modern btn-secondary box-shadow-6 border-0 text-transform-none btn-dash mt-2 py-3 px-5">Daha fazla</a>
+                            </div>
+                            <div class="tab-pane tab-pane-navigation" id="tabsNavigationVertSimple3">
+                                <p>Yaşam koçluğu, bireylerin hedeflerine ulaşmalarına yardımcı olmayı amaçlayan bir rehberlik sürecidir.</p>
+                                <p>Lifena'daki yaşam koçluğu hizmeti, kullanıcılara daha odaklı ve motive bir yaşam tarzı sunarak, zorlukların üstesinden gelmelerini sağlar.</p>
+                                <a href="/Home/Services" class="btn btn-modern btn-secondary box-shadow-6 border-0 text-transform-none btn-dash mt-2 py-3 px-5">Daha fazla</a>
+                            </div>
+                            <div class="tab-pane tab-pane-navigation" id="tabsNavigationVertSimple4">
+                                <p>Lifena, kişisel gelişim programları, blog yazıları, motivasyon alıntıları ve rehberlik hizmetleri ile bireylerin motivasyonlarını sürekli kılmalarına yardımcı olur.</p>
+                                <p>Ayrıca, bireylerin içsel motivasyonlarını artıracak stratejiler sunar.</p>
+                                <a href="/Home/Services" class="btn btn-modern btn-secondary box-shadow-6 border-0 text-transform-none btn-dash mt-2 py-3 px-5">Daha fazla</a>
+                            </div>
+                            <div class="tab-pane tab-pane-navigation" id="tabsNavigationVertSimple5">
+                                <p>Lifena, herkes için uygundur. Kişisel ve profesyonel gelişim arayan, motivasyonunu artırmak isteyen veya yaşamında bir yön arayan bireyler, Lifena'nın hizmetlerinden faydalanabilir.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-end pt-5 pb-4">
+            <div class="col-lg-12">
                 <div class="row">
-                    <div class="col text-center">
-                        <h3>Awards</h3>
-                    </div>
-                </div>
-                <div class="row text-center mt-4">
-                    <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
-                        <img src="~/img/demos/business-consulting-5/icons/icon-3.png" class="img-fluid mb-3" alt="">
-                        <h4 class="mb-1">Top Seo 2022</h4>
-                        <p>Porto Awards 2022</p>
-                    </div>
-                    <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
-                        <img src="~/img/demos/business-consulting-5/icons/icon-4.png" class="img-fluid mb-3" alt="">
-                        <h4 class="mb-1">Top Seo 2022</h4>
-                        <p>Porto Awards 2022</p>
-                    </div>
-                    <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
-                        <img src="~/img/demos/business-consulting-5/icons/icon-5.png" class="img-fluid mb-3" alt="">
-                        <h4 class="mb-1">Top Seo 2022</h4>
-                        <p>Porto Awards 2022</p>
-                    </div>
-                    <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
-                        <img src="~/img/demos/business-consulting-5/icons/icon-6.png" class="img-fluid mb-3" alt="">
-                        <h4 class="mb-1">Top Seo 2022</h4>
-                        <p>Porto Awards 2022</p>
-                    </div>
-                </div>
-            </div>
-
-            <section class="section section-default border-0 p-0" data-inviewport-style data-plugin-options="{'style': {'background-color': '#FFFFFF'}, 'styleIn': {'background-color': '#393159'}, 'styleOut': {'background-color': '#FFFFFF'}, 'classIn': 'inner-text-light', 'modTop': '-300px', 'modBottom': '-300px'}">
-                <div class="container">
-                    <div class="row justify-content-center min-height-screen align-items-center">
-                        <div class="col-lg-4 text-center">
-                            <h3 class="text-color-light">Be the #1 on <mark class="text-color-light bg-transparent p-0 mark mark-gradient mark-gradient-primary">Google</mark> with Competitive Keywords.</h3>
-                            <p class="text-4 text-light line-height-4 opacity-6">Lorem ipsum dolor sit amet, consectetur lorem ipsum aipiscing anc vivita.</p>
-                            <a href="#" class="btn btn-modern btn-light text-color-primary text-3 box-shadow-6 border-0 text-transform-none btn-dash mt-2 py-3 px-5">Our Services</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <div class="container mt-5 pt-5 mb-5">
-                <div class="row align-items-end">
-                    <div class="col-lg-4 mb-4 mb-lg-0 text-center text-lg-start">
-                        <h3 class="m-0">Popüler blog yazıları</h3>
-                    </div>
-                    <div class="col-lg-8 text-center text-lg-end">
-                        <a href="#" class="btn btn-modern btn-primary box-shadow-6 border-0 text-transform-none btn-dash m-0 py-3 px-5">daha fazla blog yazısı</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container-fluid p-0">
-                <div class="row g-0">
-                    <div class="col">
-
-                        <div class="thumb-info-container-full-img">
-                            <div class="owl-carousel p-relative owl-theme full-width m-0" data-plugin-options="{'items': 4, 'loop': false, 'nav': true, 'dots': false}">
-                                <div>
-                                    <a href="#">
-                                        <span class="thumb-info p-relative z-index-1 thumb-info-no-borders thumb-info-lighten thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-dark-linear bg-transparent" data-full-width-img-src="img/demos/business-consulting-5/blog/blog-1-large.jpg">
-                                            <span class="thumb-info-wrapper overlay overlay-show overlay-gradient-bottom-content">
-                                                <img src="~/img/demos/business-consulting-5/blog/blog-1-small.jpg" class="img-fluid" alt="">
-                                                <span class="thumb-info-title">
-                                                    <span class="thumb-info-inner line-height-1 text-5 pb-4 ps-4">This is the Blog Post</span>
-                                                </span>
-                                            </span>
-                                        </span>
-                                    </a>
-                                </div>
-                                <div>
-                                    <a href="#">
-                                        <span class="thumb-info p-relative z-index-1 thumb-info-no-borders thumb-info-lighten thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-dark-linear bg-transparent" data-full-width-img-src="img/demos/business-consulting-5/blog/blog-2-large.jpg">
-                                            <span class="thumb-info-wrapper overlay overlay-show overlay-gradient-bottom-content">
-                                                <img src="~/img/demos/business-consulting-5/blog/blog-2-small.jpg" class="img-fluid" alt="">
-                                                <span class="thumb-info-title">
-                                                    <span class="thumb-info-inner line-height-1 text-5 pb-4 ps-4">This is the Blog Post</span>
-                                                </span>
-                                            </span>
-                                        </span>
-                                    </a>
-                                </div>
-                                <div>
-                                    <a href="#">
-                                        <span class="thumb-info p-relative z-index-1 thumb-info-no-borders thumb-info-lighten thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-dark-linear bg-transparent" data-full-width-img-src="img/demos/business-consulting-5/blog/blog-3-large.jpg">
-                                            <span class="thumb-info-wrapper overlay overlay-show overlay-gradient-bottom-content">
-                                                <img src="~/img/demos/business-consulting-5/blog/blog-3-small.jpg" class="img-fluid" alt="">
-                                                <span class="thumb-info-title">
-                                                    <span class="thumb-info-inner line-height-1 text-5 pb-4 ps-4">This is the Blog Post</span>
-                                                </span>
-                                            </span>
-                                        </span>
-                                    </a>
-                                </div>
-                                <div>
-                                    <a href="#">
-                                        <span class="thumb-info p-relative z-index-1 thumb-info-no-borders thumb-info-lighten thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-dark-linear bg-transparent" data-full-width-img-src="img/demos/business-consulting-5/blog/blog-4-large.jpg">
-                                            <span class="thumb-info-wrapper overlay overlay-show overlay-gradient-bottom-content">
-                                                <img src="~/img/demos/business-consulting-5/blog/blog-4-small.jpg" class="img-fluid" alt="">
-                                                <span class="thumb-info-title">
-                                                    <span class="thumb-info-inner line-height-1 text-5 pb-4 ps-4">This is the Blog Post</span>
-                                                </span>
-                                            </span>
-                                        </span>
-                                    </a>
-                                </div>
-                                <div>
-                                    <a href="#">
-                                        <span class="thumb-info p-relative z-index-1 thumb-info-no-borders thumb-info-lighten thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-dark-linear bg-transparent" data-full-width-img-src="img/demos/business-consulting-5/blog/blog-2-large.jpg">
-                                            <span class="thumb-info-wrapper overlay overlay-show overlay-gradient-bottom-content">
-                                                <img src="~/img/demos/business-consulting-5/blog/blog-2-small.jpg" class="img-fluid" alt="">
-                                                <span class="thumb-info-title">
-                                                    <span class="thumb-info-inner line-height-1 text-5 pb-4 ps-4">This is the Blog Post</span>
-                                                </span>
-                                            </span>
-                                        </span>
-                                    </a>
-                                </div>
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-shrink-0">
+                                <img src="~/img/demos/business-consulting-5/hizmetler/destek.png" class="img-fluid" alt="" style="max-width: 180px; max-height: 180px; border-radius: 50%;">
+                            </div>
+                            <div class="flex-grow-1 ms-4">
+                                <h4 class="text-4">Destek ve Rehberlik</h4>
+                                <p class="text-2">Hayatın getirdiği zorluklarla başa çıkmak bazen zor olabilir. Bu nedenle, kişisel ve profesyonel yaşamda karşılaşılan sorunlara yönelik kapsamlı bir destek ve rehberlik hizmeti sunuyoruz. Bireylerin kendilerine güvenlerini artırmalarına, sorunlarını çözmelerine ve sağlıklı kararlar almalarına yardımcı olmak için burada bulunuyoruz.</p>
                             </div>
                         </div>
-
                     </div>
-                </div>
-            </div>
-
-            <section class="section bg-dark m-0 border-0">
-                <div class="container py-5">
-                    <div class="row justify-content-between align-items-center py-5">
-                        <div class="col-lg-6 text-center text-lg-start py-5">
-                            <h3 class="mb-4 text-color-light">Ready To Transform Your Small Business Marketing?</h3>
-                            <p class="text-4 text-light line-height-4 opacity-6 mb-4">Lorem ipsum dolor sit amet, consectetur lorem ipsum aipiscing anc vivita consectetur lorem ipsum aipiscing anc vivita consectetur lorem ipsum aipiscing anc vivita.</p>
-
-                            <i class="icons icon-phone text-8 text-color-primary me-2"></i>
-                            <a href="tel:+1234567890" class="text-decoration-none text-5 p-relative bottom-9 font-weight-semi-bold text-light text-color-hover-primary">888 123 4567</a>
-
-                        </div>
-                        <div class="col-lg-5 py-5">
-                            <div class="card border-radius bg-color-light border-0 box-shadow-3">
-                                <div class="card-body p-5 m-2 text-center">
-                                    <h4 class="card-title mb-2 text-6">Book Discovery Call!</h4>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-
-                                    <form class="contact-form" action="~/php/contact-form.php" method="POST">
-                                        <div class="contact-form-success alert alert-success d-none mt-4">
-                                            <strong>Success!</strong> Your message has been sent to us.
-                                        </div>
-
-                                        <div class="contact-form-error alert alert-danger d-none mt-4">
-                                            <strong>Error!</strong> There was an error sending your message.
-                                            <span class="mail-error-message text-1 d-block"></span>
-                                        </div>
-
-                                        <div class="row">
-                                            <div class="form-group col text-start">
-                                                <input type="text" value="" placeholder="Your Name *" data-msg-required="Please enter your name." maxlength="100" class="form-control text-2-5 p-3" name="name" required>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="form-group col text-start">
-                                                <input type="text" value="" placeholder="Your Phone *" data-msg-required="Please enter your phone" maxlength="100" class="form-control text-2-5 p-3" name="phone" required>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="form-group col">
-                                                <div class="d-grid gap-2">
-                                                    <input type="submit" value="Get Started" class="btn border-0 btn-tertiary bg-hover-primary text-color-hover-light text-color-primary text-3-5 p-3" data-loading-text="Loading...">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col pt-4">
-                                                <div class="hstack gap-3">
-                                                    <div class="ms-auto">
-                                                        <i class="icons icon-envelope text-4 p-relative top-5 me-2"></i>
-                                                        <a href="mailto:you@domain.com" class="text-decoration-none text-2 text-dark text-color-hover-primary ws-nowrap font-weight-semi-bold">porto@domain.com</a>
-                                                    </div>
-                                                    <div class="vr"></div>
-                                                    <div class="me-auto">
-                                                        <i class="icons icon-phone text-4 p-relative top-5 me-2"></i>
-                                                        <a href="tel:+1234567890" class="text-decoration-none text-2 text-dark text-color-hover-primary ws-nowrap font-weight-semi-bold">888 123 4567</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
+                    <div class="col-lg-6">
+                        <div class="d-flex align-items-center">
+                            <div class="flex-shrink-0">
+                                <img src="~/img/demos/business-consulting-5/hizmetler/farkındalık.png" class="img-fluid" alt="" style="max-width: 180px; max-height: 180px; border-radius: 50%;">
+                            </div>
+                            <div class="flex-grow-1 ms-4">
+                                <h4 class="text-4">Kişisel Gelişim ve Farkındalık</h4>
+                                <p class="text-2">Kişisel gelişim, bireylerin kendilerini daha iyi tanıması ve potansiyellerini en üst düzeye çıkarması için kritik bir süreçtir. Bu hizmetimiz, bireylerin güçlü ve zayıf yönlerini anlamalarına, değerlerini belirlemelerine ve kendilerine yönelik farkındalık kazanmalarına yardımcı olur. Bu süreç, sürekli bir öğrenme ve gelişim yolculuğunun temelini oluşturur.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-       
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container my-5 py-5">
+    <div class="row">
+        <div class="col text-center">
+            <h3>Başarı hikayelerimiz</h3>
+        </div>
+    </div>
+    <div class="row text-center mt-4">
+        <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+            <img src="~/img/demos/business-consulting-5/icons/icon-3.png" class="img-fluid mb-3" alt="">
+            <h4 class="mb-1">Top Seo 2022</h4>
+            <p>Porto Awards 2022</p>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+            <img src="~/img/demos/business-consulting-5/icons/icon-4.png" class="img-fluid mb-3" alt="">
+            <h4 class="mb-1">Top Seo 2022</h4>
+            <p>Porto Awards 2022</p>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+            <img src="~/img/demos/business-consulting-5/icons/icon-5.png" class="img-fluid mb-3" alt="">
+            <h4 class="mb-1">Top Seo 2022</h4>
+            <p>Porto Awards 2022</p>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+            <img src="~/img/demos/business-consulting-5/icons/icon-6.png" class="img-fluid mb-3" alt="">
+            <h4 class="mb-1">Top Seo 2022</h4>
+            <p>Porto Awards 2022</p>
+        </div>
+    </div>
+</div>
+
+<section class="section section-default border-0 p-0" data-inviewport-style data-plugin-options="{'style': {'background-color': '#FFFFFF'}, 'styleIn': {'background-color': '#393159'}, 'styleOut': {'background-color': '#FFFFFF'}, 'classIn': 'inner-text-light', 'modTop': '-300px', 'modBottom': '-300px'}">
+    <div class="container">
+        <div class="row justify-content-center min-height-screen align-items-center">
+            <div class="col-lg-4 text-center">
+                <h3 class="text-color-light">Be the #1 on <mark class="text-color-light bg-transparent p-0 mark mark-gradient mark-gradient-primary">Google</mark> with Competitive Keywords.</h3>
+                <p class="text-4 text-light line-height-4 opacity-6">Lorem ipsum dolor sit amet, consectetur lorem ipsum aipiscing anc vivita.</p>
+                <a href="#" class="btn btn-modern btn-light text-color-primary text-3 box-shadow-6 border-0 text-transform-none btn-dash mt-2 py-3 px-5">Our Services</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container mt-5 pt-5 mb-5">
+    <div class="row align-items-end">
+        <div class="col-lg-4 mb-4 mb-lg-0 text-center text-lg-start">
+            <h3 class="m-0">Popüler blog yazıları</h3>
+        </div>
+        <div class="col-lg-8 text-center text-lg-end">
+            <a href="#" class="btn btn-modern btn-primary box-shadow-6 border-0 text-transform-none btn-dash m-0 py-3 px-5">daha fazla blog yazısı</a>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid p-0">
+    <div class="row g-0">
+        <div class="col">
+
+            <div class="thumb-info-container-full-img">
+                <div class="owl-carousel p-relative owl-theme full-width m-0" data-plugin-options="{'items': 4, 'loop': false, 'nav': true, 'dots': false}">
+                    <div>
+                        <a href="#">
+                            <span class="thumb-info p-relative z-index-1 thumb-info-no-borders thumb-info-lighten thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-dark-linear bg-transparent" data-full-width-img-src="img/demos/business-consulting-5/blog/blog-1-large.jpg">
+                                <span class="thumb-info-wrapper overlay overlay-show overlay-gradient-bottom-content">
+                                    <img src="~/img/demos/business-consulting-5/blog/blog-1-small.jpg" class="img-fluid" alt="">
+                                    <span class="thumb-info-title">
+                                        <span class="thumb-info-inner line-height-1 text-5 pb-4 ps-4">This is the Blog Post</span>
+                                    </span>
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <span class="thumb-info p-relative z-index-1 thumb-info-no-borders thumb-info-lighten thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-dark-linear bg-transparent" data-full-width-img-src="img/demos/business-consulting-5/blog/blog-2-large.jpg">
+                                <span class="thumb-info-wrapper overlay overlay-show overlay-gradient-bottom-content">
+                                    <img src="~/img/demos/business-consulting-5/blog/blog-2-small.jpg" class="img-fluid" alt="">
+                                    <span class="thumb-info-title">
+                                        <span class="thumb-info-inner line-height-1 text-5 pb-4 ps-4">This is the Blog Post</span>
+                                    </span>
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <span class="thumb-info p-relative z-index-1 thumb-info-no-borders thumb-info-lighten thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-dark-linear bg-transparent" data-full-width-img-src="img/demos/business-consulting-5/blog/blog-3-large.jpg">
+                                <span class="thumb-info-wrapper overlay overlay-show overlay-gradient-bottom-content">
+                                    <img src="~/img/demos/business-consulting-5/blog/blog-3-small.jpg" class="img-fluid" alt="">
+                                    <span class="thumb-info-title">
+                                        <span class="thumb-info-inner line-height-1 text-5 pb-4 ps-4">This is the Blog Post</span>
+                                    </span>
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <span class="thumb-info p-relative z-index-1 thumb-info-no-borders thumb-info-lighten thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-dark-linear bg-transparent" data-full-width-img-src="img/demos/business-consulting-5/blog/blog-4-large.jpg">
+                                <span class="thumb-info-wrapper overlay overlay-show overlay-gradient-bottom-content">
+                                    <img src="~/img/demos/business-consulting-5/blog/blog-4-small.jpg" class="img-fluid" alt="">
+                                    <span class="thumb-info-title">
+                                        <span class="thumb-info-inner line-height-1 text-5 pb-4 ps-4">This is the Blog Post</span>
+                                    </span>
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <span class="thumb-info p-relative z-index-1 thumb-info-no-borders thumb-info-lighten thumb-info-bottom-info thumb-info-bottom-info-dark thumb-info-bottom-info-dark-linear bg-transparent" data-full-width-img-src="img/demos/business-consulting-5/blog/blog-2-large.jpg">
+                                <span class="thumb-info-wrapper overlay overlay-show overlay-gradient-bottom-content">
+                                    <img src="~/img/demos/business-consulting-5/blog/blog-2-small.jpg" class="img-fluid" alt="">
+                                    <span class="thumb-info-title">
+                                        <span class="thumb-info-inner line-height-1 text-5 pb-4 ps-4">This is the Blog Post</span>
+                                    </span>
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<section class="section bg-dark m-0 border-0">
+    <div class="container py-5">
+        <div class="row justify-content-between align-items-center py-5">
+            <div class="col-lg-6 text-center text-lg-start py-5">
+                <h3 class="mb-4 text-color-light">Ready To Transform Your Small Business Marketing?</h3>
+                <p class="text-4 text-light line-height-4 opacity-6 mb-4">Lorem ipsum dolor sit amet, consectetur lorem ipsum aipiscing anc vivita consectetur lorem ipsum aipiscing anc vivita consectetur lorem ipsum aipiscing anc vivita.</p>
+
+                <i class="icons icon-phone text-8 text-color-primary me-2"></i>
+                <a href="tel:+1234567890" class="text-decoration-none text-5 p-relative bottom-9 font-weight-semi-bold text-light text-color-hover-primary">888 123 4567</a>
+
+            </div>
+            <div class="col-lg-5 py-5">
+                <div class="card border-radius bg-color-light border-0 box-shadow-3">
+                    <div class="card-body p-5 m-2 text-center">
+                        <h4 class="card-title mb-2 text-6">Book Discovery Call!</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+                        <form class="contact-form" action="~/php/contact-form.php" method="POST">
+                            <div class="contact-form-success alert alert-success d-none mt-4">
+                                <strong>Success!</strong> Your message has been sent to us.
+                            </div>
+
+                            <div class="contact-form-error alert alert-danger d-none mt-4">
+                                <strong>Error!</strong> There was an error sending your message.
+                                <span class="mail-error-message text-1 d-block"></span>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-group col text-start">
+                                    <input type="text" value="" placeholder="Your Name *" data-msg-required="Please enter your name." maxlength="100" class="form-control text-2-5 p-3" name="name" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col text-start">
+                                    <input type="text" value="" placeholder="Your Phone *" data-msg-required="Please enter your phone" maxlength="100" class="form-control text-2-5 p-3" name="phone" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col">
+                                    <div class="d-grid gap-2">
+                                        <input type="submit" value="Get Started" class="btn border-0 btn-tertiary bg-hover-primary text-color-hover-light text-color-primary text-3-5 p-3" data-loading-text="Loading...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col pt-4">
+                                    <div class="hstack gap-3">
+                                        <div class="ms-auto">
+                                            <i class="icons icon-envelope text-4 p-relative top-5 me-2"></i>
+                                            <a href="mailto:you@domain.com" class="text-decoration-none text-2 text-dark text-color-hover-primary ws-nowrap font-weight-semi-bold">porto@domain.com</a>
+                                        </div>
+                                        <div class="vr"></div>
+                                        <div class="me-auto">
+                                            <i class="icons icon-phone text-4 p-relative top-5 me-2"></i>
+                                            <a href="tel:+1234567890" class="text-decoration-none text-2 text-dark text-color-hover-primary ws-nowrap font-weight-semi-bold">888 123 4567</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

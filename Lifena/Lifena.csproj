@@ -390,6 +390,14 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="img\demos\business-consulting-5\about\bahar.png" />
+    <Content Include="img\demos\business-consulting-5\about\generic-1.jpg" />
+    <Content Include="img\demos\business-consulting-5\about\generic-2.jpg" />
+    <Content Include="img\demos\business-consulting-5\about\hakkimizda.png" />
+    <Content Include="img\demos\business-consulting-5\about\hakkımızda1.png" />
+    <Content Include="img\demos\business-consulting-5\about\hakkımızda2.png" />
+    <Content Include="img\demos\business-consulting-5\about\kcy.png" />
+    <Content Include="img\demos\business-consulting-5\backgrounds\arkaplan.png" />
     <Content Include="img\demos\business-consulting-5\backgrounds\background-1.jpg" />
     <Content Include="img\demos\business-consulting-5\backgrounds\background-2.jpg" />
     <Content Include="img\demos\business-consulting-5\backgrounds\background-3.jpg" />

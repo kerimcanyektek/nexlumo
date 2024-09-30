@@ -122,6 +122,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\BlogController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -407,14 +408,20 @@
     <Content Include="img\demos\business-consulting-5\backgrounds\sorular2.png" />
     <Content Include="img\demos\business-consulting-5\backgrounds\sorular3.png" />
     <Content Include="img\demos\business-consulting-5\backgrounds\sorular4.png" />
-    <Content Include="img\demos\business-consulting-5\blog\blog-1-large.jpg" />
-    <Content Include="img\demos\business-consulting-5\blog\blog-1-small.jpg" />
-    <Content Include="img\demos\business-consulting-5\blog\blog-2-large.jpg" />
-    <Content Include="img\demos\business-consulting-5\blog\blog-2-small.jpg" />
-    <Content Include="img\demos\business-consulting-5\blog\blog-3-large.jpg" />
-    <Content Include="img\demos\business-consulting-5\blog\blog-3-small.jpg" />
-    <Content Include="img\demos\business-consulting-5\blog\blog-4-large.jpg" />
-    <Content Include="img\demos\business-consulting-5\blog\blog-4-small.jpg" />
+    <Content Include="img\demos\business-consulting-5\BasariHikayeleri\BasariHCeoM.png" />
+    <Content Include="img\demos\business-consulting-5\BasariHikayeleri\BasariHHanC.png" />
+    <Content Include="img\demos\business-consulting-5\BasariHikayeleri\BasariHKahramanT.png" />
+    <Content Include="img\demos\business-consulting-5\BasariHikayeleri\BasariHVillaK.png" />
+    <Content Include="img\demos\business-consulting-5\blog\Blog1.png" />
+    <Content Include="img\demos\business-consulting-5\blog\Blog1Kapak.png" />
+    <Content Include="img\demos\business-consulting-5\blog\Blog2.png" />
+    <Content Include="img\demos\business-consulting-5\blog\Blog2Kapak.png" />
+    <Content Include="img\demos\business-consulting-5\blog\Blog3.png" />
+    <Content Include="img\demos\business-consulting-5\blog\Blog3Kapak.png" />
+    <Content Include="img\demos\business-consulting-5\blog\Blog4.png" />
+    <Content Include="img\demos\business-consulting-5\blog\Blog4Kapak.png" />
+    <Content Include="img\demos\business-consulting-5\blog\Blog5.png" />
+    <Content Include="img\demos\business-consulting-5\blog\Blog5Kapak.png" />
     <Content Include="img\demos\business-consulting-5\generic\generic-1.jpg" />
     <Content Include="img\demos\business-consulting-5\generic\generic-1.png" />
     <Content Include="img\demos\business-consulting-5\generic\generic-2.jpg" />
@@ -4363,6 +4370,11 @@
     <Content Include="Views\Home\SuccessStories.cshtml" />
     <Content Include="Views\Home\Blog.cshtml" />
     <Content Include="Views\Admin\Index.cshtml" />
+    <Content Include="Views\Blog\Blog1.cshtml" />
+    <Content Include="Views\Blog\Blog2.cshtml" />
+    <Content Include="Views\Blog\Blog5.cshtml" />
+    <Content Include="Views\Blog\Blog4.cshtml" />
+    <Content Include="Views\Blog\Blog3.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

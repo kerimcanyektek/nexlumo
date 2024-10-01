@@ -7,7 +7,23 @@
       "RelativeMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|Lifena.csproj|solutionrelative:views\\home\\successstories.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|Lifena.csproj|c:\\users\\bahars\\source\\repos\\lifena\\lifena\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|Lifena.csproj|c:\\users\\bahars\\source\\repos\\lifena\\lifena\\views\\blog\\blog2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|Lifena.csproj|solutionrelative:views\\blog\\blog2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|Lifena.csproj|c:\\users\\bahars\\source\\repos\\lifena\\lifena\\views\\blog\\blog1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|Lifena.csproj|solutionrelative:views\\blog\\blog1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|Lifena.csproj|C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\views\\home\\blog.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|Lifena.csproj|solutionrelative:views\\home\\blog.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|Lifena.csproj|C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|Lifena.csproj|solutionrelative:views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|Lifena.csproj|C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|Lifena.csproj|solutionrelative:views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
@@ -15,20 +31,12 @@
       "RelativeMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|Lifena.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|Lifena.csproj|c:\\users\\bahars\\source\\repos\\lifena\\lifena\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|Lifena.csproj|C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|Lifena.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|Lifena.csproj|C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\views\\home\\blog.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|Lifena.csproj|solutionrelative:views\\home\\blog.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|Lifena.csproj|C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\views\\home\\services.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|Lifena.csproj|solutionrelative:views\\home\\services.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|Lifena.csproj|C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|Lifena.csproj|solutionrelative:views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,20 +58,46 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Blog2.cshtml",
+              "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\Views\\Blog\\Blog2.cshtml",
+              "RelativeDocumentMoniker": "Views\\Blog\\Blog2.cshtml",
+              "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\Views\\Blog\\Blog2.cshtml",
+              "RelativeToolTip": "Views\\Blog\\Blog2.cshtml",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAABcAAABtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-30T20:36:05.24Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Blog1.cshtml",
+              "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\Views\\Blog\\Blog1.cshtml",
+              "RelativeDocumentMoniker": "Views\\Blog\\Blog1.cshtml",
+              "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\Views\\Blog\\Blog1.cshtml",
+              "RelativeToolTip": "Views\\Blog\\Blog1.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-30T20:23:13.019Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "SuccessStories.cshtml",
               "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\Views\\Home\\SuccessStories.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\SuccessStories.cshtml",
               "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\Views\\Home\\SuccessStories.cshtml",
               "RelativeToolTip": "Views\\Home\\SuccessStories.cshtml",
-              "ViewState": "AgIAAL8AAAAAAAAAAAAqwOQAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-09-30T19:04:56.713Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Contact.cshtml",
               "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\Views\\Home\\Contact.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Contact.cshtml",
@@ -71,24 +105,24 @@
               "RelativeToolTip": "Views\\Home\\Contact.cshtml",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAABQAAABVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-30T18:38:42.071Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-30T18:38:42.071Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Blog.cshtml",
               "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\Views\\Home\\Blog.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Blog.cshtml",
               "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\Views\\Home\\Blog.cshtml",
               "RelativeToolTip": "Views\\Home\\Blog.cshtml",
-              "ViewState": "AgIAANkAAAAAAAAAAAAAwOIAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-30T09:52:12.098Z"
+              "WhenOpened": "2024-09-30T09:52:12.098Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Services.cshtml",
               "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\Views\\Home\\Services.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Services.cshtml",
@@ -100,19 +134,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "About.cshtml",
               "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\Views\\Home\\About.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\About.cshtml",
               "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\Views\\Home\\About.cshtml",
               "RelativeToolTip": "Views\\Home\\About.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAAGwAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-27T20:35:55.381Z"
+              "WhenOpened": "2024-09-27T20:35:55.381Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
@@ -120,12 +155,11 @@
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
               "ViewState": "AgIAABECAAAAAAAAAAAAwDACAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-26T18:52:33.624Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-26T18:52:33.624Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
@@ -133,8 +167,7 @@
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAHkAAAAAAAAAAAAAAIsAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-26T14:57:36.335Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-26T14:57:36.335Z"
             }
           ]
         }

@@ -19,6 +19,11 @@ namespace Lifena.Controllers
 			return View();
 		}
 
+		public ActionResult Admin_NewBlog()
+		{
+			return View();
+		}
+
 		public ActionResult Admin_User()
 		{
 			return View();

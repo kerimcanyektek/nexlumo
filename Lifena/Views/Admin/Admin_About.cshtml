@@ -1,0 +1,245 @@
+﻿@{
+    ViewBag.Title = "Admin_About";
+    Layout = "~/Views/Shared/Admin_Layout.cshtml";
+}
+
+<style>
+    .floating-image-wrapper {
+        position: relative;
+        top: -100px; /* Resmi yukarı taşıyoruz */
+        display: flex;
+        justify-content: center;
+    }
+
+    .p-absolute {
+        position: absolute;
+        z-index: -1; /* SVG'nin resmin altında kalmasını sağlar */
+        top: -140px; /* İkonu hafif yukarı aldık */
+    }
+
+    .shadow-custom {
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Gölge ekliyoruz */
+        border-radius: 50%; /* Yuvarlak yapıyoruz */
+    }
+
+    .page-header .container .row.align-items-center {
+        margin-top: -100px; /* Yazıları yukarı çekiyoruz */
+    }
+
+
+    .icon-left {
+        margin-left: -50px; /* Değeri ihtiyaca göre ayarlayın */
+    }
+
+
+    .button-container {
+        display: flex;
+        justify-content: flex-start; /* Butonu sola hizalar */
+        margin-top: -60px; /* Yukarı doğru kaydırır */
+        padding-left: 20px; /* Sol kenardan biraz boşluk bırakır */
+    }
+
+    .custom-button {
+        background-color: #ff6716; /* Turuncu renk */
+        color: white;
+        padding: 15px 40px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 16px;
+        display: inline-block;
+        margin-top: 20px;
+        position: relative;
+    }
+
+        .custom-button:hover {
+            background-color: black; /* Üzerine gelince siyah olacak */
+            color: white; /* Yazı rengi beyaz olacak */
+        }
+
+    .btn-short {
+        width: auto; /* Butonun genişliğini otomatik ayarla */
+        padding: 0.90rem 1.5rem; /* Yukarı/aşağı ve yanlardan daha fazla boşluk ayarla */
+        display: flex; /* Flex kullanarak simgeleri ve metni yatay hizala */
+        align-items: center; /* Dikey hizalamayı merkezleştir */
+        font-size: 1.25rem; /* Font boyutunu büyüt (1.25rem) */
+    }
+
+    .custom-hr {
+        border: none; /* Varsayılan sınırı kaldırıyoruz */
+        height: 4px; /* Kalınlık */
+        background-color: #ff6716; /* Rengi buradan ayarlıyoruz */
+    }
+
+    .owl-carousel {
+        display: flex; /* Flexbox ile yan yana hizalama sağlıyoruz */
+        justify-content: center; /* Ortada hizalamak için */
+    }
+
+    .owl-stage {
+        display: flex; /* Kartların yan yana gelmesi için flex kullanılıyor */
+    }
+
+    .owl-item {
+        display: flex;
+        justify-content: center;
+        margin-right: 20px; /* Kartlar arası boşluk artırıldı */
+        width: 300px; /* Kart genişliği artırıldı */
+    }
+
+    .card {
+        width: 100%; /* Kart genişliği %100 yapılır, böylece esnek olacak */
+        max-width: 450px; /* Maksimum genişlik 350px olarak ayarlandı */
+    }
+
+    /* Kartların genişliğini ayarlamak için */
+    .custom-card-style-1 {
+        width: 420px; /* Kartların genişliği */
+    }
+
+    .custom-social-icons {
+        list-style: none; /* Madde işaretlerini kaldırır */
+        padding: 0; /* Varsayılan padding'i kaldırır */
+        display: flex; /* İkonları yan yana yerleştirir */
+        justify-content: center; /* İkonları ortalar */
+    }
+
+        .custom-social-icons li {
+            margin: 0 15px; /* Her iki tarafta 15 piksel boşluk bırakır */
+        }
+
+            .custom-social-icons li:last-child {
+                margin-right: 0; /* Son ikonun sağında boşluk bırakmaz */
+            }
+</style>
+
+
+<section class="page-header page-header-modern bg-transparent">
+    <div class="container pt-5 mt-0">
+        <div class="col text-center">
+            <h1 class="text-color-dark text-8 font-weight-bold">Hakkımızda</h1>
+        </div>
+        <div class="container my-5 pb-2">
+            <div class="row align-items-center mb-4">
+                <div class="row align-items-center justify-content-around mt-3">
+                    <div class="col-lg-4 text-end position-relative pt-3 max-width-custom-1">
+                        <div class="p-absolute left-0" style="top: -125px; margin-left: -50px;">
+                            <!-- Burada margin-left ekledik -->
+                            <div data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
+                                <img width="470" height="451" src="~/img/demos/business-consulting-5/svg/icon-bg-2.svg" alt="" />
+                            </div>
+                        </div>
+
+                        <div class="floating-image-wrapper">
+                            <img width="376" height="350" src="~/img/demos/business-consulting-5/about/hakkımızda1.png" alt="Açıklama" class="rounded-circle shadow-custom" />
+                        </div>
+                    </div>
+                    <div class="col-lg-7 text-center text-lg-start">
+                        <h4 class="mt-5 pt-4">Lifena, Grodea şirketi bünyesinde geliştirilmiş bir motivasyon ve yaşam koçluğu platformudur.</h4>
+                        <br />
+                        <p>Amacımız, insanların günlük yaşamlarında karşılaştıkları zorlukları aşmalarına yardımcı olmak ve içsel motivasyonlarını artırmalarını sağlamaktır. Biz, her bireyin içinde büyük bir potansiyel olduğuna inanıyoruz ve bu potansiyeli açığa çıkarmak için rehberlik etmeyi amaçlıyoruz.</p>
+                        <p>Lifena ekibi olarak, kişisel gelişim, motivasyon ve hayatı daha pozitif bir perspektiften yaşamanın gücüne inanıyoruz. Blog yazılarımız, motivasyon sözlerimiz ve başarı hikayelerimizle ziyaretçilerimize ilham kaynağı olmayı hedefliyoruz. Ayrıca, profesyonel koçluk hizmetlerimizle de bireylerin hedeflerine ulaşmaları için yanlarında yer alıyoruz.</p>
+                        <p>Hedefimiz, sadece anlık bir motivasyon değil, sürdürülebilir bir yaşam disiplini kazandırmak ve insanların daha anlamlı bir hayat sürmelerine katkı sağlamaktır.</p>
+                        <div class="row justify-content-center">
+                            <div class="col-md-9 col-lg-12 text-center">
+                                <div class="button-container">
+                                    <a href="/Admin/EditAbout" class="btn btn-warning btn-lg" style="margin-left: -360px;">Düzenle</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container mb-5">
+    <div class="row">
+        <div class="col">
+            <hr class="custom-hr">
+        </div>
+    </div>
+    <br />
+    <div class="row justify-content-center pb-2 mb-3">
+        <div class="col-md-9 col-lg-12 text-center">
+            <h2 class="text-color-secondary font-weight-bold line-height-6 mb-3">Ekibimiz</h2>
+            <p class="custom-font-secondary text-4 mb-3">Ekibimiz, yaşam koçluğu alanında kendini geliştirmeye ve insanlara yardımcı olmaya odaklanmış bir grup bireydir...</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="owl-carousel nav-outside nav-arrows-1 owl-theme owl-carousel-init owl-loaded owl-drag fadeInUpShorter">
+                <div class="owl-stage-outer">
+                    <div class="owl-stage">
+                        <div class="owl-item">
+                            <div class="card custom-card-style-1 custom-card-style-1-variation">
+                                <div class="card-body text-center bg-color-light-scale-1 py-5">
+                                    <div class="custom-card-style-1-image-wrapper bg-primary rounded-circle d-inline-block mb-3">
+                                        <img src="~/img/demos/business-consulting-5/about/kcy.png" class="img-fluid rounded-circle" alt="" style="width: 150px; height: 150px; object-fit: cover;">
+                                    </div>
+                                    <h4 class="text-color-secondary font-weight-bold line-height-1 text-5 mb-0">
+                                        <a class="text-color-secondary text-color-hover-primary text-decoration-none">Kerimcan Yektek</a>
+                                    </h4>
+                                    <p class="text-2 pb-1 mb-2">Co-Founder at Lifena</p>
+                                    <ul class="social-icons custom-social-icons social-icons-big">
+                                        <li class="social-icons-instagram"><a href="https://www.instagram.com/kerimcan.dev/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                                        <li class="social-icons-linkedin mx-2"><a href="https://www.linkedin.com/in/kerimcanyektek/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                                        <li class="social-icons-github"><a href="https://github.com/kerimcanyektek" target="_blank"><i class="fab fa-github"></i></a></li>
+                                    </ul>
+                                    <p class="text-2 mb-0"><a href="http://www.kerimcanyektek.com" target="_blank" class="text-color-secondary text-decoration-none">kerimcanyektek.com</a></p>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-md-9 col-lg-12 text-center d-flex justify-content-center align-items-center">
+                                        <a href="#" class="btn btn-warning btn-lg me-2">Düzenle</a>
+                                        <a href="#" class="btn btn-dark btn-short">
+                                            <i class="fas fa-trash-alt"></i> <!-- Çöp kutusu simgesi -->
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item">
+                            <div class="card custom-card-style-1 custom-card-style-1-variation">
+                                <div class="card-body text-center bg-color-light-scale-1 py-5">
+                                    <div class="custom-card-style-1-image-wrapper bg-primary rounded-circle d-inline-block mb-3">
+                                        <img src="~/img/demos/business-consulting-5/about/bahar.png" class="img-fluid rounded-circle" alt="" style="width: 150px; height: 150px; object-fit: cover;">
+                                    </div>
+                                    <h4 class="text-color-secondary font-weight-bold line-height-1 text-5 mb-0">
+                                        <a class="text-color-secondary text-color-hover-primary text-decoration-none">Bahar Karabulut</a>
+                                    </h4>
+                                    <p class="text-2 pb-1 mb-2">Co-Founder at Lifena</p>
+                                    <ul class="social-icons custom-social-icons social-icons-big">
+                                        <li class="social-icons-instagram"><a href="https://www.instagram.com/baharcode/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                                        <li class="social-icons-linkedin mx-2"><a href="https://www.linkedin.com/in/baharkarabulut/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                                        <li class="social-icons-github"><a href="https://github.com/baharkarabulut" target="_blank"><i class="fab fa-github"></i></a></li>
+                                    </ul>
+                                    <p class="text-2 mb-0"><a href="http://www.baharkarabulut.com" target="_blank" class="text-color-secondary text-decoration-none">baharkarabulut.com</a></p>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-md-9 col-lg-12 text-center d-flex justify-content-center align-items-center">
+                                        <a href="#" class="btn btn-warning btn-lg me-2">Düzenle</a>
+                                        <a href="#" class="btn btn-dark btn-short">
+                                            <i class="fas fa-trash-alt"></i> <!-- Çöp kutusu simgesi -->
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Yeni Kişi Ekle Butonu -->
+    <div class="text-center mt-4">
+        <a href="#" class="btn btn-secondary btn-lg">Yeni Kişi Ekle</a>
+    </div>
+    <br />
+
+
+    <div class="row">
+        <div class="col">
+            <hr style="border: 3px solid orange;">
+        </div>
+    </div>
+</div>

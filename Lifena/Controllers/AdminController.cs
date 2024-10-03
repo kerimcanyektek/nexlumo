@@ -9,9 +9,19 @@ namespace Lifena.Controllers
     public class AdminController : Controller
     {
         // GET: Admin
-        public ActionResult Index()
+        public ActionResult Admin_About()
         {
             return View();
         }
-    }
+
+		public ActionResult Admin_Blog()
+		{
+			return View();
+		}
+
+		public ActionResult Admin_User()
+		{
+			return View();
+		}
+	}
 }

@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DbNexLumoModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="TblAbout">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="preface" Type="String" MaxLength="550" FixedLength="false" Unicode="true" />
+    <Property Name="description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="title" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TblAdmin">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="username" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="password" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TblAuthors">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="authorName" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="authorimg" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="authorTitle" Type="String" MaxLength="550" FixedLength="false" Unicode="true" />
+    <Property Name="blogid" Type="Int32" />
+  </EntityType>
+  <EntityType Name="TblBlogs">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="blogHeader" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="blogSlogan" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="blogimg" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="blogPost" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="blogForeword" Type="String" MaxLength="550" FixedLength="false" Unicode="true" />
+    <Property Name="blogDate" Type="DateTime" Precision="0" />
+    <Property Name="blogHighlights" Type="Byte" />
+    <Property Name="authorid" Type="Int32" />
+  </EntityType>
+  <EntityType Name="TblCategories">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="categoryName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="serviceid" Type="Int32" />
+  </EntityType>
+  <EntityType Name="TblContact">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="title" Type="String" MaxLength="520" FixedLength="false" Unicode="true" />
+    <Property Name="description" Type="String" MaxLength="950" FixedLength="false" Unicode="true" />
+    <Property Name="blogCardPost" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="blogCardName" Type="String" MaxLength="530" FixedLength="false" Unicode="true" />
+    <Property Name="blogCardMail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="blogCardSubject" Type="String" MaxLength="550" FixedLength="false" Unicode="true" />
+    <Property Name="mailAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TblFooter">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="serviceid" Type="Int32" />
+    <Property Name="socialMedia1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="socialMediaLink1" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="socialMediaicon1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="socialMedia2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="socialMediaLink2" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="socialMediaicon2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="socialMedia3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="socialMediaLink3" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="socialMediaicon3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TblHome">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="title" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="slogan" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="applicationTitle" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="applicationName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="applicationPhone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="mailAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TblServices">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="serviceimg" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="serviceName" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="serviceDescription" Type="String" MaxLength="550" FixedLength="false" Unicode="true" />
+    <Property Name="serviceDescription2" Type="String" MaxLength="550" FixedLength="false" Unicode="true" />
+    <Property Name="categoryid" Type="Int32" />
+  </EntityType>
+  <EntityType Name="TblSocialMedias">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="link" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="icon" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="teamid" Type="Int32" />
+  </EntityType>
+  <EntityType Name="TblTeams">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="teamDescription" Type="String" MaxLength="550" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="DbNexLumoEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="TblAbout" EntityType="Self.TblAbout" />
+    <EntitySet Name="TblAdmin" EntityType="Self.TblAdmin" />
+    <EntitySet Name="TblAuthors" EntityType="Self.TblAuthors" />
+    <EntitySet Name="TblBlogs" EntityType="Self.TblBlogs" />
+    <EntitySet Name="TblCategories" EntityType="Self.TblCategories" />
+    <EntitySet Name="TblContact" EntityType="Self.TblContact" />
+    <EntitySet Name="TblFooter" EntityType="Self.TblFooter" />
+    <EntitySet Name="TblHome" EntityType="Self.TblHome" />
+    <EntitySet Name="TblServices" EntityType="Self.TblServices" />
+    <EntitySet Name="TblSocialMedias" EntityType="Self.TblSocialMedias" />
+    <EntitySet Name="TblTeams" EntityType="Self.TblTeams" />
+    <EntitySet Name="TblTeamMembers" EntityType="DbNexLumoModel.TblTeamMembers" />
+  </EntityContainer>
+  <EntityType Name="TblTeamMembers">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="fullname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="mission" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="website" Type="String" MaxLength="450" FixedLength="false" Unicode="true" />
+    <Property Name="img" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="socialMediaicon1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="socialMediaicon2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="socialMediaicon3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="socialMediaLink1" Type="String" MaxLength="450" FixedLength="false" Unicode="true" />
+    <Property Name="socialMediaLink2" Type="String" MaxLength="450" FixedLength="false" Unicode="true" />
+    <Property Name="socialMediaLink3" Type="String" MaxLength="450" FixedLength="false" Unicode="true" />
+  </EntityType>
+</Schema>

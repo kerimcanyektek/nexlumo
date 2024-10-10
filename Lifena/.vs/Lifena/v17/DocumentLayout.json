@@ -3,52 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|c:\\users\\bahars\\source\\repos\\lifena\\lifena\\views\\admin\\admin_team.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|solutionrelative:views\\admin\\admin_team.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|c:\\users\\bahars\\source\\repos\\lifena\\lifena\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|c:\\users\\bahars\\source\\repos\\lifena\\lifena\\views\\admin\\admin_login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|solutionrelative:views\\admin\\admin_login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|c:\\users\\bahars\\source\\repos\\lifena\\lifena\\models\\entity\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
       "RelativeMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|solutionrelative:models\\entity\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|c:\\users\\bahars\\source\\repos\\lifena\\lifena\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|solutionrelative:web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|c:\\users\\bahars\\source\\repos\\lifena\\lifena\\views\\admin\\admin_about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|solutionrelative:views\\admin\\admin_about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|c:\\users\\bahars\\source\\repos\\lifena\\lifena\\web.release.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|solutionrelative:web.release.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|c:\\users\\bahars\\source\\repos\\lifena\\lifena\\views\\shared\\admin_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|solutionrelative:views\\shared\\admin_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|c:\\users\\bahars\\source\\repos\\lifena\\lifena\\web.debug.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|solutionrelative:web.debug.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|c:\\users\\bahars\\source\\repos\\lifena\\lifena\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|c:\\users\\bahars\\source\\repos\\lifena\\lifena\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|solutionrelative:global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|c:\\users\\bahars\\source\\repos\\lifena\\lifena\\repositories\\aboutrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|solutionrelative:repositories\\aboutrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|c:\\users\\bahars\\source\\repos\\lifena\\lifena\\views\\home\\blog.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|solutionrelative:views\\home\\blog.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\views\\blog\\blog1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|solutionrelative:views\\blog\\blog1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|c:\\users\\bahars\\source\\repos\\lifena\\lifena\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|solutionrelative:repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|solutionrelative:views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\views\\blog\\blog2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|solutionrelative:views\\blog\\blog2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\views\\home\\services.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|solutionrelative:views\\home\\services.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -70,92 +62,105 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Model1.edmx [Diagram1]",
               "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\Models\\Entity\\Model1.edmx",
               "RelativeDocumentMoniker": "Models\\Entity\\Model1.edmx",
               "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\Models\\Entity\\Model1.edmx [Diagram1]",
               "RelativeToolTip": "Models\\Entity\\Model1.edmx [Diagram1]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
-              "WhenOpened": "2024-10-10T12:07:38.851Z",
+              "WhenOpened": "2024-10-10T15:53:29.66Z",
               "EditorCaption": " [Diagram1]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Web.Release.config",
-              "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\Web.Release.config",
-              "RelativeDocumentMoniker": "Web.Release.config",
-              "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\Web.Release.config",
-              "RelativeToolTip": "Web.Release.config",
+              "Title": "Admin_Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\Views\\Admin\\Admin_Login.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Admin_Login.cshtml",
+              "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\Views\\Admin\\Admin_Login.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Admin_Login.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-10-10T11:39:43.687Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-10T15:49:41.541Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Web.Debug.config",
-              "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\Web.Debug.config",
-              "RelativeDocumentMoniker": "Web.Debug.config",
-              "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\Web.Debug.config",
-              "RelativeToolTip": "Web.Debug.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-10-10T11:39:42.007Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Global.asax.cs",
-              "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\Global.asax.cs",
-              "RelativeDocumentMoniker": "Global.asax.cs",
-              "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\Global.asax.cs",
-              "RelativeToolTip": "Global.asax.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T11:39:38.149Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Web.config",
-              "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\Web.config",
-              "RelativeDocumentMoniker": "Web.config",
-              "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\Web.config",
-              "RelativeToolTip": "Web.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAwD0AAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-10-10T11:38:47.918Z",
+              "DocumentIndex": 0,
+              "Title": "Admin_Team.cshtml",
+              "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\Views\\Admin\\Admin_Team.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Admin_Team.cshtml",
+              "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\Views\\Admin\\Admin_Team.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Admin_Team.cshtml",
+              "ViewState": "AgIAAIcAAAAAAAAAAAAAAJwAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-10T15:44:17.353Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Blog.cshtml",
-              "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\Views\\Home\\Blog.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Blog.cshtml",
-              "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\Views\\Home\\Blog.cshtml",
-              "RelativeToolTip": "Views\\Home\\Blog.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA1AAAAAAAAAA==",
+              "Title": "Admin_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\Views\\Shared\\Admin_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\Admin_Layout.cshtml",
+              "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\Views\\Shared\\Admin_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\Admin_Layout.cshtml",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAAG8AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-09T12:56:24.408Z",
+              "WhenOpened": "2024-10-10T15:41:39.162Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACAAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T15:37:43.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Admin_About.cshtml",
+              "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\Views\\Admin\\Admin_About.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Admin_About.cshtml",
+              "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\Views\\Admin\\Admin_About.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Admin_About.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-10T15:28:29.376Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AboutRepository.cs",
+              "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\Repositories\\AboutRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\AboutRepository.cs",
+              "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\Repositories\\AboutRepository.cs",
+              "RelativeToolTip": "Repositories\\AboutRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T15:12:18.914Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAAAEUAAABUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-09T12:39:09.171Z",
+              "Title": "GenericRepository.cs",
+              "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\Repositories\\GenericRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\GenericRepository.cs",
+              "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\Repositories\\GenericRepository.cs",
+              "RelativeToolTip": "Repositories\\GenericRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T15:11:50.636Z",
               "EditorCaption": ""
             },
             {
@@ -166,61 +171,22 @@
               "RelativeDocumentMoniker": "Views\\Home\\About.cshtml",
               "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\Views\\Home\\About.cshtml",
               "RelativeToolTip": "Views\\Home\\About.cshtml",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAAAGMAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACMAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-10-09T12:36:20.449Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Services.cshtml",
-              "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\Views\\Home\\Services.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Services.cshtml",
-              "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\Views\\Home\\Services.cshtml",
-              "RelativeToolTip": "Views\\Home\\Services.cshtml",
-              "ViewState": "AgIAAGYAAAAAAAAAAAAAAIQAAAB3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-09T12:27:23.887Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Blog2.cshtml",
-              "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\Views\\Blog\\Blog2.cshtml",
-              "RelativeDocumentMoniker": "Views\\Blog\\Blog2.cshtml",
-              "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\Views\\Blog\\Blog2.cshtml",
-              "RelativeToolTip": "Views\\Blog\\Blog2.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGEAAABeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-08T14:57:48.819Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Blog1.cshtml",
-              "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\Views\\Blog\\Blog1.cshtml",
-              "RelativeDocumentMoniker": "Views\\Blog\\Blog1.cshtml",
-              "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\Views\\Blog\\Blog1.cshtml",
-              "RelativeToolTip": "Views\\Blog\\Blog1.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABRAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-08T14:57:24.246Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAA8AAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-08T12:02:04.745Z",
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\lifena\\Lifena\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T14:58:39.244Z",
               "EditorCaption": ""
             }
           ]

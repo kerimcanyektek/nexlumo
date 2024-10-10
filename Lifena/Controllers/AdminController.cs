@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Lifena.Models.Entity;
+using Lifena.Repositories;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -16,8 +18,21 @@ namespace Lifena.Controllers
 		// GET: Admin
 		public ActionResult Admin_About()
         {
-            return View();
+			// GET: About
+			GenericRepository<TblAbout> repo = new GenericRepository<TblAbout>();
+			
+				var about = repo.List();
+				return View(about);
         }
+
+		public ActionResult Admin_Team()
+		{
+			// GET: Team Member
+			GenericRepository<TblTeamMembers> repo = new GenericRepository<TblTeamMembers>();
+
+			var teammember = repo.List();
+			return View(teammember);
+		}
 
 		public ActionResult Admin_Blog()
 		{

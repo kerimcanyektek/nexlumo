@@ -77,3 +77,7 @@ C:\Users\BAHARS\source\repos\lifena\Lifena\obj\Debug\NexLumo.csproj.CoreCompileI
 C:\Users\BAHARS\source\repos\lifena\Lifena\obj\Debug\NexLumo.csproj.Up2Date
 C:\Users\BAHARS\source\repos\lifena\Lifena\obj\Debug\Lifena.dll
 C:\Users\BAHARS\source\repos\lifena\Lifena\obj\Debug\Lifena.pdb
+C:\Users\BAHARS\source\repos\lifena\Lifena\bin\EntityFramework.dll
+C:\Users\BAHARS\source\repos\lifena\Lifena\bin\EntityFramework.SqlServer.dll
+C:\Users\BAHARS\source\repos\lifena\Lifena\bin\EntityFramework.xml
+C:\Users\BAHARS\source\repos\lifena\Lifena\bin\EntityFramework.SqlServer.xml

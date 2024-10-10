@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Lifena.Models.Entity;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,6 +9,7 @@ namespace Lifena.Controllers
 {
 	public class HomeController : Controller
 	{
+		DbNexLumoEntities db = new DbNexLumoEntities();
 		public ActionResult Index()
 		{
 			return View();
@@ -15,7 +17,8 @@ namespace Lifena.Controllers
 
 		public ActionResult About()
 		{
-			return View();
+			var values = db.TblAbout.ToList();
+			return View(values);
 		}
 
 		public ActionResult Services()

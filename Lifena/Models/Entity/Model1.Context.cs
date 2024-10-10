@@ -36,5 +36,6 @@ namespace Lifena.Models.Entity
         public virtual DbSet<TblServices> TblServices { get; set; }
         public virtual DbSet<TblSocialMedias> TblSocialMedias { get; set; }
         public virtual DbSet<TblTeams> TblTeams { get; set; }
+        public virtual DbSet<TblTeamMembers> TblTeamMembers { get; set; }
     }
 }

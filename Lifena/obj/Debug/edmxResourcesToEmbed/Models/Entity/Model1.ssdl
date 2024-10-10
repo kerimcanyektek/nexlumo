@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DbNexLumoModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="TblAbout">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="preface" Type="nvarchar" MaxLength="550" />
+    <Property Name="description" Type="nvarchar(max)" />
+    <Property Name="title" Type="nvarchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="TblAdmin">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="username" Type="nvarchar" MaxLength="15" />
+    <Property Name="password" Type="nvarchar" MaxLength="15" />
+  </EntityType>
+  <EntityType Name="TblAuthors">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="authorName" Type="nvarchar" MaxLength="150" />
+    <Property Name="authorimg" Type="nvarchar" MaxLength="50" />
+    <Property Name="authorTitle" Type="nvarchar" MaxLength="550" />
+    <Property Name="blogid" Type="int" />
+  </EntityType>
+  <EntityType Name="TblBlogs">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="blogHeader" Type="nvarchar" MaxLength="150" />
+    <Property Name="blogSlogan" Type="nvarchar" MaxLength="150" />
+    <Property Name="blogimg" Type="nvarchar" MaxLength="50" />
+    <Property Name="blogPost" Type="nvarchar(max)" />
+    <Property Name="blogForeword" Type="nvarchar" MaxLength="550" />
+    <Property Name="blogDate" Type="date" />
+    <Property Name="blogHighlights" Type="tinyint" />
+    <Property Name="authorid" Type="int" />
+  </EntityType>
+  <EntityType Name="TblCategories">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="categoryName" Type="nvarchar" MaxLength="50" />
+    <Property Name="serviceid" Type="int" />
+  </EntityType>
+  <EntityType Name="TblContact">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="title" Type="nvarchar" MaxLength="520" />
+    <Property Name="description" Type="nvarchar" MaxLength="950" />
+    <Property Name="blogCardPost" Type="nvarchar" MaxLength="50" />
+    <Property Name="blogCardName" Type="nvarchar" MaxLength="530" />
+    <Property Name="blogCardMail" Type="nvarchar" MaxLength="50" />
+    <Property Name="blogCardSubject" Type="nvarchar" MaxLength="550" />
+    <Property Name="mailAddress" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TblFooter">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="serviceid" Type="int" />
+    <Property Name="socialMedia1" Type="nvarchar" MaxLength="50" />
+    <Property Name="socialMediaLink1" Type="nvarchar" MaxLength="150" />
+    <Property Name="socialMediaicon1" Type="nvarchar" MaxLength="50" />
+    <Property Name="socialMedia2" Type="nvarchar" MaxLength="50" />
+    <Property Name="socialMediaLink2" Type="nvarchar" MaxLength="150" />
+    <Property Name="socialMediaicon2" Type="nvarchar" MaxLength="50" />
+    <Property Name="socialMedia3" Type="nvarchar" MaxLength="50" />
+    <Property Name="socialMediaLink3" Type="nvarchar" MaxLength="150" />
+    <Property Name="socialMediaicon3" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TblHome">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="title" Type="nvarchar" MaxLength="50" />
+    <Property Name="slogan" Type="nvarchar" MaxLength="50" />
+    <Property Name="applicationTitle" Type="nvarchar" MaxLength="50" />
+    <Property Name="applicationName" Type="nvarchar" MaxLength="50" />
+    <Property Name="applicationPhone" Type="nvarchar" MaxLength="50" />
+    <Property Name="mailAddress" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TblServices">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="serviceimg" Type="nvarchar" MaxLength="150" />
+    <Property Name="serviceName" Type="nvarchar" MaxLength="150" />
+    <Property Name="serviceDescription" Type="nvarchar" MaxLength="550" />
+    <Property Name="serviceDescription2" Type="nvarchar" MaxLength="550" />
+    <Property Name="categoryid" Type="int" />
+  </EntityType>
+  <EntityType Name="TblSocialMedias">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="150" />
+    <Property Name="link" Type="nvarchar" MaxLength="150" />
+    <Property Name="icon" Type="nvarchar" MaxLength="150" />
+    <Property Name="teamid" Type="int" />
+  </EntityType>
+  <EntityType Name="TblTeamMembers">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="fullname" Type="varchar" MaxLength="50" />
+    <Property Name="mission" Type="nvarchar" MaxLength="250" />
+    <Property Name="website" Type="nvarchar" MaxLength="450" />
+    <Property Name="img" Type="nvarchar" MaxLength="50" />
+    <Property Name="socialMediaicon1" Type="nvarchar" MaxLength="50" />
+    <Property Name="socialMediaicon2" Type="nvarchar" MaxLength="50" />
+    <Property Name="socialMediaicon3" Type="nvarchar" MaxLength="50" />
+    <Property Name="socialMediaLink1" Type="nvarchar" MaxLength="450" />
+    <Property Name="socialMediaLink2" Type="nvarchar" MaxLength="450" />
+    <Property Name="socialMediaLink3" Type="nvarchar" MaxLength="450" />
+  </EntityType>
+  <EntityType Name="TblTeams">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="teamDescription" Type="nvarchar" MaxLength="550" />
+  </EntityType>
+  <EntityContainer Name="DbNexLumoModelStoreContainer">
+    <EntitySet Name="TblAbout" EntityType="Self.TblAbout" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblAdmin" EntityType="Self.TblAdmin" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblAuthors" EntityType="Self.TblAuthors" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblBlogs" EntityType="Self.TblBlogs" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblCategories" EntityType="Self.TblCategories" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblContact" EntityType="Self.TblContact" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblFooter" EntityType="Self.TblFooter" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblHome" EntityType="Self.TblHome" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblServices" EntityType="Self.TblServices" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblSocialMedias" EntityType="Self.TblSocialMedias" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblTeamMembers" EntityType="Self.TblTeamMembers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TblTeams" EntityType="Self.TblTeams" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

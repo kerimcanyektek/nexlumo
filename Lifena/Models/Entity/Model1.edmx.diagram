@@ -16,6 +16,7 @@
         <EntityTypeShape EntityType="DbNexLumoModel.TblServices" Width="1.5" PointX="0.75" PointY="7.75" IsExpanded="true" />
         <EntityTypeShape EntityType="DbNexLumoModel.TblSocialMedias" Width="1.5" PointX="2.75" PointY="7.75" IsExpanded="true" />
         <EntityTypeShape EntityType="DbNexLumoModel.TblTeams" Width="1.5" PointX="8.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbNexLumoModel.TblTeamMembers" Width="1.5" PointX="10.5" PointY="0.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

@@ -1,4 +1,6 @@
-﻿@{
+﻿@using Lifena.Models.Entity;
+@model List<TblAbout>
+@{
     ViewBag.Title = "Admin_About";
     Layout = "~/Views/Shared/Admin_Layout.cshtml";
 }
@@ -134,112 +136,22 @@
                         </div>
                     </div>
                     <div class="col-lg-7 text-center text-lg-start">
-                        <h4 class="mt-5 pt-4">NexLumo, Grodea şirketi bünyesinde geliştirilmiş bir motivasyon ve yaşam koçluğu platformudur.</h4>
-                        <br />
-                        <p>Amacımız, insanların günlük yaşamlarında karşılaştıkları zorlukları aşmalarına yardımcı olmak ve içsel motivasyonlarını artırmalarını sağlamaktır. Biz, her bireyin içinde büyük bir potansiyel olduğuna inanıyoruz ve bu potansiyeli açığa çıkarmak için rehberlik etmeyi amaçlıyoruz.</p>
-                        <p>NexLumo ekibi olarak, kişisel gelişim, motivasyon ve hayatı daha pozitif bir perspektiften yaşamanın gücüne inanıyoruz. Blog yazılarımız, motivasyon sözlerimiz ve başarı hikayelerimizle ziyaretçilerimize ilham kaynağı olmayı hedefliyoruz. Ayrıca, profesyonel koçluk hizmetlerimizle de bireylerin hedeflerine ulaşmaları için yanlarında yer alıyoruz.</p>
-                        <p>Hedefimiz, sadece anlık bir motivasyon değil, sürdürülebilir bir yaşam disiplini kazandırmak ve insanların daha anlamlı bir hayat sürmelerine katkı sağlamaktır.</p>
-                        <div class="row justify-content-center">
-                            <div class="col-md-9 col-lg-12 text-center">
-                                <div class="button-container">
-                                    <a href="/Admin/EditAbout" class="btn btn-warning btn-lg" style="margin-left: -360px;">Düzenle</a>
+                        @foreach (var item in Model)
+                        {
+                            <h4 class="mt-5 pt-4">@item.title</h4>
+                            <br />
+                            <p>@item.description</p>
+                            <div class="row justify-content-center">
+                                <div class="col-md-9 col-lg-12 text-center">
+                                    <div class="button-container">
+                                        <a href="/Admin/EditAbout" class="btn btn-warning btn-lg" style="margin-left: -360px;">Düzenle</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        }
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-
-<div class="container mb-5">
-    <div class="row">
-        <div class="col">
-            <hr class="custom-hr">
-        </div>
-    </div>
-    <br />
-    <div class="row justify-content-center pb-2 mb-3">
-        <div class="col-md-9 col-lg-12 text-center">
-            <h2 class="text-color-secondary font-weight-bold line-height-6 mb-3">Ekibimiz</h2>
-            <p class="custom-font-secondary text-4 mb-3">Ekibimiz, yaşam koçluğu alanında kendini geliştirmeye ve insanlara yardımcı olmaya odaklanmış bir grup bireydir...</p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col">
-            <div class="owl-carousel nav-outside nav-arrows-1 owl-theme owl-carousel-init owl-loaded owl-drag fadeInUpShorter">
-                <div class="owl-stage-outer">
-                    <div class="owl-stage">
-                        <div class="owl-item">
-                            <div class="card custom-card-style-1 custom-card-style-1-variation">
-                                <div class="card-body text-center bg-color-light-scale-1 py-5">
-                                    <div class="custom-card-style-1-image-wrapper bg-primary rounded-circle d-inline-block mb-3">
-                                        <img src="~/img/demos/business-consulting-5/about/kcy.png" class="img-fluid rounded-circle" alt="" style="width: 150px; height: 150px; object-fit: cover;">
-                                    </div>
-                                    <h4 class="text-color-secondary font-weight-bold line-height-1 text-5 mb-0">
-                                        <a class="text-color-secondary text-color-hover-primary text-decoration-none">Kerimcan Yektek</a>
-                                    </h4>
-                                    <p class="text-2 pb-1 mb-2">Co-Founder at NexLumo</p>
-                                    <ul class="social-icons custom-social-icons social-icons-big">
-                                        <li class="social-icons-instagram"><a href="https://www.instagram.com/kerimcan.dev/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                                        <li class="social-icons-linkedin mx-2"><a href="https://www.linkedin.com/in/kerimcanyektek/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                                        <li class="social-icons-github"><a href="https://github.com/kerimcanyektek" target="_blank"><i class="fab fa-github"></i></a></li>
-                                    </ul>
-                                    <p class="text-2 mb-0"><a href="http://www.kerimcanyektek.com" target="_blank" class="text-color-secondary text-decoration-none">kerimcanyektek.com</a></p>
-                                </div>
-                                <div class="row justify-content-center">
-                                    <div class="col-md-9 col-lg-12 text-center d-flex justify-content-center align-items-center">
-                                        <a href="#" class="btn btn-warning btn-lg me-2">Düzenle</a>
-                                        <a href="#" class="btn btn-dark btn-short">
-                                            <i class="fas fa-trash-alt"></i> <!-- Çöp kutusu simgesi -->
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="owl-item">
-                            <div class="card custom-card-style-1 custom-card-style-1-variation">
-                                <div class="card-body text-center bg-color-light-scale-1 py-5">
-                                    <div class="custom-card-style-1-image-wrapper bg-primary rounded-circle d-inline-block mb-3">
-                                        <img src="~/img/demos/business-consulting-5/about/bahar.png" class="img-fluid rounded-circle" alt="" style="width: 150px; height: 150px; object-fit: cover;">
-                                    </div>
-                                    <h4 class="text-color-secondary font-weight-bold line-height-1 text-5 mb-0">
-                                        <a class="text-color-secondary text-color-hover-primary text-decoration-none">Bahar Karabulut</a>
-                                    </h4>
-                                    <p class="text-2 pb-1 mb-2">Co-Founder at NexLumo</p>
-                                    <ul class="social-icons custom-social-icons social-icons-big">
-                                        <li class="social-icons-instagram"><a href="https://www.instagram.com/baharcode/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                                        <li class="social-icons-linkedin mx-2"><a href="https://www.linkedin.com/in/baharkarabulut/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                                        <li class="social-icons-github"><a href="https://github.com/baharkarabulut" target="_blank"><i class="fab fa-github"></i></a></li>
-                                    </ul>
-                                    <p class="text-2 mb-0"><a href="http://www.baharkarabulut.com" target="_blank" class="text-color-secondary text-decoration-none">baharkarabulut.com</a></p>
-                                </div>
-                                <div class="row justify-content-center">
-                                    <div class="col-md-9 col-lg-12 text-center d-flex justify-content-center align-items-center">
-                                        <a href="#" class="btn btn-warning btn-lg me-2">Düzenle</a>
-                                        <a href="#" class="btn btn-dark btn-short">
-                                            <i class="fas fa-trash-alt"></i> <!-- Çöp kutusu simgesi -->
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Yeni Kişi Ekle Butonu -->
-    <div class="text-center mt-4">
-        <a href="#" class="btn btn-secondary btn-lg">Yeni Kişi Ekle</a>
-    </div>
-    <br />
-
-
-    <div class="row">
-        <div class="col">
-            <hr style="border: 3px solid orange;">
-        </div>
-    </div>
-</div>

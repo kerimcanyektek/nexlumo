@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="DbNexLumoModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="DbNexLumoModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="TblAbout">
           <Key>
             <PropertyRef Name="id" />
@@ -116,21 +116,22 @@
           <Property Name="icon" Type="nvarchar" MaxLength="150" />
           <Property Name="teamid" Type="int" />
         </EntityType>
-        <!--Errors Found During Generation:
-warning 6013: The table/view 'DbNexLumo.dbo.TblTeamMember' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
-        <EntityType Name="TblTeamMember">
-          <Property Name="id" Type="int" />
-          <Property Name="fullname" Type="nvarchar" MaxLength="50" />
+        <EntityType Name="TblTeamMembers">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="fullname" Type="varchar" MaxLength="50" />
           <Property Name="mission" Type="nvarchar" MaxLength="250" />
-          <Property Name="website" Type="nvarchar" MaxLength="250" />
+          <Property Name="website" Type="nvarchar" MaxLength="450" />
           <Property Name="img" Type="nvarchar" MaxLength="50" />
           <Property Name="socialMediaicon1" Type="nvarchar" MaxLength="50" />
-          <Property Name="socialMediaLink1" Type="nvarchar" MaxLength="250" />
           <Property Name="socialMediaicon2" Type="nvarchar" MaxLength="50" />
-          <Property Name="socialMediaLink2" Type="nvarchar" MaxLength="250" />
           <Property Name="socialMediaicon3" Type="nvarchar" MaxLength="50" />
-          <Property Name="socialMediaLink3" Type="nvarchar" MaxLength="250" />
-        </EntityType>-->
+          <Property Name="socialMediaLink1" Type="nvarchar" MaxLength="450" />
+          <Property Name="socialMediaLink2" Type="nvarchar" MaxLength="450" />
+          <Property Name="socialMediaLink3" Type="nvarchar" MaxLength="450" />
+        </EntityType>
         <EntityType Name="TblTeams">
           <Key>
             <PropertyRef Name="id" />
@@ -149,10 +150,10 @@ warning 6013: The table/view 'DbNexLumo.dbo.TblTeamMember' does not have a prima
           <EntitySet Name="TblHome" EntityType="Self.TblHome" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblServices" EntityType="Self.TblServices" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblSocialMedias" EntityType="Self.TblSocialMedias" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TblTeamMembers" EntityType="Self.TblTeamMembers" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblTeams" EntityType="Self.TblTeams" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="DbNexLumoModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -286,7 +287,24 @@ warning 6013: The table/view 'DbNexLumo.dbo.TblTeamMember' does not have a prima
           <EntitySet Name="TblServices" EntityType="Self.TblServices" />
           <EntitySet Name="TblSocialMedias" EntityType="Self.TblSocialMedias" />
           <EntitySet Name="TblTeams" EntityType="Self.TblTeams" />
+          <EntitySet Name="TblTeamMembers" EntityType="DbNexLumoModel.TblTeamMembers" />
         </EntityContainer>
+        <EntityType Name="TblTeamMembers">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="fullname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="mission" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="website" Type="String" MaxLength="450" FixedLength="false" Unicode="true" />
+          <Property Name="img" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="socialMediaicon1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="socialMediaicon2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="socialMediaicon3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="socialMediaLink1" Type="String" MaxLength="450" FixedLength="false" Unicode="true" />
+          <Property Name="socialMediaLink2" Type="String" MaxLength="450" FixedLength="false" Unicode="true" />
+          <Property Name="socialMediaLink3" Type="String" MaxLength="450" FixedLength="false" Unicode="true" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -422,6 +440,23 @@ warning 6013: The table/view 'DbNexLumo.dbo.TblTeamMember' does not have a prima
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+          <EntitySetMapping Name="TblTeamMembers">
+            <EntityTypeMapping TypeName="DbNexLumoModel.TblTeamMembers">
+              <MappingFragment StoreEntitySet="TblTeamMembers">
+                <ScalarProperty Name="socialMediaLink3" ColumnName="socialMediaLink3" />
+                <ScalarProperty Name="socialMediaLink2" ColumnName="socialMediaLink2" />
+                <ScalarProperty Name="socialMediaLink1" ColumnName="socialMediaLink1" />
+                <ScalarProperty Name="socialMediaicon3" ColumnName="socialMediaicon3" />
+                <ScalarProperty Name="socialMediaicon2" ColumnName="socialMediaicon2" />
+                <ScalarProperty Name="socialMediaicon1" ColumnName="socialMediaicon1" />
+                <ScalarProperty Name="img" ColumnName="img" />
+                <ScalarProperty Name="website" ColumnName="website" />
+                <ScalarProperty Name="mission" ColumnName="mission" />
+                <ScalarProperty Name="fullname" ColumnName="fullname" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>
@@ -436,8 +471,8 @@ warning 6013: The table/view 'DbNexLumo.dbo.TblTeamMember' does not have a prima
     <Options>
       <DesignerInfoPropertySet>
         <DesignerProperty Name="ValidateOnBuild" Value="true" />
-        <DesignerProperty Name="EnablePluralization" Value="false" />
-        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
         <DesignerProperty Name="UseLegacyProvider" Value="false" />
         <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
       </DesignerInfoPropertySet>

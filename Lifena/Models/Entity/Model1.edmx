@@ -1,0 +1,448 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="DbNexLumoModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="TblAbout">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="preface" Type="nvarchar" MaxLength="550" />
+          <Property Name="description" Type="nvarchar(max)" />
+          <Property Name="title" Type="nvarchar" MaxLength="250" />
+        </EntityType>
+        <EntityType Name="TblAdmin">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="username" Type="nvarchar" MaxLength="15" />
+          <Property Name="password" Type="nvarchar" MaxLength="15" />
+        </EntityType>
+        <EntityType Name="TblAuthors">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="authorName" Type="nvarchar" MaxLength="150" />
+          <Property Name="authorimg" Type="nvarchar" MaxLength="50" />
+          <Property Name="authorTitle" Type="nvarchar" MaxLength="550" />
+          <Property Name="blogid" Type="int" />
+        </EntityType>
+        <EntityType Name="TblBlogs">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="blogHeader" Type="nvarchar" MaxLength="150" />
+          <Property Name="blogSlogan" Type="nvarchar" MaxLength="150" />
+          <Property Name="blogimg" Type="nvarchar" MaxLength="50" />
+          <Property Name="blogPost" Type="nvarchar(max)" />
+          <Property Name="blogForeword" Type="nvarchar" MaxLength="550" />
+          <Property Name="blogDate" Type="date" />
+          <Property Name="blogHighlights" Type="tinyint" />
+          <Property Name="authorid" Type="int" />
+        </EntityType>
+        <EntityType Name="TblCategories">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="categoryName" Type="nvarchar" MaxLength="50" />
+          <Property Name="serviceid" Type="int" />
+        </EntityType>
+        <EntityType Name="TblContact">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="title" Type="nvarchar" MaxLength="520" />
+          <Property Name="description" Type="nvarchar" MaxLength="950" />
+          <Property Name="blogCardPost" Type="nvarchar" MaxLength="50" />
+          <Property Name="blogCardName" Type="nvarchar" MaxLength="530" />
+          <Property Name="blogCardMail" Type="nvarchar" MaxLength="50" />
+          <Property Name="blogCardSubject" Type="nvarchar" MaxLength="550" />
+          <Property Name="mailAddress" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="TblFooter">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="serviceid" Type="int" />
+          <Property Name="socialMedia1" Type="nvarchar" MaxLength="50" />
+          <Property Name="socialMediaLink1" Type="nvarchar" MaxLength="150" />
+          <Property Name="socialMediaicon1" Type="nvarchar" MaxLength="50" />
+          <Property Name="socialMedia2" Type="nvarchar" MaxLength="50" />
+          <Property Name="socialMediaLink2" Type="nvarchar" MaxLength="150" />
+          <Property Name="socialMediaicon2" Type="nvarchar" MaxLength="50" />
+          <Property Name="socialMedia3" Type="nvarchar" MaxLength="50" />
+          <Property Name="socialMediaLink3" Type="nvarchar" MaxLength="150" />
+          <Property Name="socialMediaicon3" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="TblHome">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="title" Type="nvarchar" MaxLength="50" />
+          <Property Name="slogan" Type="nvarchar" MaxLength="50" />
+          <Property Name="applicationTitle" Type="nvarchar" MaxLength="50" />
+          <Property Name="applicationName" Type="nvarchar" MaxLength="50" />
+          <Property Name="applicationPhone" Type="nvarchar" MaxLength="50" />
+          <Property Name="mailAddress" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="TblServices">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="serviceimg" Type="nvarchar" MaxLength="150" />
+          <Property Name="serviceName" Type="nvarchar" MaxLength="150" />
+          <Property Name="serviceDescription" Type="nvarchar" MaxLength="550" />
+          <Property Name="serviceDescription2" Type="nvarchar" MaxLength="550" />
+          <Property Name="categoryid" Type="int" />
+        </EntityType>
+        <EntityType Name="TblSocialMedias">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="name" Type="nvarchar" MaxLength="150" />
+          <Property Name="link" Type="nvarchar" MaxLength="150" />
+          <Property Name="icon" Type="nvarchar" MaxLength="150" />
+          <Property Name="teamid" Type="int" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'DbNexLumo.dbo.TblTeamMember' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="TblTeamMember">
+          <Property Name="id" Type="int" />
+          <Property Name="fullname" Type="nvarchar" MaxLength="50" />
+          <Property Name="mission" Type="nvarchar" MaxLength="250" />
+          <Property Name="website" Type="nvarchar" MaxLength="250" />
+          <Property Name="img" Type="nvarchar" MaxLength="50" />
+          <Property Name="socialMediaicon1" Type="nvarchar" MaxLength="50" />
+          <Property Name="socialMediaLink1" Type="nvarchar" MaxLength="250" />
+          <Property Name="socialMediaicon2" Type="nvarchar" MaxLength="50" />
+          <Property Name="socialMediaLink2" Type="nvarchar" MaxLength="250" />
+          <Property Name="socialMediaicon3" Type="nvarchar" MaxLength="50" />
+          <Property Name="socialMediaLink3" Type="nvarchar" MaxLength="250" />
+        </EntityType>-->
+        <EntityType Name="TblTeams">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="teamDescription" Type="nvarchar" MaxLength="550" />
+        </EntityType>
+        <EntityContainer Name="DbNexLumoModelStoreContainer">
+          <EntitySet Name="TblAbout" EntityType="Self.TblAbout" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TblAdmin" EntityType="Self.TblAdmin" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TblAuthors" EntityType="Self.TblAuthors" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TblBlogs" EntityType="Self.TblBlogs" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TblCategories" EntityType="Self.TblCategories" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TblContact" EntityType="Self.TblContact" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TblFooter" EntityType="Self.TblFooter" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TblHome" EntityType="Self.TblHome" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TblServices" EntityType="Self.TblServices" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TblSocialMedias" EntityType="Self.TblSocialMedias" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TblTeams" EntityType="Self.TblTeams" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DbNexLumoModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="TblAbout">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="preface" Type="String" MaxLength="550" FixedLength="false" Unicode="true" />
+          <Property Name="description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="title" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="TblAdmin">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="username" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Name="password" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="TblAuthors">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="authorName" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="authorimg" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="authorTitle" Type="String" MaxLength="550" FixedLength="false" Unicode="true" />
+          <Property Name="blogid" Type="Int32" />
+        </EntityType>
+        <EntityType Name="TblBlogs">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="blogHeader" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="blogSlogan" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="blogimg" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="blogPost" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="blogForeword" Type="String" MaxLength="550" FixedLength="false" Unicode="true" />
+          <Property Name="blogDate" Type="DateTime" Precision="0" />
+          <Property Name="blogHighlights" Type="Byte" />
+          <Property Name="authorid" Type="Int32" />
+        </EntityType>
+        <EntityType Name="TblCategories">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="categoryName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="serviceid" Type="Int32" />
+        </EntityType>
+        <EntityType Name="TblContact">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="title" Type="String" MaxLength="520" FixedLength="false" Unicode="true" />
+          <Property Name="description" Type="String" MaxLength="950" FixedLength="false" Unicode="true" />
+          <Property Name="blogCardPost" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="blogCardName" Type="String" MaxLength="530" FixedLength="false" Unicode="true" />
+          <Property Name="blogCardMail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="blogCardSubject" Type="String" MaxLength="550" FixedLength="false" Unicode="true" />
+          <Property Name="mailAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="TblFooter">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="serviceid" Type="Int32" />
+          <Property Name="socialMedia1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="socialMediaLink1" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="socialMediaicon1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="socialMedia2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="socialMediaLink2" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="socialMediaicon2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="socialMedia3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="socialMediaLink3" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="socialMediaicon3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="TblHome">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="title" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="slogan" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="applicationTitle" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="applicationName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="applicationPhone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="mailAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="TblServices">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="serviceimg" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="serviceName" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="serviceDescription" Type="String" MaxLength="550" FixedLength="false" Unicode="true" />
+          <Property Name="serviceDescription2" Type="String" MaxLength="550" FixedLength="false" Unicode="true" />
+          <Property Name="categoryid" Type="Int32" />
+        </EntityType>
+        <EntityType Name="TblSocialMedias">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="link" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="icon" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="teamid" Type="Int32" />
+        </EntityType>
+        <EntityType Name="TblTeams">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="teamDescription" Type="String" MaxLength="550" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="DbNexLumoEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="TblAbout" EntityType="Self.TblAbout" />
+          <EntitySet Name="TblAdmin" EntityType="Self.TblAdmin" />
+          <EntitySet Name="TblAuthors" EntityType="Self.TblAuthors" />
+          <EntitySet Name="TblBlogs" EntityType="Self.TblBlogs" />
+          <EntitySet Name="TblCategories" EntityType="Self.TblCategories" />
+          <EntitySet Name="TblContact" EntityType="Self.TblContact" />
+          <EntitySet Name="TblFooter" EntityType="Self.TblFooter" />
+          <EntitySet Name="TblHome" EntityType="Self.TblHome" />
+          <EntitySet Name="TblServices" EntityType="Self.TblServices" />
+          <EntitySet Name="TblSocialMedias" EntityType="Self.TblSocialMedias" />
+          <EntitySet Name="TblTeams" EntityType="Self.TblTeams" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DbNexLumoModelStoreContainer" CdmEntityContainer="DbNexLumoEntities">
+          <EntitySetMapping Name="TblAbout">
+            <EntityTypeMapping TypeName="DbNexLumoModel.TblAbout">
+              <MappingFragment StoreEntitySet="TblAbout">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="preface" ColumnName="preface" />
+                <ScalarProperty Name="description" ColumnName="description" />
+                <ScalarProperty Name="title" ColumnName="title" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TblAdmin">
+            <EntityTypeMapping TypeName="DbNexLumoModel.TblAdmin">
+              <MappingFragment StoreEntitySet="TblAdmin">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="username" ColumnName="username" />
+                <ScalarProperty Name="password" ColumnName="password" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TblAuthors">
+            <EntityTypeMapping TypeName="DbNexLumoModel.TblAuthors">
+              <MappingFragment StoreEntitySet="TblAuthors">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="authorName" ColumnName="authorName" />
+                <ScalarProperty Name="authorimg" ColumnName="authorimg" />
+                <ScalarProperty Name="authorTitle" ColumnName="authorTitle" />
+                <ScalarProperty Name="blogid" ColumnName="blogid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TblBlogs">
+            <EntityTypeMapping TypeName="DbNexLumoModel.TblBlogs">
+              <MappingFragment StoreEntitySet="TblBlogs">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="blogHeader" ColumnName="blogHeader" />
+                <ScalarProperty Name="blogSlogan" ColumnName="blogSlogan" />
+                <ScalarProperty Name="blogimg" ColumnName="blogimg" />
+                <ScalarProperty Name="blogPost" ColumnName="blogPost" />
+                <ScalarProperty Name="blogForeword" ColumnName="blogForeword" />
+                <ScalarProperty Name="blogDate" ColumnName="blogDate" />
+                <ScalarProperty Name="blogHighlights" ColumnName="blogHighlights" />
+                <ScalarProperty Name="authorid" ColumnName="authorid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TblCategories">
+            <EntityTypeMapping TypeName="DbNexLumoModel.TblCategories">
+              <MappingFragment StoreEntitySet="TblCategories">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="categoryName" ColumnName="categoryName" />
+                <ScalarProperty Name="serviceid" ColumnName="serviceid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TblContact">
+            <EntityTypeMapping TypeName="DbNexLumoModel.TblContact">
+              <MappingFragment StoreEntitySet="TblContact">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="title" ColumnName="title" />
+                <ScalarProperty Name="description" ColumnName="description" />
+                <ScalarProperty Name="blogCardPost" ColumnName="blogCardPost" />
+                <ScalarProperty Name="blogCardName" ColumnName="blogCardName" />
+                <ScalarProperty Name="blogCardMail" ColumnName="blogCardMail" />
+                <ScalarProperty Name="blogCardSubject" ColumnName="blogCardSubject" />
+                <ScalarProperty Name="mailAddress" ColumnName="mailAddress" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TblFooter">
+            <EntityTypeMapping TypeName="DbNexLumoModel.TblFooter">
+              <MappingFragment StoreEntitySet="TblFooter">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="serviceid" ColumnName="serviceid" />
+                <ScalarProperty Name="socialMedia1" ColumnName="socialMedia1" />
+                <ScalarProperty Name="socialMediaLink1" ColumnName="socialMediaLink1" />
+                <ScalarProperty Name="socialMediaicon1" ColumnName="socialMediaicon1" />
+                <ScalarProperty Name="socialMedia2" ColumnName="socialMedia2" />
+                <ScalarProperty Name="socialMediaLink2" ColumnName="socialMediaLink2" />
+                <ScalarProperty Name="socialMediaicon2" ColumnName="socialMediaicon2" />
+                <ScalarProperty Name="socialMedia3" ColumnName="socialMedia3" />
+                <ScalarProperty Name="socialMediaLink3" ColumnName="socialMediaLink3" />
+                <ScalarProperty Name="socialMediaicon3" ColumnName="socialMediaicon3" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TblHome">
+            <EntityTypeMapping TypeName="DbNexLumoModel.TblHome">
+              <MappingFragment StoreEntitySet="TblHome">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="title" ColumnName="title" />
+                <ScalarProperty Name="slogan" ColumnName="slogan" />
+                <ScalarProperty Name="applicationTitle" ColumnName="applicationTitle" />
+                <ScalarProperty Name="applicationName" ColumnName="applicationName" />
+                <ScalarProperty Name="applicationPhone" ColumnName="applicationPhone" />
+                <ScalarProperty Name="mailAddress" ColumnName="mailAddress" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TblServices">
+            <EntityTypeMapping TypeName="DbNexLumoModel.TblServices">
+              <MappingFragment StoreEntitySet="TblServices">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="serviceimg" ColumnName="serviceimg" />
+                <ScalarProperty Name="serviceName" ColumnName="serviceName" />
+                <ScalarProperty Name="serviceDescription" ColumnName="serviceDescription" />
+                <ScalarProperty Name="serviceDescription2" ColumnName="serviceDescription2" />
+                <ScalarProperty Name="categoryid" ColumnName="categoryid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TblSocialMedias">
+            <EntityTypeMapping TypeName="DbNexLumoModel.TblSocialMedias">
+              <MappingFragment StoreEntitySet="TblSocialMedias">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="link" ColumnName="link" />
+                <ScalarProperty Name="icon" ColumnName="icon" />
+                <ScalarProperty Name="teamid" ColumnName="teamid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TblTeams">
+            <EntityTypeMapping TypeName="DbNexLumoModel.TblTeams">
+              <MappingFragment StoreEntitySet="TblTeams">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="teamDescription" ColumnName="teamDescription" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

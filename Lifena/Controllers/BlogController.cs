@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Lifena.Models.Entity;
+using Lifena.Repositories;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -7,13 +9,14 @@ using System.Web.Mvc;
 namespace Lifena.Controllers
 {
     public class BlogController : Controller
-    {
-        // GET: Blog
-        public ActionResult Blog()
+	{
+		// GET: Blog
+		GenericRepository<TblBlogs> repo = new GenericRepository<TblBlogs>();
+		public ActionResult Blog()
         {
-            return View();
-        }
-
+			var blog = repo.List();
+			return View(blog);
+		}
 		public ActionResult Blog1()
 		{
 			return View();

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Web;
 using Lifena.Models.Entity;
 using Lifena.Repositories;
@@ -11,36 +12,41 @@ namespace Lifena.Repositories
 	{
 		DbNexLumoEntities db = new DbNexLumoEntities();
 
-		//Listeleme İşlemi
+		// Listeleme İşlemi
 		public List<T> List()
 		{
 			return db.Set<T>().ToList();
 		}
 
-		//Ekleme İşlemi
+		// Ekleme İşlemi
 		public void TAdd(T p)
 		{
 			db.Set<T>().Add(p);
 			db.SaveChanges();
 		}
 
-		//Silme İşlemi
+		// Silme İşlemi
 		public void TDelete(T p)
 		{
 			db.Set<T>().Remove(p);
 			db.SaveChanges();
 		}
 
-		//ID'e Göre Getirme İşlemi
+		// ID'e Göre Getirme İşlemi
 		public T TGet(int id)
 		{
 			return db.Set<T>().Find(id);
 		}
 
-		//Güncelleme İşlemi
+		// Güncelleme İşlemi
 		public void TUpdate(T p)
 		{
 			db.SaveChanges();
+		}
+
+		public T Find(Expression<Func<T, bool>> filter)
+		{
+			return db.Set<T>().FirstOrDefault(filter);
 		}
 	}
 }

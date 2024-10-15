@@ -1,4 +1,5 @@
-﻿
+﻿@using Lifena.Models.Entity;
+@model List<TblBlogs>
 @{
     ViewBag.Title = "Admin_Blog";
     Layout = "~/Views/Shared/Admin_Layout.cshtml";
@@ -20,129 +21,34 @@
                 <div class="cards-medical-services row flex-wrap justify-content-center">
                     <div class="container">
                         <div class="row">
-                            <div class="col-lg-4 mb-4">
-                                <article>
-                                    <div class="card border-0 border-radius-0">
-                                        <div class="card-body bg-color-light-scale-1 p-4 z-index-1">
-                                            <a href="demo-architecture-2-blog-post.html">
-                                                <img class="card-img-top border-radius-0 hover-effect-2" src="~/img/demos/business-consulting-5/blog/Blog1.png" alt="Card Image">
-                                            </a>
-                                            <p class="text-uppercase text-1 mb-3 pt-1 text-color-default">
-                                                <time pubdate="" datetime="2022-01-10">10 eylül</time>
-                                                <span class="opacity-3 d-inline-block px-2">|</span>
-                                                kerimcan yektek
-                                            </p>
-                                            <div class="card-body p-0">
-                                                <h4 class="card-title mb-3 text-4 font-weight-semibold">
-                                                    <a class="text-color-dark text-color-hover-primary text-decoration-none font-weight-bold text-3" href="#">Motivasyonunuzu kaybettiğinizde ne yapmalısınız?</a>
-                                                </h4>
-                                                <a href="/Blog/BlogEdit/" class="btn btn-group-toggle">Düzenle</a> &nbsp;
-                                                <a href="/Blog/BlogDelete/" class="btn btn-danger">Sil</a>
+                            @foreach (var x in Model)
+                            {
+                                <div class="col-lg-4 mb-4">
+                                    <article>
+                                        <div class="card border-0 border-radius-0">
+                                            <div class="card-body bg-color-light-scale-1 p-4 z-index-1">
+                                                <a href="demo-architecture-2-blog-post.html">
+                                                    <img class="card-img-top border-radius-0 hover-effect-2" src="~/img/demos/business-consulting-5/blog/@x.blogimg" alt="Card Image">
+                                                </a>
+                                                <p class="text-uppercase text-1 mb-3 pt-1 text-color-default">
+                                                    <time pubdate="" datetime="2022-01-10">@x.blogDate</time>
+                                                    <span class="opacity-3 d-inline-block px-2">|</span>
+                                                    @x.authorid
+                                                </p>
+                                                <div class="card-body p-0">
+                                                    <h4 class="card-title mb-3 text-4 font-weight-semibold">
+                                                        <a class="text-color-dark text-color-hover-primary text-decoration-none font-weight-bold text-3" href="#">@x.blogHeader</a>
+                                                    </h4>
+                                                    <a href="/Blog/BlogEdit/" class="btn btn-group-toggle">Düzenle</a> &nbsp;
+                                                    <a href="@Url.Action("DeleteBlog", "Admin", new { id = x.id })" class="btn btn-danger">Sil</a>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </article>
-                            </div>
-
-                            <div class="col-lg-4 mb-4">
-                                <article>
-                                    <div class="card border-0 border-radius-0">
-                                        <div class="card-body bg-color-light-scale-1 p-4 z-index-1">
-                                            <a href="demo-architecture-2-blog-post.html">
-                                                <img class="card-img-top border-radius-0 hover-effect-2" src="~/img/demos/business-consulting-5/blog/Blog2.png" alt="Card Image">
-                                            </a>
-                                            <p class="text-uppercase text-1 mb-3 pt-1 text-color-default">
-                                                <time pubdate="" datetime="2022-01-10">22 eylül</time>
-                                                <span class="opacity-3 d-inline-block px-2">|</span>
-                                                bahar karabulut
-                                            </p>
-                                            <div class="card-body p-0">
-                                                <h4 class="card-title mb-3 text-4 font-weight-semibold">
-                                                    <a class="text-color-dark text-color-hover-primary text-decoration-none font-weight-bold text-3" href="#">Kişisel gelişim: kendinizi her gün bir adım ileri taşıyın</a>
-                                                </h4>
-                                                <a href="/Blog/BlogEdit/" class="btn btn-group-toggle">Düzenle</a> &nbsp;
-                                                <a href="/Blog/BlogDelete/" class="btn btn-danger">Sil</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-
-                            <div class="col-lg-4 mb-4">
-                                <article>
-                                    <div class="card border-0 border-radius-0">
-                                        <div class="card-body bg-color-light-scale-1 p-4 z-index-1">
-                                            <a href="demo-architecture-2-blog-post.html">
-                                                <img class="card-img-top border-radius-0 hover-effect-2" src="~/img/demos/business-consulting-5/blog/Blog3.png" alt="Card Image">
-                                            </a>
-                                            <p class="text-uppercase text-1 mb-3 pt-1 text-color-default">
-                                                <time pubdate="" datetime="2022-01-10">26 ağustos</time>
-                                                <span class="opacity-3 d-inline-block px-2">|</span>
-                                                kerimcan yektek
-                                            </p>
-                                            <div class="card-body p-0">
-                                                <h4 class="card-title mb-3 text-4 font-weight-semibold">
-                                                    <a class="text-color-dark text-color-hover-primary text-decoration-none font-weight-bold text-3" href="#">Başarıya giden yolda kararlılık ve disiplin</a>
-                                                </h4>
-                                                <a href="/Blog/BlogEdit/" class="btn btn-group-toggle">Düzenle</a> &nbsp;
-                                                <a href="/Blog/BlogDelete/" class="btn btn-danger">Sil</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-
-                            <div class="col-lg-4 mb-4">
-                                <article>
-                                    <div class="card border-0 border-radius-0">
-                                        <div class="card-body bg-color-light-scale-1 p-4 z-index-1">
-                                            <a href="demo-architecture-2-blog-post.html">
-                                                <img class="card-img-top border-radius-0 hover-effect-2" src="~/img/demos/business-consulting-5/blog/Blog4.png" alt="Card Image">
-                                            </a>
-                                            <p class="text-uppercase text-1 mb-3 pt-1 text-color-default">
-                                                <time pubdate="" datetime="2022-01-10">14 ağustos</time>
-                                                <span class="opacity-3 d-inline-block px-2">|</span>
-                                                bahar karabulut
-                                            </p>
-                                            <div class="card-body p-0">
-                                                <h4 class="card-title mb-3 text-4 font-weight-semibold">
-                                                    <a class="text-color-dark text-color-hover-primary text-decoration-none font-weight-bold text-3" href="#">Stres yönetimi: dengeli bir yaşam için ipuçları</a>
-                                                </h4>
-                                                <a href="/Blog/BlogEdit/" class="btn btn-group-toggle">Düzenle</a> &nbsp;
-                                                <a href="/Blog/BlogDelete/" class="btn btn-danger">Sil</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-
-                            <div class="col-lg-4 mb-4">
-                                <article>
-                                    <div class="card border-0 border-radius-0">
-                                        <div class="card-body bg-color-light-scale-1 p-4 z-index-1">
-                                            <a href="demo-architecture-2-blog-post.html">
-                                                <img class="card-img-top border-radius-0 hover-effect-2" src="~/img/demos/business-consulting-5/blog/Blog5.png" alt="Card Image">
-                                            </a>
-                                            <p class="text-uppercase text-1 mb-3 pt-1 text-color-default">
-                                                <time pubdate="" datetime="2022-01-10">2 ağustos</time>
-                                                <span class="opacity-3 d-inline-block px-2">|</span>
-                                                kerimcan yektek
-                                            </p>
-                                            <div class="card-body p-0">
-                                                <h4 class="card-title mb-3 text-4 font-weight-semibold">
-                                                    <a class="text-color-dark text-color-hover-primary text-decoration-none font-weight-bold text-3" href="#">Güne başlarken daha pozitif olmanın sırları</a>
-                                                </h4>
-                                                <a href="/Blog/BlogEdit/" class="btn btn-group-toggle">Düzenle</a> &nbsp;
-                                                <a href="/Blog/BlogDelete/" class="btn btn-danger">Sil</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
+                                    </article>
+                                </div>
+                            }
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </div>

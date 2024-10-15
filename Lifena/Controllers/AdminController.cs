@@ -5,11 +5,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Linq.Expressions;
 
 namespace Lifena.Controllers
 {
     public class AdminController : Controller
     {
+
 		public ActionResult Admin_Login()
 		{
 			return View();
@@ -36,14 +38,46 @@ namespace Lifena.Controllers
 
 		public ActionResult Admin_Blog()
 		{
-			return View();
+			// GET: Blog
+			GenericRepository<TblBlogs> repo = new GenericRepository<TblBlogs>();
+
+			var blog = repo.List();
+			return View(blog);
 		}
 
+		[HttpGet]
 		public ActionResult Admin_NewBlog()
 		{
+			// GET: New Blog
+			GenericRepository<TblBlogs> repo = new GenericRepository<TblBlogs>();
 			return View();
 		}
+		[HttpPost]
+		public ActionResult Admin_NewBlog(TblBlogs p)
+		{
+			// GET: New Blog
+			GenericRepository<TblBlogs> repo = new GenericRepository<TblBlogs>();
+			repo.TAdd(p);
+			return RedirectToAction("Admin_Blog");
 
+		}
+		// Blog silme işlemi
+		public ActionResult DeleteBlog(int id)
+		{
+			// GenericRepository'den ilgili blogu buluyoruz.
+			GenericRepository<TblBlogs> repo = new GenericRepository<TblBlogs>();
+
+			// Blogu ID'ye göre bul
+			TblBlogs blogToDelete = repo.TGet(id);
+
+			// Blog var mı kontrolü
+			if (blogToDelete != null)
+			{
+				repo.TDelete(blogToDelete); // Blogu sil
+			}
+
+			return RedirectToAction("Admin_Blog"); // Listeleme sayfasına dön
+		}
 		public ActionResult Admin_User()
 		{
 			return View();

@@ -152,9 +152,7 @@
                                 <div class="row justify-content-center">
                                     <div class="col-md-9 col-lg-12 text-center d-flex justify-content-center align-items-center">
                                         <a href="#" class="btn btn-warning btn-lg me-2">Düzenle</a>
-                                        <a href="#" class="btn btn-dark btn-short">
-                                            <i class="fas fa-trash-alt"></i>
-                                        </a>
+                                        <a href="@Url.Action("DeleteTeamMember", "Admin", new { id = x.id })" class="btn btn-danger">Sil</a>
                                     </div>
                                 </div>
                             </div>
@@ -167,7 +165,7 @@
     </div>
     <!-- Yeni Kişi Ekle Butonu -->
     <div class="text-center mt-4">
-        <a href="#" class="btn btn-secondary btn-lg">Yeni Kişi Ekle</a>
+        <a href="/Admin/Admin_NewTeam" class="btn btn-secondary btn-lg">Yeni Kişi Ekle</a>
     </div>
     <br />
 

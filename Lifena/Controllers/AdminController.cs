@@ -35,6 +35,44 @@ namespace Lifena.Controllers
 			var teammember = repo.List();
 			return View(teammember);
 		}
+		[HttpGet]
+		public ActionResult Admin_NewTeam()
+		{
+			// GET: New Team
+			GenericRepository<TblTeams> repo = new GenericRepository<TblTeams>();
+			return View();
+		}
+		[HttpPost]
+		public ActionResult Admin_NewTeam(TblTeamMembers p)
+		{
+			// GET: New Team
+			GenericRepository<TblTeamMembers> repo = new GenericRepository<TblTeamMembers>();
+			repo.TAdd(p);
+			return RedirectToAction("Admin_Team");
+
+		}
+		// Ekip üyesi silme işlemi
+		public ActionResult DeleteTeamMember(int id)
+		{
+			// GenericRepository'den ilgili TeamMember buluyoruz.
+			GenericRepository<TblTeamMembers> repo = new GenericRepository<TblTeamMembers>();
+
+			// TeamMember ID'ye göre bul
+			TblTeamMembers teamToDelete = repo.TGet(id);
+
+			// ID'yi kontrol edelim
+			if (teamToDelete == null)
+			{
+				// Eğer ID bulunamazsa bir hata mesajı gösterelim
+				TempData["Error"] = "Silinmek istenen takım üyesi bulunamadı.";
+				return RedirectToAction("Admin_Team");
+			}
+
+			// TeamMember var mı kontrolü
+			repo.TDelete(teamToDelete); // TeamMember sil
+			return RedirectToAction("Admin_Team"); // Listeleme sayfasına dön
+		}
+
 
 		public ActionResult Admin_Blog()
 		{

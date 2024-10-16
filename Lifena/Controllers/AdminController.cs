@@ -197,7 +197,46 @@ namespace Lifena.Controllers
 
 			return RedirectToAction("Admin_Blog"); // Listeleme sayfasına dön
 		}
+		// GET: Admin_BlogEdit (Blog Düzenleme)
+		[HttpGet]
+		public ActionResult Admin_BlogEdit(int id)
+		{
+			GenericRepository<TblBlogs> repo = new GenericRepository<TblBlogs>();
+			var blog = repo.TGet(id); // İlgili blogu id'ye göre bul
+			if (blog == null)
+			{
+				return HttpNotFound();
+			}
+			return View(blog); // Blogu düzenleme sayfasına gönder
+		}
 
+		// POST: Admin_BlogEdit
+		[HttpPost]
+		public ActionResult Admin_BlogEdit(TblBlogs p)
+		{
+			GenericRepository<TblBlogs> repo = new GenericRepository<TblBlogs>();
+			var blog = repo.TGet(p.id); // Blogu id'ye göre bul
+			if (blog == null)
+			{
+				return HttpNotFound();
+			}
+
+			// Blog detaylarını güncelle
+			blog.blogimg = p.blogimg;
+			blog.blogHeader = p.blogHeader;
+			blog.blogDate = p.blogDate;
+			blog.authorid = p.authorid;
+			blog.blogPost = p.blogPost;
+			blog.blogHighlights = p.blogHighlights;
+			blog.blogForeword = p.blogForeword;
+			blog.blogSlogan = p.blogSlogan;
+
+			// Veritabanında değişiklikleri kaydet
+			repo.TUpdate(blog);
+
+			// Güncelleme sonrası blog listesine geri dön
+			return RedirectToAction("Admin_Blog");
+		}
 
 
 

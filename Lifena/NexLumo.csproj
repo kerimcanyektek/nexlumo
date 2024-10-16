@@ -4449,7 +4449,7 @@
     <Content Include="Views\Home\Services.cshtml" />
     <Content Include="Views\Home\SuccessStories.cshtml" />
     <Content Include="Views\Home\Blog.cshtml" />
-    <Content Include="Views\Blog\Blog1.cshtml" />
+    <Content Include="Views\Blog\Blogs.cshtml" />
     <Content Include="Views\Blog\Blog2.cshtml" />
     <Content Include="Views\Blog\Blog5.cshtml" />
     <Content Include="Views\Blog\Blog4.cshtml" />
@@ -4466,6 +4466,7 @@
     <Content Include="Views\Admin\EditAbout.cshtml" />
     <Content Include="Views\Admin\EditTeamMember.cshtml" />
     <Content Include="Views\Home\Team.cshtml" />
+    <Content Include="Views\Admin\Admin_BlogEdit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

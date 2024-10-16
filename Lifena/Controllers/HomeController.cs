@@ -39,7 +39,8 @@ namespace Lifena.Controllers
 
 		public ActionResult Blog()
 		{
-			return View();
+			var blogs = db.TblBlogs.ToList();
+			return View(blogs);
 		}
 
 		public ActionResult Contact()

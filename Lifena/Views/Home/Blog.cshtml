@@ -1,6 +1,29 @@
-﻿@{
+﻿@using Lifena.Models.Entity
+@model List<TblBlogs>
+@{
     ViewBag.Title = "Blog";
 }
+<style>
+    .timeline-box {
+        display: flex; /* Flexbox kullanarak sağa sola kaydırma */
+        justify-content: space-between; /* Alanı eşit olarak dağıt */
+        margin: 20px 0; /* Üst ve alt boşluk */
+    }
+
+        .timeline-box.left {
+            flex-direction: row; /* Soldaki öğeler normal yönle */
+        }
+
+        .timeline-box.right {
+            flex-direction: row-reverse; /* Sağdaki öğeleri ters yönde diz */
+        }
+
+        /* Ekstra boşluk eklemek için */
+        .timeline-box .p-2 {
+            padding: 15px; /* İçerik alanına dolgu ekle */
+        }
+
+</style>
 <body class="alternative-font-7">
     <br /><br /><br /><br />
     <div role="main" class="main">
@@ -19,211 +42,53 @@
                                     <section class="timeline">
                                         <div class="timeline-body">
                                             <div class="timeline-date">
-                                                <h3 class="text-primary font-weight-bold">Eylül 2024</h3>
+                                                <h3 class="text-primary font-weight-bold">2024</h3>
                                             </div>
-                                            <article class="timeline-box left post post-medium">
-                                                <div class="timeline-box-arrow"></div>
-                                                <div class="p-2">
-                                                    <div class="col text-center">
-                                                        <div class="post-image" style="width: 100%; height: 250px; overflow: hidden;">
-                                                            <a href="@Url.Action("Blog1", "Blog")">
-                                                                <img src="~/img/demos/business-consulting-5/blog/Blog1.png" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="" style="width: 100%; object-fit: cover; object-position: top 50px;">
-                                                            </a>
+                                            @foreach (var x in Model)
+                                            {
+                                                <article class="timeline-box @((Model.IndexOf(x) % 2 == 0) ? "left" : "right") post post-medium">
+                                                    <div class="timeline-box-arrow"></div>
+                                                    <div class="p-2">
+                                                        <div class="col text-center">
+                                                            <div class="post-image" style="width: 100%; height: 250px; overflow: hidden;">
+                                                                <a href="@Url.Action("Blogs", "Blog", new { id = x.id })">
+                                                                    <img src="~/img/demos/business-consulting-5/blog/@x.blogimg" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="" style="width: 100%; object-fit: cover; object-position: top 50px;">
+                                                                </a>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col">
-                                                            <div class="post-content">
-                                                                <h2 class="font-weight-semibold text-5 line-height-4 mt-2 mb-2"><a href="@Url.Action("Blog1", "Blog")">Motivasyonunuzu Kaybettiğinizde Ne Yapmalısınız?</a></h2>
-                                                                <p>Motivasyon, kişisel ve profesyonel hedeflere ulaşmanın temel itici gücüdür. Ancak hepimiz zaman zaman motivasyonumuzu kaybettiğimiz anlarla karşılaşırız. Bu, doğal bir süreçtir ve asıl önemli olan bu anlarda nasıl bir stratejiyle hareket ettiğimizdir. Peki, motivasyonunuzu kaybettiğinizde ne yapmalısınız?</p>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <div class="post-content">
+                                                                    <h2 class="font-weight-semibold text-5 line-height-4 mt-2 mb-2">
+                                                                        <a href="@Url.Action("Blogs", "Blog", new { id = x.id })">@x.blogHeader</a>
+                                                                    </h2>
+                                                                    <p>@x.blogForeword</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <div class="post-meta">
+                                                                    <span><i class="far fa-calendar-alt"></i> 10 Eylül 2024 </span><br>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <div class="post-meta">
+                                                                    <span><i class="far fa-user"></i><a href="#">@x.authorid</a> </span>
+                                                                    <span><i class="far fa-comments"></i> <a href="#">2 Yorum</a></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <a href="@Url.Action("Blogs", "Blog", new { id = x.id })" class="btn btn-xs btn-light text-1 text-uppercase">Devamı +</a>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="row">
-                                                        <div class="col">
-                                                            <div class="post-meta">
-                                                                <span><i class="far fa-calendar-alt"></i> 10 Eylül 2024 </span><br>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col">
-                                                            <div class="post-meta">
-                                                                <span><i class="far fa-user"></i><a href="#">Kerimcan Yektek</a> </span>
-                                                                <span><i class="far fa-comments"></i> <a href="#">2 Yorum</a></span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col">
-                                                            <a href="@Url.Action("Blog1", "Blog")" class="btn btn-xs btn-light text-1 text-uppercase">Devamı +</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </article>
-                                            <article class="timeline-box right post post-medium">
-                                                <div class="timeline-box-arrow"></div>
-                                                <div class="p-2">
-                                                    <div class="col text-center">
-                                                        <div class="post-image" style="width: 100%; height: 250px; overflow: hidden;">
-                                                            <a href="@Url.Action("Blog2", "Blog")">
-                                                                <img src="~/img/demos/business-consulting-5/blog/Blog2.png" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="" style="width: 100%; object-fit: cover; object-position: top 50px;">
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col">
-                                                            <div class="post-content">
-                                                                <h2 class="font-weight-semibold text-5 line-height-4 mt-2 mb-2"><a href="@Url.Action("Blog2", "Blog")">Kişisel Gelişim: <br /> Kendinizi Her Gün Bir Adım İleri Taşıyın</a></h2>
-                                                                <p>Kişisel gelişim, bireyin kendisini daha iyiye taşıma çabasını ifade eder ve bu süreç, yaşam boyu süren bir yolculuktur. Her gün bir adım daha ileri gitmek, uzun vadede başarı ve tatmin sağlayan en etkili stratejilerden biridir. Ancak, kişisel gelişimi sürdürülebilir hale getirmek için disiplinli, stratejik ve bilinçli adımlar atmak gerekir. Peki, kişisel gelişimde nasıl her gün bir adım ileri atabilirsiniz?</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col">
-                                                            <div class="post-meta">
-                                                                <span><i class="far fa-calendar-alt"></i> 22 Eylül 2024 </span><br>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col">
-                                                            <div class="post-meta">
-                                                                <span><i class="far fa-user"></i><a href="#">Bahar Karabulut</a> </span>
-                                                                <span><i class="far fa-comments"></i> <a href="#">2 Yorum</a></span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col">
-                                                            <a href="@Url.Action("Blog2", "Blog")" class="btn btn-xs btn-light text-1 text-uppercase">Devamı +</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </article>
-                                            <div class="timeline-date">
-                                                <h3 class="text-primary font-weight-bold">Ağustos 2024</h3>
-                                            </div>
-                                            <article class="timeline-box left post post-medium">
-                                                <div class="timeline-box-arrow"></div>
-                                                <div class="p-2">
-                                                    <div class="col text-center">
-                                                        <div class="post-image" style="width: 100%; height: 250px; overflow: hidden;">
-                                                            <a href="@Url.Action("Blog3", "Blog")">
-                                                                <img src="~/img/demos/business-consulting-5/blog/Blog3.png" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="" style="width: 100%; object-fit: cover; object-position: top 50px;">
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col">
-                                                            <div class="post-content">
-                                                                <h2 class="font-weight-semibold text-5 line-height-4 mt-2 mb-2"><a href="@Url.Action("Blog3", "Blog")">Başarıya Giden Yolda Kararlılık ve Disiplin<br /></a></h2>
-                                                                <p>Başarı, birçok insanın ulaşmak istediği bir hedeftir, ancak bu yolda herkesin karşılaştığı zorluklar ve engeller vardır. Başarılı olmanın sırrı, sadece yetenek veya fırsatlar değildir; kararlılık ve disiplin de başarının temel taşlarını oluşturur. Bu iki faktör, hedefleriniz ne olursa olsun sizi zirveye taşıyacak en güçlü unsurlardır. Peki, kararlılık ve disiplin başarı yolunda nasıl etkili olur?</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col">
-                                                            <div class="post-meta">
-                                                                <span><i class="far fa-calendar-alt"></i> 26 Ağustos 2024 </span><br>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col">
-                                                            <div class="post-meta">
-                                                                <span><i class="far fa-user"></i><a href="#">Kerimcan Yektek</a> </span>
-                                                                <span><i class="far fa-comments"></i> <a href="#">1 Yorum</a></span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col">
-                                                            <a href="@Url.Action("Blog3", "Blog")" class="btn btn-xs btn-light text-1 text-uppercase">Devamı +</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </article>
-                                            <article class="timeline-box right post post-medium">
-                                                <div class="timeline-box-arrow"></div>
-                                                <div class="p-2">
-                                                    <div class="col text-center">
-                                                        <div class="post-image" style="width: 100%; height: 250px; overflow: hidden;">
-                                                            <a href="@Url.Action("Blog4", "Blog")">
-                                                                <img src="~/img/demos/business-consulting-5/blog/Blog4.png" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="" style="width: 100%; object-fit: cover; object-position: top 50px;">
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col">
-                                                            <div class="post-content">
-                                                                <h2 class="font-weight-semibold text-5 line-height-4 mt-2 mb-2"><a href="@Url.Action("Blog4", "Blog")">Stres Yönetimi:  <br />Dengeli Bir Yaşam İçin İpuçları</a></h2>
-                                                                <p>haline gelmesine neden olmuştur. Ancak, stresin yönetilememesi uzun vadede hem fiziksel hem de zihinsel sağlık üzerinde olumsuz etkiler yaratabilir. Dengeli ve sağlıklı bir yaşam sürdürmek, stresle başa çıkma yöntemlerini öğrenmeyi ve uygulamayı gerektirir. İşte stres yönetimi için etkili ipuçları ve dengeli bir yaşam için stratejiler.</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col">
-                                                            <div class="post-meta">
-                                                                <span><i class="far fa-calendar-alt"></i> 14 Ağustos 2024 </span><br>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col">
-                                                            <div class="post-meta">
-                                                                <span><i class="far fa-user"></i><a href="#">Bahar Karabulut</a> </span>
-                                                                <span><i class="far fa-comments"></i> <a href="#">4 Yorum</a></span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col">
-                                                            <a href="@Url.Action("Blog4", "Blog")" class="btn btn-xs btn-light text-1 text-uppercase">Devamı +</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </article>
-                                            <article class="timeline-box right post post-medium">
-                                                <div class="timeline-box-arrow"></div>
-                                                <div class="p-2">
-                                                    <div class="col text-center">
-                                                        <div class="post-image" style="width: 100%; height: 250px; overflow: hidden;">
-                                                            <a href="@Url.Action("Blog5", "Blog")">
-                                                                <img src="~/img/demos/business-consulting-5/blog/Blog5.png" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="" style="width: 100%; object-fit: cover; object-position: top 50px;">
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col">
-                                                            <div class="post-content">
-                                                                <h2 class="font-weight-semibold text-5 line-height-4 mt-2 mb-2"><a href="@Url.Action("Blog5", "Blog")">Güne Başlarken Daha Pozitif Olmanın Sırları</a></h2>
-                                                                <p>Her sabah nasıl başladığınız, gününüzün geri kalanını büyük ölçüde şekillendirir. Pozitif bir başlangıç yapmak, yalnızca gününüzü daha verimli hale getirmekle kalmaz, aynı zamanda genel ruh halinizi ve yaşam kalitenizi de yükseltir. Ancak, birçok kişi sabahları yoğun stres ve olumsuz düşüncelerle mücadele eder. İşte güne daha pozitif başlamak ve bu enerjiyi gün boyu sürdürmek için birkaç etkili strateji.</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col">
-                                                            <div class="post-meta">
-                                                                <span><i class="far fa-calendar-alt"></i> 2 Ağustos 2024 </span><br>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col">
-                                                            <div class="post-meta">
-                                                                <span><i class="far fa-user"></i><a href="#">Kerimcan Yektek</a> </span>
-                                                                <span><i class="far fa-comments"></i> <a href="#">4 Yorum</a></span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col">
-                                                            <a href="@Url.Action("Blog5", "Blog")" class="btn btn-xs btn-light text-1 text-uppercase">Devamı +</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </article>
+                                                </article>
+                                            }
                                         </div>
                                     </section>
                                 </div>

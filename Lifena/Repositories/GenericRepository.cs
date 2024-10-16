@@ -44,6 +44,12 @@ namespace Lifena.Repositories
 			db.SaveChanges();
 		}
 
+		// ID'ye göre bulma metodu eklendi
+		public T FindById(int id)
+		{
+			return db.Set<T>().Find(id); // ID'ye göre bulma işlemi
+		}
+
 		public T Find(Expression<Func<T, bool>> filter)
 		{
 			return db.Set<T>().FirstOrDefault(filter);

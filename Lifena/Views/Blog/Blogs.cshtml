@@ -1,0 +1,54 @@
+﻿@model Lifena.Models.Entity.TblBlogs
+@{
+    ViewBag.Title = "Blog";
+}
+<body class="alternative-font-7">
+    <br /><br /><br /><br />
+    <div class="row py-5">
+        <div class="col text-center">
+            <h1 class="text-color-dark text-8 font-weight-bold">Blog yazıları</h1>
+        </div>
+    </div>
+    <div role="main" class="main">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col">
+                    <div class="blog-posts single-post">
+                       
+                            <article class="post post-large blog-single-post border-0 m-0 p-0">
+                                <div class="post-date ms-0">
+                                    <span class="day">10</span>
+                                    <span class="month">Eylül</span>
+                                </div>
+                                <div class="post-content ms-0">
+                                    <h4 class="font-weight-semi-bold"><a href="/Blog/Blog1">@Model.blogSlogan</a></h4>
+                                    <div class="post-meta">
+                                        <span><i class="far fa-user"></i><a href="/"> @Model.authorid</a> </span>
+                                    </div>
+                                    <img src="~/img/demos/business-consulting-5/blog/@Model.blogimg" class="img-fluid float-start me-4 mt-2" alt="" style="width: 600px; height: auto;">
+                                    <p>@Model.blogPost</p>
+                                  
+                                    <div class="post-block mt-4 pt-2 post-author">
+                                        <h4 class="mb-3">Yazar</h4>
+                                        <div class="img-thumbnail img-thumbnail-no-borders d-block pb-3">
+                                            <a href="#">
+                                                <img src="~/img/demos/business-consulting-5/about/kcy.png" alt="">
+                                            </a>
+                                        </div>
+                                        <p><strong class="name"><a href="#" class="text-4 pb-2 pt-2 d-block">@Model.authorid</a></strong></p>
+                                        <p>Co-Founder at NexLumo</p>
+                                    </div>
+                                </div>
+                            </article>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<div class="row">
+    <div class="col">
+        <hr style="border: 3px solid orange;">
+    </div>
+</div>

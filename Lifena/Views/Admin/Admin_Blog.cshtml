@@ -39,7 +39,8 @@
                                                     <h4 class="card-title mb-3 text-4 font-weight-semibold">
                                                         <a class="text-color-dark text-color-hover-primary text-decoration-none font-weight-bold text-3" href="#">@x.blogHeader</a>
                                                     </h4>
-                                                    <a href="/Blog/BlogEdit/" class="btn btn-group-toggle">Düzenle</a> &nbsp;
+                                                    <a href="@Url.Action("Admin_BlogEdit", "Admin", new { id = x.id })" class="btn btn-group-toggle">Düzenle</a>
+                                                    &nbsp;
                                                     <a href="@Url.Action("DeleteBlog", "Admin", new { id = x.id })" class="btn btn-danger">Sil</a>
                                                 </div>
                                             </div>

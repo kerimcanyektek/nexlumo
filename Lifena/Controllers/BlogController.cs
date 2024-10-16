@@ -8,18 +8,25 @@ using System.Web.Mvc;
 
 namespace Lifena.Controllers
 {
-    public class BlogController : Controller
+	public class BlogController : Controller
 	{
 		// GET: Blog
 		GenericRepository<TblBlogs> repo = new GenericRepository<TblBlogs>();
+
 		public ActionResult Blog()
-        {
+		{
 			var blog = repo.List();
 			return View(blog);
 		}
-		public ActionResult Blog1()
+
+		public ActionResult Blogs(int id)
 		{
-			return View();
+			var blog = repo.FindById(id); // Burada yeni metodu kullanıyoruz
+			if (blog == null)
+			{
+				return RedirectToAction("Blog"); // Bulunamazsa 'Blog' sayfasına yönlendir
+			}
+			return View(blog); // Bulunan blogu döndür
 		}
 
 		public ActionResult Blog2()

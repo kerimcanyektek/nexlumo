@@ -1,0 +1,38 @@
+﻿@model Lifena.Models.Entity.TblBlogs
+@{
+    ViewBag.Title = "Admin_BlogEdit";
+    Layout = "~/Views/Shared/Admin_Layout.cshtml";
+}
+
+<div class="container">
+    <h2>Blog Düzenle</h2>
+    <form asp-action="Admin_BlogEdit" asp-controller="Admin" method="post">
+        <div class="form-group">
+            <label for="blogimg">Blog Resmi</label>
+            <input type="text" class="form-control" id="blogimg" name="blogimg" value="@Model.blogimg" />
+        </div>
+        <div class="form-group">
+            <label for="blogHeader">Başlık</label>
+            <input type="text" class="form-control" id="blogHeader" name="blogHeader" value="@Model.blogHeader" />
+        </div>
+        <div class="form-group">
+            <label for="blogSlogan">Slogan Yazısı</label>
+            <input type="text" class="form-control" id="blogSlogan" name="blogSlogan" value="@Model.blogSlogan" />
+        </div>
+        <div class="form-group">
+            <label for="blogForeword">Ön yazı</label>
+            <textarea class="form-control" id="blogForeword" name="blogForeword" rows="10">@Model.blogForeword</textarea>
+        </div>
+        <div class="form-group">
+            <label for="blogForeword">Blog yazısı</label>
+            <textarea class="form-control" id="blogPost" name="blogPost" rows="10">@Model.blogPost</textarea>
+        </div>
+        <div class="form-group">
+            <label for="authorid">Yazar</label>
+            <input type="text" class="form-control" id="authorid" name="authorid" value="@Model.authorid" />
+        </div>
+
+        <button type="submit" class="btn btn-primary">Güncelle</button>
+    </form>
+</div>
+

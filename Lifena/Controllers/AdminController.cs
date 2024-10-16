@@ -17,6 +17,9 @@ namespace Lifena.Controllers
 			return View();
 		}
 
+
+
+
 		// GET: Admin
 		public ActionResult Admin_About()
         {
@@ -26,6 +29,10 @@ namespace Lifena.Controllers
 				var about = repo.List();
 				return View(about);
         }
+
+
+
+
 
 		public ActionResult Admin_Team()
 		{
@@ -74,6 +81,9 @@ namespace Lifena.Controllers
 		}
 
 
+
+
+
 		public ActionResult Admin_Blog()
 		{
 			// GET: Blog
@@ -116,9 +126,60 @@ namespace Lifena.Controllers
 
 			return RedirectToAction("Admin_Blog"); // Listeleme sayfasına dön
 		}
+
+
+
+
+
+
 		public ActionResult Admin_User()
 		{
+			// GET: User
+			GenericRepository<TblAdmin> repo = new GenericRepository<TblAdmin>();
+
+			var user = repo.List();
+			return View(user);
+		}
+
+		[HttpGet]
+		public ActionResult Admin_NewUser()
+		{
+			// GET: New Admin
+			GenericRepository<TblAdmin> repo = new GenericRepository<TblAdmin>();
 			return View();
+		}
+		[HttpPost]
+		public ActionResult Admin_NewUser(TblAdmin p)
+		{
+			// GET: New Admin
+			GenericRepository<TblAdmin> repo = new GenericRepository<TblAdmin>();
+			repo.TAdd(p);
+			return RedirectToAction("Admin_User");
+
+		}
+		// Admin silme işlemi
+		public ActionResult DeleteUser(int id)
+		{
+			// GenericRepository'den ilgili Admini buluyoruz.
+			GenericRepository<TblAdmin> repo = new GenericRepository<TblAdmin>();
+
+			// Admin ID'ye göre bul
+			TblAdmin adminToDelete = repo.TGet(id);
+
+			// Admin var mı kontrolü
+			if (adminToDelete == null)
+			{
+				// Admin bulunamadıysa hata mesajı ekleyelim
+				TempData["Error"] = "Silinmek istenen admin bulunamadı.";
+				return RedirectToAction("Admin_User");
+			}
+
+			// Admin bulunduysa silme işlemi
+			repo.TDelete(adminToDelete);
+
+			// Başarılı bir şekilde silindi
+			TempData["Success"] = "Admin başarıyla silindi.";
+			return RedirectToAction("Admin_User");
 		}
 	}
 }

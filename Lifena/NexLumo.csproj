@@ -4463,6 +4463,9 @@
     <Content Include="Views\Admin\Admin_Team.cshtml" />
     <Content Include="Views\Admin\Admin_NewTeam.cshtml" />
     <Content Include="Views\Admin\Admin_NewUser.cshtml" />
+    <Content Include="Views\Admin\EditAbout.cshtml" />
+    <Content Include="Views\Admin\EditTeamMember.cshtml" />
+    <Content Include="Views\Home\Team.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

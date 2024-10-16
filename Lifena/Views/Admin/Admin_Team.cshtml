@@ -151,7 +151,7 @@
                                 </div>
                                 <div class="row justify-content-center">
                                     <div class="col-md-9 col-lg-12 text-center d-flex justify-content-center align-items-center">
-                                        <a href="#" class="btn btn-warning btn-lg me-2">Düzenle</a>
+                                        <a href="@Url.Action("EditTeamMember", "Admin", new { id = x.id })" class="btn btn-warning btn-lg me-2">Düzenle</a>
                                         <a href="@Url.Action("DeleteTeamMember", "Admin", new { id = x.id })" class="btn btn-danger">Sil</a>
                                     </div>
                                 </div>

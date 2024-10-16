@@ -29,6 +29,37 @@ namespace Lifena.Controllers
 				var about = repo.List();
 				return View(about);
         }
+		[HttpGet]
+		public ActionResult EditAbout(int id)
+		{
+			GenericRepository<TblAbout> repo = new GenericRepository<TblAbout>();
+			var about = repo.TGet(id);
+			if (about == null)
+			{
+				return HttpNotFound();
+			}
+
+			return View(about); // View'a Model gönderiyoruz.
+		}
+
+		// Düzenleme işlemi (POST)
+		[HttpPost]
+		public ActionResult EditAbout(TblAbout about)
+		{
+			GenericRepository<TblAbout> repo = new GenericRepository<TblAbout>();
+			var aboutToUpdate = repo.TGet(about.id); // Veritabanından kaydı getir.
+			if (aboutToUpdate != null)
+			{
+				aboutToUpdate.title = about.title;
+				aboutToUpdate.description = about.description;
+
+				repo.TUpdate(aboutToUpdate); // Kaydı güncelle.
+				return RedirectToAction("Admin_About"); // Düzenleme sonrası listeleme sayfasına yönlendir.
+			}
+
+			return View(about);
+		}
+
 
 
 
@@ -36,7 +67,7 @@ namespace Lifena.Controllers
 
 		public ActionResult Admin_Team()
 		{
-			// GET: Team Member
+			// GET: Ekip Üyesi
 			GenericRepository<TblTeamMembers> repo = new GenericRepository<TblTeamMembers>();
 
 			var teammember = repo.List();
@@ -45,14 +76,14 @@ namespace Lifena.Controllers
 		[HttpGet]
 		public ActionResult Admin_NewTeam()
 		{
-			// GET: New Team
+			// GET: Ekip üyesi ekleme
 			GenericRepository<TblTeams> repo = new GenericRepository<TblTeams>();
 			return View();
 		}
 		[HttpPost]
 		public ActionResult Admin_NewTeam(TblTeamMembers p)
 		{
-			// GET: New Team
+			// GET: Ekip üyesi ekleme
 			GenericRepository<TblTeamMembers> repo = new GenericRepository<TblTeamMembers>();
 			repo.TAdd(p);
 			return RedirectToAction("Admin_Team");
@@ -79,7 +110,47 @@ namespace Lifena.Controllers
 			repo.TDelete(teamToDelete); // TeamMember sil
 			return RedirectToAction("Admin_Team"); // Listeleme sayfasına dön
 		}
+		[HttpGet]
+		public ActionResult EditTeamMember(int id)
+		{
+			// Veritabanından düzenlenecek üyenin bilgilerini alıyoruz.
+			GenericRepository<TblTeamMembers> repo = new GenericRepository<TblTeamMembers>();
+			TblTeamMembers teamMember = repo.TGet(id);
 
+			if (teamMember == null)
+			{
+				TempData["Error"] = "Düzenlenmek istenen takım üyesi bulunamadı.";
+				return RedirectToAction("Admin_Team");
+			}
+
+			// Düzenleme sayfasına mevcut üyenin bilgilerini gönderiyoruz.
+			return View(teamMember);
+		}
+
+		[HttpPost]
+		public ActionResult EditTeamMember(TblTeamMembers p)
+		{
+			// Veritabanında değişiklikleri kaydetme işlemi
+			GenericRepository<TblTeamMembers> repo = new GenericRepository<TblTeamMembers>();
+			TblTeamMembers teamMember = repo.TGet(p.id);
+
+			if (teamMember != null)
+			{
+				// Mevcut değerleri güncelliyoruz
+				teamMember.fullname = p.fullname;
+				teamMember.mission = p.mission;
+				teamMember.img = p.img;  // Resmi değiştirmek isterseniz bunu ayarlayabilirsiniz.
+				teamMember.socialMediaLink1 = p.socialMediaLink1;
+				teamMember.socialMediaLink2 = p.socialMediaLink2;
+				teamMember.socialMediaLink3 = p.socialMediaLink3;
+				teamMember.website = p.website;
+
+				// Veritabanına güncellenen verileri kaydet
+				repo.TUpdate(teamMember);
+			}
+
+			return RedirectToAction("Admin_Team");
+		}
 
 
 
@@ -96,14 +167,14 @@ namespace Lifena.Controllers
 		[HttpGet]
 		public ActionResult Admin_NewBlog()
 		{
-			// GET: New Blog
+			// GET: Yeni Blog
 			GenericRepository<TblBlogs> repo = new GenericRepository<TblBlogs>();
 			return View();
 		}
 		[HttpPost]
 		public ActionResult Admin_NewBlog(TblBlogs p)
 		{
-			// GET: New Blog
+			// GET: Yeni Blog
 			GenericRepository<TblBlogs> repo = new GenericRepository<TblBlogs>();
 			repo.TAdd(p);
 			return RedirectToAction("Admin_Blog");
@@ -134,7 +205,7 @@ namespace Lifena.Controllers
 
 		public ActionResult Admin_User()
 		{
-			// GET: User
+			// GET: Kullanıcı
 			GenericRepository<TblAdmin> repo = new GenericRepository<TblAdmin>();
 
 			var user = repo.List();
@@ -144,14 +215,14 @@ namespace Lifena.Controllers
 		[HttpGet]
 		public ActionResult Admin_NewUser()
 		{
-			// GET: New Admin
+			// GET: Yeni Admin
 			GenericRepository<TblAdmin> repo = new GenericRepository<TblAdmin>();
 			return View();
 		}
 		[HttpPost]
 		public ActionResult Admin_NewUser(TblAdmin p)
 		{
-			// GET: New Admin
+			// GET: Yeni Admin
 			GenericRepository<TblAdmin> repo = new GenericRepository<TblAdmin>();
 			repo.TAdd(p);
 			return RedirectToAction("Admin_User");

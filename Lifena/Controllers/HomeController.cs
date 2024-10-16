@@ -21,6 +21,12 @@ namespace Lifena.Controllers
 			return View(values);
 		}
 
+		public ActionResult Team()
+		{
+			var members = db.TblTeamMembers.ToList();
+			return View(members);
+		}
+
 		public ActionResult Services()
 		{
 			return View();

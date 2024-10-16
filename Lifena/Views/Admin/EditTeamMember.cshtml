@@ -1,0 +1,48 @@
+﻿@model Lifena.Models.Entity.TblTeamMembers
+@{
+    ViewBag.Title = "EditTeamMember";
+    Layout = "~/Views/Shared/Admin_Layout.cshtml";
+}
+
+<h2>@Model.fullname Düzenle</h2>
+
+<form action="/Admin/EditTeamMember" method="post" enctype="multipart/form-data">
+    @Html.HiddenFor(model => model.id)
+
+    <div class="form-group">
+        <label>Ad Soyad:</label>
+        @Html.TextBoxFor(model => model.fullname, new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        <label>Görev:</label>
+        @Html.TextBoxFor(model => model.mission, new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        <label>Resim:</label>
+        @Html.TextBoxFor(model => model.img, new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        <label>Instagram:</label>
+        @Html.TextBoxFor(model => model.socialMediaLink1, new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        <label>LinkedIn:</label>
+        @Html.TextBoxFor(model => model.socialMediaLink2, new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        <label>Github:</label>
+        @Html.TextBoxFor(model => model.socialMediaLink3, new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        <label>Kişisel Web Sitesi:</label>
+        @Html.TextBoxFor(model => model.website, new { @class = "form-control" })
+    </div>
+
+    <button type="submit" class="btn btn-primary">Güncelle</button>
+</form>

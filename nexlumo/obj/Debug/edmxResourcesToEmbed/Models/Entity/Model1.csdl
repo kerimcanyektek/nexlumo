@@ -43,6 +43,9 @@
     <Property Name="authorName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="authorMission" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="authorimg" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="blogPost2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="blogPost3" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="blogPost4" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityType Name="TblCategories">
     <Key>

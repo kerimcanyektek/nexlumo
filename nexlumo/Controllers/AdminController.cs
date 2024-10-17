@@ -229,6 +229,9 @@ namespace Lifena.Controllers
 			blog.authorMission = p.authorMission;
 			blog.authorimg = p.authorimg;
 			blog.blogPost = p.blogPost;
+			blog.blogPost2 = p.blogPost2;
+			blog.blogPost3 = p.blogPost3;
+			blog.blogPost4 = p.blogPost4;
 			blog.blogForeword = p.blogForeword;
 			blog.blogSlogan = p.blogSlogan;
 

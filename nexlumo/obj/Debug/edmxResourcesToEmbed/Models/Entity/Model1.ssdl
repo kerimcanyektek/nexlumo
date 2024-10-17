@@ -43,6 +43,9 @@
     <Property Name="authorName" Type="nvarchar" MaxLength="50" />
     <Property Name="authorMission" Type="nvarchar" MaxLength="50" />
     <Property Name="authorimg" Type="nvarchar" MaxLength="50" />
+    <Property Name="blogPost2" Type="nvarchar(max)" />
+    <Property Name="blogPost3" Type="nvarchar(max)" />
+    <Property Name="blogPost4" Type="nvarchar(max)" />
   </EntityType>
   <EntityType Name="TblCategories">
     <Key>

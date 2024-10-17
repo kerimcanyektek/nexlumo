@@ -26,5 +26,8 @@ namespace Lifena.Models.Entity
         public string authorName { get; set; }
         public string authorMission { get; set; }
         public string authorimg { get; set; }
+        public string blogPost2 { get; set; }
+        public string blogPost3 { get; set; }
+        public string blogPost4 { get; set; }
     }
 }

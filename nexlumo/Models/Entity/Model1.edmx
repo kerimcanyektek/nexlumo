@@ -48,6 +48,9 @@
           <Property Name="authorName" Type="nvarchar" MaxLength="50" />
           <Property Name="authorMission" Type="nvarchar" MaxLength="50" />
           <Property Name="authorimg" Type="nvarchar" MaxLength="50" />
+          <Property Name="blogPost2" Type="nvarchar(max)" />
+          <Property Name="blogPost3" Type="nvarchar(max)" />
+          <Property Name="blogPost4" Type="nvarchar(max)" />
         </EntityType>
         <EntityType Name="TblCategories">
           <Key>
@@ -203,6 +206,9 @@
           <Property Name="authorName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="authorMission" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="authorimg" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="blogPost2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="blogPost3" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="blogPost4" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="TblCategories">
           <Key>
@@ -350,6 +356,9 @@
           <EntitySetMapping Name="TblBlogs">
             <EntityTypeMapping TypeName="DbNexLumoModel.TblBlogs">
               <MappingFragment StoreEntitySet="TblBlogs">
+                <ScalarProperty Name="blogPost4" ColumnName="blogPost4" />
+                <ScalarProperty Name="blogPost3" ColumnName="blogPost3" />
+                <ScalarProperty Name="blogPost2" ColumnName="blogPost2" />
                 <ScalarProperty Name="authorimg" ColumnName="authorimg" />
                 <ScalarProperty Name="authorMission" ColumnName="authorMission" />
                 <ScalarProperty Name="authorName" ColumnName="authorName" />

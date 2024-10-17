@@ -1,0 +1,58 @@
+﻿@using Lifena.Models.Entity;
+@model List<TblBlogs>
+@{
+    ViewBag.Title = "Admin_Blog";
+    Layout = "~/Views/Shared/Admin_Layout.cshtml";
+}
+
+<style>
+    .cards-medical-services .card {
+        margin-bottom: 30px; /* İstenilen boşluk değeri */
+    }
+
+    .cards-medical-services .card-body {
+        margin: 20px; /* İstenilen dikey ve yatay boşluk değeri */
+    }
+</style>
+
+<div class="container-fluid py-3">
+    <div class="card-body">
+        <div class="row">
+            <div class="col">
+                <div class="cards-medical-services row flex-wrap justify-content-center">
+                    <div class="container">
+                        <div class="row">
+                            @foreach (var x in Model)
+                            {
+                                <div class="col-lg-4 mb-4">
+                                    <article>
+                                        <div class="card border-0 border-radius-0">
+                                            <div class="card-body bg-color-light-scale-1 p-4 z-index-1">
+                                                <a href="demo-architecture-2-blog-post.html">
+                                                    <img class="card-img-top border-radius-0 hover-effect-2" src="~/img/demos/business-consulting-5/blog/@x.blogimg" alt="Card Image">
+                                                </a>
+                                                <p class="text-uppercase text-1 mb-3 pt-1 text-color-default">
+                                                    <time pubdate="" datetime="2022-01-10">@x.blogDate</time>
+                                                    <span class="opacity-3 d-inline-block px-2">|</span>
+                                                    @x.authorid
+                                                </p>
+                                                <div class="card-body p-0">
+                                                    <h4 class="card-title mb-3 text-4 font-weight-semibold">
+                                                        <a class="text-color-dark text-color-hover-primary text-decoration-none font-weight-bold text-3" href="#">@x.blogHeader</a>
+                                                    </h4>
+                                                    <a href="@Url.Action("Admin_BlogEdit", "Admin", new { id = x.id })" class="btn btn-group-toggle">Düzenle</a>
+                                                    &nbsp;
+                                                    <a href="@Url.Action("DeleteBlog", "Admin", new { id = x.id })" class="btn btn-danger">Sil</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

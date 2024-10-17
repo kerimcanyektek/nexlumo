@@ -40,6 +40,9 @@
     <Property Name="blogDate" Type="date" />
     <Property Name="blogHighlights" Type="tinyint" />
     <Property Name="authorid" Type="int" />
+    <Property Name="authorName" Type="nvarchar" MaxLength="50" />
+    <Property Name="authorMission" Type="nvarchar" MaxLength="50" />
+    <Property Name="authorimg" Type="nvarchar" MaxLength="50" />
   </EntityType>
   <EntityType Name="TblCategories">
     <Key>

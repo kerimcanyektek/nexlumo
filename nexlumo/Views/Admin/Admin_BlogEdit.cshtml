@@ -28,8 +28,16 @@
             <textarea class="form-control" id="blogPost" name="blogPost" rows="10">@Model.blogPost</textarea>
         </div>
         <div class="form-group">
-            <label for="authorid">Yazar</label>
-            <input type="text" class="form-control" id="authorid" name="authorid" value="@Model.authorid" />
+            <label for="authorName">Yazar</label>
+            <input type="text" class="form-control" id="authorName" name="authorName" value="@Model.authorName" />
+        </div>
+        <div class="form-group">
+            <label for="authorMission">Yazar Unvan</label>
+            <input type="text" class="form-control" id="authorMission" name="authorMission" value="@Model.authorMission" />
+        </div>
+        <div class="form-group">
+            <label for="authorimg">Yazar Resim</label>
+            <input type="text" class="form-control" id="authorimg" name="authorimg" value="@Model.authorimg" />
         </div>
 
         <button type="submit" class="btn btn-primary">Güncelle</button>

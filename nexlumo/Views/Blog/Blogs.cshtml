@@ -23,7 +23,7 @@
                                 <div class="post-content ms-0">
                                     <h4 class="font-weight-semi-bold"><a href="/Blog/Blog1">@Model.blogSlogan</a></h4>
                                     <div class="post-meta">
-                                        <span><i class="far fa-user"></i><a href="/"> @Model.authorid</a> </span>
+                                        <span><i class="far fa-user"></i><a href="/"> @Model.authorName</a> </span>
                                     </div>
                                     <img src="~/img/demos/business-consulting-5/blog/@Model.blogimg" class="img-fluid float-start me-4 mt-2" alt="" style="width: 600px; height: auto;">
                                     <p>@Model.blogPost</p>
@@ -32,11 +32,11 @@
                                         <h4 class="mb-3">Yazar</h4>
                                         <div class="img-thumbnail img-thumbnail-no-borders d-block pb-3">
                                             <a href="#">
-                                                <img src="~/img/demos/business-consulting-5/about/kcy.png" alt="">
+                                                <img src="~/img/demos/business-consulting-5/about/@Model.authorimg" alt="">
                                             </a>
                                         </div>
-                                        <p><strong class="name"><a href="#" class="text-4 pb-2 pt-2 d-block">@Model.authorid</a></strong></p>
-                                        <p>Co-Founder at NexLumo</p>
+                                        <p><strong class="name"><a href="#" class="text-4 pb-2 pt-2 d-block">@Model.authorName</a></strong></p>
+                                        <p>@Model.authorMission</p>
                                     </div>
                                 </div>
                             </article>

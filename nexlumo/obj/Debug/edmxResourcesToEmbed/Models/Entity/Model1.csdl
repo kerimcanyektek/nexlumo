@@ -40,6 +40,9 @@
     <Property Name="blogDate" Type="DateTime" Precision="0" />
     <Property Name="blogHighlights" Type="Byte" />
     <Property Name="authorid" Type="Int32" />
+    <Property Name="authorName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="authorMission" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="authorimg" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityType Name="TblCategories">
     <Key>

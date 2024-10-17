@@ -23,5 +23,8 @@ namespace Lifena.Models.Entity
         public Nullable<System.DateTime> blogDate { get; set; }
         public Nullable<byte> blogHighlights { get; set; }
         public Nullable<int> authorid { get; set; }
+        public string authorName { get; set; }
+        public string authorMission { get; set; }
+        public string authorimg { get; set; }
     }
 }

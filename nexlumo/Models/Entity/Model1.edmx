@@ -45,6 +45,9 @@
           <Property Name="blogDate" Type="date" />
           <Property Name="blogHighlights" Type="tinyint" />
           <Property Name="authorid" Type="int" />
+          <Property Name="authorName" Type="nvarchar" MaxLength="50" />
+          <Property Name="authorMission" Type="nvarchar" MaxLength="50" />
+          <Property Name="authorimg" Type="nvarchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="TblCategories">
           <Key>
@@ -197,6 +200,9 @@
           <Property Name="blogDate" Type="DateTime" Precision="0" />
           <Property Name="blogHighlights" Type="Byte" />
           <Property Name="authorid" Type="Int32" />
+          <Property Name="authorName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="authorMission" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="authorimg" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="TblCategories">
           <Key>
@@ -344,6 +350,9 @@
           <EntitySetMapping Name="TblBlogs">
             <EntityTypeMapping TypeName="DbNexLumoModel.TblBlogs">
               <MappingFragment StoreEntitySet="TblBlogs">
+                <ScalarProperty Name="authorimg" ColumnName="authorimg" />
+                <ScalarProperty Name="authorMission" ColumnName="authorMission" />
+                <ScalarProperty Name="authorName" ColumnName="authorName" />
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="blogHeader" ColumnName="blogHeader" />
                 <ScalarProperty Name="blogSlogan" ColumnName="blogSlogan" />

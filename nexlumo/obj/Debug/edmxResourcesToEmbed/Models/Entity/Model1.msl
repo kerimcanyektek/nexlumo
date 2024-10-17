@@ -34,6 +34,9 @@
     <EntitySetMapping Name="TblBlogs">
       <EntityTypeMapping TypeName="DbNexLumoModel.TblBlogs">
         <MappingFragment StoreEntitySet="TblBlogs">
+          <ScalarProperty Name="authorimg" ColumnName="authorimg" />
+          <ScalarProperty Name="authorMission" ColumnName="authorMission" />
+          <ScalarProperty Name="authorName" ColumnName="authorName" />
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="blogHeader" ColumnName="blogHeader" />
           <ScalarProperty Name="blogSlogan" ColumnName="blogSlogan" />

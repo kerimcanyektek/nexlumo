@@ -225,7 +225,9 @@ namespace Lifena.Controllers
 			blog.blogimg = p.blogimg;
 			blog.blogHeader = p.blogHeader;
 			blog.blogDate = p.blogDate;
-			blog.authorid = p.authorid;
+			blog.authorName = p.authorName;
+			blog.authorMission = p.authorMission;
+			blog.authorimg = p.authorimg;
 			blog.blogPost = p.blogPost;
 			blog.blogForeword = p.blogForeword;
 			blog.blogSlogan = p.blogSlogan;

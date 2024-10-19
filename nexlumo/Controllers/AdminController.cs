@@ -6,20 +6,12 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Linq.Expressions;
+using System.Web.Security;
 
 namespace Lifena.Controllers
 {
-    public class AdminController : Controller
+	public class AdminController : Controller
     {
-
-		public ActionResult Admin_Login()
-		{
-			return View();
-		}
-
-
-
-
 		// GET: Admin
 		public ActionResult Admin_About()
         {
@@ -296,5 +288,38 @@ namespace Lifena.Controllers
 			TempData["Success"] = "Admin başarıyla silindi.";
 			return RedirectToAction("Admin_User");
 		}
+		// GET: Admin_UserEdit (Kullanıcı Düzenleme)
+		[HttpGet]
+		public ActionResult Admin_UserEdit(int id)
+		{
+			GenericRepository<TblAdmin> repo = new GenericRepository<TblAdmin>();
+			var user = repo.TGet(id);
+			if (user == null)
+			{
+				return HttpNotFound();
+			}
+			return View(user);
+		}
+		// POST: Admin_UserEdit
+		[HttpPost]
+		public ActionResult Admin_UserEdit(TblAdmin p)
+		{
+			GenericRepository<TblAdmin> repo = new GenericRepository<TblAdmin>();
+			var user = repo.TGet(p.id);
+			if (user == null)
+			{
+				return HttpNotFound();
+			}
+
+			user.username = p.username;
+			user.password = p.password;
+
+			repo.TUpdate(user);
+
+			return RedirectToAction("Admin_User");
+		}
+	
+		
+
 	}
 }

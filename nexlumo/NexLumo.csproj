@@ -132,6 +132,7 @@
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\BlogController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -4406,7 +4407,6 @@
     <Content Include="Views\Admin\Admin_User.cshtml" />
     <Content Include="Views\Admin\Admin_Blog.cshtml" />
     <Content Include="Views\Admin\Admin_NewBlog.cshtml" />
-    <Content Include="Views\Admin\Admin_Login.cshtml" />
     <Content Include="Views\Admin\Admin_Team.cshtml" />
     <Content Include="Views\Admin\Admin_NewTeam.cshtml" />
     <Content Include="Views\Admin\Admin_NewUser.cshtml" />
@@ -4415,6 +4415,8 @@
     <Content Include="Views\Home\Team.cshtml" />
     <Content Include="Views\Admin\Admin_BlogEdit.cshtml" />
     <Content Include="Views\Blog\BlogPartial.cshtml" />
+    <Content Include="Views\Admin\Admin_UserEdit.cshtml" />
+    <Content Include="Views\Login\Admin_Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

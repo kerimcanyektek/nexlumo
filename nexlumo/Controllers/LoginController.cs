@@ -11,6 +11,7 @@ namespace Lifena.Controllers
 	[AllowAnonymous]
 	public class LoginController : Controller
     {
+		DbNexLumoEntities db = new DbNexLumoEntities();
 		[HttpGet]
 		public ActionResult Admin_Login()
 		{

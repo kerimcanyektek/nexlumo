@@ -7,6 +7,7 @@ using System.Web.Mvc;
 
 namespace Lifena.Controllers
 {
+	[AllowAnonymous]
 	public class HomeController : Controller
 	{
 		DbNexLumoEntities db = new DbNexLumoEntities();

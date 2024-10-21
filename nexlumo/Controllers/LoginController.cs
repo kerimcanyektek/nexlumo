@@ -8,7 +8,6 @@ using System.Web.Security;
 
 namespace Lifena.Controllers
 {
-	[AllowAnonymous]
 	public class LoginController : Controller
     {
 		DbNexLumoEntities db = new DbNexLumoEntities();

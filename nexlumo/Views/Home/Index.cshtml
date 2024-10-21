@@ -40,38 +40,15 @@
                         <h4 class="card-title mb-2 text-6">Motivasyon danışmanlığı için isminizi bırakın!</h4>
 
                         <form class="contact-form" action="~/php/contact-form.php" method="POST">
-                            <div class="contact-form-success alert alert-success d-none mt-4">
-                                <strong>Success!</strong> Your message has been sent to us.
-                            </div>
-
-                            <div class="contact-form-error alert alert-danger d-none mt-4">
-                                <strong>Error!</strong> There was an error sending your message.
-                                <span class="mail-error-message text-1 d-block"></span>
-                            </div>
-
-                            <div class="row">
-                                <div class="form-group col text-start">
-                                    <input type="text" value="" placeholder="isim ve soyisim*" data-msg-required="Please enter your name." maxlength="100" class="form-control text-2-5 p-3" name="name" required>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-group col text-start">
-                                    <input type="text" value="" placeholder="telefon numarası*" data-msg-required="Please enter your phone" maxlength="100" class="form-control text-2-5 p-3" name="phone" required>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-group col">
-                                    <div class="d-grid gap-2">
-                                        <input type="submit" value="Gönder" class="btn border-0 btn-tertiary bg-hover-primary text-color-hover-light text-color-primary text-3-5 p-3" data-loading-text="Loading...">
-                                    </div>
-                                </div>
-                            </div>
+                            <p class="mt-4">
+                                ikirleriniz, projeleriniz ya da sadece bir sorunuz mu var? Biz her zaman burada, sizinle iletişime geçmeye hazırız. NexLumo ekibi olarak, topluluğumuzla büyüyor, gelişiyor ve her gün yeni şeyler öğreniyoruz. Hayat yolculuğunuzda kararlılık, motivasyon ve gelişim için birlikte adım atmak istiyoruz. Bize ulaşarak düşüncelerinizi paylaşın, sorularınıza cevap bulalım ya da gelecekte birlikte neler yapabileceğimizi konuşalım.
+                            </p>
                             <div class="row">
                                 <div class="col pt-4">
                                     <div class="hstack gap-3">
                                         <div class="ms-auto">
                                             <i class="icons icon-envelope text-4 p-relative top-5 me-2"></i>
-                                            <a href=" hello@grodea.com " class="text-decoration-none text-2 text-dark text-color-hover-primary ws-nowrap font-weight-semi-bold"> info@nexlumo.com </a>
+                                            <a href="mailto:info@nexlumo.com" class="text-decoration-none text-2 text-dark text-color-hover-primary ws-nowrap font-weight-semi-bold">info@nexlumo.com</a>
                                         </div>
                                     </div>
                                 </div>
@@ -448,54 +425,17 @@
         <div class="row justify-content-between align-items-center py-5">
             <div class="col-lg-6 text-center text-lg-start py-5">
                 <h3 class="mb-4 text-color-light">Sizin de söyleyecekleriniz var mı?</h3>
-                <p class="text-4 text-light line-height-4 opacity-6 mb-4">Blog yazılarımıza katkıda bulunmak ister misiniz? İlham verici bir hikayeniz veya paylaşmak istediğiniz bir konu varsa, düşüncelerinizi bizimle paylaşın!</p>
+                <p class="text-4 text-light line-height-4 opacity-6 mb-4">Blog yazılarımıza katkıda bulunmak ister misiniz? İlham verici bir hikayeniz veya paylaşmak istediğiniz bir konu varsa, düşüncelerinizi bizimle paylaşın! Bize ulaşmak için aşağıdaki e-posta adresini kullanabilirsiniz.</p>
             </div>
             <div class="col-lg-5 py-5">
                 <div class="card border-radius bg-color-light border-0 box-shadow-3">
                     <div class="card-body p-5 m-2 text-center">
-                        <h4 class="card-title mb-2 text-4">O zaman sizin de blog yazılarımızda yer alma vaktiniz geldi! Hemen blog konunuzu paylaşın, birlikte ilham yaratalım.</h4>
-
-                        <form class="contact-form" action="~/php/contact-form.php" method="POST">
-                            <div class="contact-form-success alert alert-success d-none mt-4">
-                                <strong>Success!</strong> Your message has been sent to us.
-                            </div>
-                            <div class="contact-form-error alert alert-danger d-none mt-4">
-                                <strong>Error!</strong> There was an error sending your message.
-                                <span class="mail-error-message text-1 d-block"></span>
-                            </div>
-                            <div class="row">
-                                <div class="form-group col text-start">
-                                    <input type="text" value="" placeholder="isim soyisim*" data-msg-required="Please enter your name." maxlength="100" class="form-control text-2-5 p-3" name="name" required>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-group col text-start">
-                                    <input type="text" value="" placeholder="mail adresi*" data-msg-required="Please enter your phone" maxlength="100" class="form-control text-2-5 p-3" name="phone" required>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-group col text-start">
-                                    <input type="text" value="" placeholder="blog konusu*" data-msg-required="Please enter your name." maxlength="100" class="form-control text-2-5 p-3" name="blog" required>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-group col">
-                                    <div class="d-grid gap-2">
-                                        <input type="submit" value="Paylaş" class="btn border-0 btn-tertiary bg-hover-primary text-color-hover-light text-color-primary text-3-5 p-3" data-loading-text="Loading...">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col pt-4">
-                                    <div class="hstack gap-3">
-                                        <div class="ms-auto">
-                                            <i class="icons icon-envelope text-4 p-relative top-5 me-2"></i>
-                                            <a href="mailto:you@domain.com" class="text-decoration-none text-2 text-dark text-color-hover-primary ws-nowrap font-weight-semi-bold">info@nexlumo.com</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
+                        <h4 class="card-title mb-2 text-4">O zaman sizin de blog yazılarımızda yer alma vaktiniz geldi! Hemen bizimle iletişime geçin, birlikte ilham yaratalım.</h4>
+                        <p class="text-3">Bize ulaşmak için mail atabilirsiniz:</p>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <i class="icons icon-envelope text-4 me-2"></i>
+                            <a href="mailto:info@nexlumo.com" class="text-decoration-none text-2 text-dark text-color-hover-primary ws-nowrap font-weight-semi-bold">info@nexlumo.com</a>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -8,6 +8,7 @@ using System.Web.Mvc;
  
 namespace Lifena.Controllers
 {
+	[AllowAnonymous]
 	public class BlogController : Controller
 	{
 		// GET: Blog

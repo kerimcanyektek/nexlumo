@@ -3,36 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\BAHARS\\source\\repos\\nexlumo\\nexlumo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|c:\\users\\bahars\\source\\repos\\nexlumo\\nexlumo\\views\\home\\blog.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|C:\\Users\\BAHARS\\source\\repos\\nexlumo\\nexlumo\\views\\home\\blog.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|solutionrelative:views\\home\\blog.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|c:\\users\\bahars\\source\\repos\\nexlumo\\nexlumo\\views\\blog\\blogs.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|C:\\Users\\BAHARS\\source\\repos\\nexlumo\\nexlumo\\views\\blog\\blogs.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|solutionrelative:views\\blog\\blogs.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|c:\\users\\bahars\\source\\repos\\nexlumo\\nexlumo\\views\\blog\\blogpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|solutionrelative:views\\blog\\blogpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|C:\\Users\\BAHARS\\source\\repos\\nexlumo\\nexlumo\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|c:\\users\\bahars\\source\\repos\\nexlumo\\nexlumo\\css\\theme-blog.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|solutionrelative:css\\theme-blog.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|c:\\users\\bahars\\source\\repos\\nexlumo\\nexlumo\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|c:\\users\\bahars\\source\\repos\\nexlumo\\nexlumo\\css\\theme-shop.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|solutionrelative:css\\theme-shop.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|C:\\Users\\BAHARS\\source\\repos\\nexlumo\\nexlumo\\views\\home\\services.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|solutionrelative:views\\home\\services.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|c:\\users\\bahars\\source\\repos\\nexlumo\\nexlumo\\css\\theme.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|C:\\Users\\BAHARS\\source\\repos\\nexlumo\\nexlumo\\css\\theme.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|solutionrelative:css\\theme.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|c:\\users\\bahars\\source\\repos\\nexlumo\\nexlumo\\css\\theme-elements.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|solutionrelative:css\\theme-elements.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|C:\\Users\\BAHARS\\source\\repos\\nexlumo\\nexlumo\\views\\blog\\blogpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|solutionrelative:views\\blog\\blogpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|c:\\users\\bahars\\source\\repos\\nexlumo\\nexlumo\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|C:\\Users\\BAHARS\\source\\repos\\nexlumo\\nexlumo\\css\\theme-blog.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|solutionrelative:css\\theme-blog.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|C:\\Users\\BAHARS\\source\\repos\\nexlumo\\nexlumo\\css\\theme-shop.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|solutionrelative:css\\theme-shop.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|C:\\Users\\BAHARS\\source\\repos\\nexlumo\\nexlumo\\css\\theme-elements.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{C3C810B2-AF95-4CC2-BD26-3C44AFF560E2}|NexLumo.csproj|solutionrelative:css\\theme-elements.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,20 +62,45 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Services.cshtml",
+              "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\nexlumo\\nexlumo\\Views\\Home\\Services.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Services.cshtml",
+              "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\nexlumo\\nexlumo\\Views\\Home\\Services.cshtml",
+              "RelativeToolTip": "Views\\Home\\Services.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-04T12:14:23.376Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\nexlumo\\nexlumo\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\nexlumo\\nexlumo\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAJABAAAAAAAAAAAiwL8BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-04T11:49:56.914Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Blog.cshtml",
               "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\nexlumo\\nexlumo\\Views\\Home\\Blog.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Blog.cshtml",
               "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\nexlumo\\nexlumo\\Views\\Home\\Blog.cshtml",
               "RelativeToolTip": "Views\\Home\\Blog.cshtml",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAADIAAABVAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAADkAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-04T10:48:30.448Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "BlogPartial.cshtml",
               "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\nexlumo\\nexlumo\\Views\\Blog\\BlogPartial.cshtml",
               "RelativeDocumentMoniker": "Views\\Blog\\BlogPartial.cshtml",
@@ -75,8 +108,7 @@
               "RelativeToolTip": "Views\\Blog\\BlogPartial.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-04T10:46:15.088Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-04T10:46:15.088Z"
             },
             {
               "$type": "Document",
@@ -86,14 +118,13 @@
               "RelativeDocumentMoniker": "css\\theme.css",
               "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\nexlumo\\nexlumo\\css\\theme.css",
               "RelativeToolTip": "css\\theme.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAAOMbAAAAAAAAAAAAAP4bAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-11-04T10:45:50.792Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-04T10:45:50.792Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "theme-shop.css",
               "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\nexlumo\\nexlumo\\css\\theme-shop.css",
               "RelativeDocumentMoniker": "css\\theme-shop.css",
@@ -101,12 +132,11 @@
               "RelativeToolTip": "css\\theme-shop.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-11-04T10:45:44.148Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-04T10:45:44.148Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "theme-elements.css",
               "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\nexlumo\\nexlumo\\css\\theme-elements.css",
               "RelativeDocumentMoniker": "css\\theme-elements.css",
@@ -114,12 +144,11 @@
               "RelativeToolTip": "css\\theme-elements.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-11-04T10:45:40.109Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-04T10:45:40.109Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "theme-blog.css",
               "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\nexlumo\\nexlumo\\css\\theme-blog.css",
               "RelativeDocumentMoniker": "css\\theme-blog.css",
@@ -127,8 +156,7 @@
               "RelativeToolTip": "css\\theme-blog.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-11-04T10:45:01.36Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-04T10:45:01.36Z"
             },
             {
               "$type": "Document",
@@ -138,20 +166,20 @@
               "RelativeDocumentMoniker": "Views\\Blog\\Blogs.cshtml",
               "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\nexlumo\\nexlumo\\Views\\Blog\\Blogs.cshtml",
               "RelativeToolTip": "Views\\Blog\\Blogs.cshtml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAACEAAABDAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-04T10:43:40.651Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\nexlumo\\nexlumo\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\nexlumo\\nexlumo\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAIAAAAAAAAAAAAAAAI4AAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAIMAAAAAAAAAAAAAAKQAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-10-21T11:42:33.147Z",
               "EditorCaption": ""

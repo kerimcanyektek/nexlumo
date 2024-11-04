@@ -5,7 +5,6 @@
 }
 <style>
     .timeline-box {
-        display: flex; /* Flexbox kullanarak sağa sola kaydırma */
         justify-content: space-between; /* Alanı eşit olarak dağıt */
         margin: 20px 0; /* Üst ve alt boşluk */
     }
@@ -52,7 +51,7 @@
                                                         <div class="col text-center">
                                                             <div class="post-image" style="width: 100%; height: 250px; overflow: hidden;">
                                                                 <a href="@Url.Action("Blogs", "Blog", new { id = x.id })">
-                                                                    <img src="~/img/demos/business-consulting-5/blog/@x.blogimg" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="" style="width: 100%; object-fit: cover; object-position: top 50px;">
+                                                                    <img src="~/img/demos/business-consulting-5/blog/@x.blogimg" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="" style="width: 100%; object-fit: cover;">
                                                                 </a>
                                                             </div>
                                                         </div>

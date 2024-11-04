@@ -1,0 +1,101 @@
+﻿@using Lifena.Models.Entity
+@model List<TblBlogs>
+@{
+    ViewBag.Title = "Blog";
+}
+<style>
+    .timeline-box {
+        display: flex; /* Flexbox kullanarak sağa sola kaydırma */
+        justify-content: space-between; /* Alanı eşit olarak dağıt */
+        margin: 20px 0; /* Üst ve alt boşluk */
+    }
+
+        .timeline-box.left {
+            flex-direction: row; /* Soldaki öğeler normal yönle */
+        }
+
+        .timeline-box.right {
+            flex-direction: row-reverse; /* Sağdaki öğeleri ters yönde diz */
+        }
+
+        /* Ekstra boşluk eklemek için */
+        .timeline-box .p-2 {
+            padding: 15px; /* İçerik alanına dolgu ekle */
+        }
+
+</style>
+<body class="alternative-font-7">
+    <br /><br /><br /><br />
+    <div role="main" class="main">
+        <section class="section bg-color-light position-relative border-0 pt-3 m-0">
+            <div class="row justify-content-center">
+                <div class="col-md-10 col-lg-10 mb-5 mb-lg-0">
+                    <div class="row py-5">
+                        <div class="col text-center">
+                            <h1 class="text-color-dark text-8 font-weight-bold">Blog yazıları</h1>
+                        </div>
+                    </div>
+                    <div class="container py-4">
+                        <div class="row">
+                            <div class="col">
+                                <div class="blog-posts">
+                                    <section class="timeline">
+                                        <div class="timeline-body">
+                                            <div class="timeline-date">
+                                                <h3 class="text-primary font-weight-bold">2024</h3>
+                                            </div>
+                                            @foreach (var x in Model)
+                                            {
+                                                <article class="timeline-box @((Model.IndexOf(x) % 2 == 0) ? "left" : "right") post post-medium">
+                                                    <div class="timeline-box-arrow"></div>
+                                                    <div class="p-2">
+                                                        <div class="col text-center">
+                                                            <div class="post-image" style="width: 100%; height: 250px; overflow: hidden;">
+                                                                <a href="@Url.Action("Blogs", "Blog", new { id = x.id })">
+                                                                    <img src="~/img/demos/business-consulting-5/blog/@x.blogimg" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="" style="width: 100%; object-fit: cover; object-position: top 50px;">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <div class="post-content">
+                                                                    <h2 class="font-weight-semibold text-5 line-height-4 mt-2 mb-2">
+                                                                        <a href="@Url.Action("Blogs", "Blog", new { id = x.id })">@x.blogHeader</a>
+                                                                    </h2>
+                                                                    <p>@x.blogForeword</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <div class="post-meta">
+                                                                    <span><i class="far fa-calendar-alt"></i> 10 Eylül 2024 </span><br>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <div class="post-meta">
+                                                                    <span><i class="far fa-user"></i><a href="#">@x.authorName</a> </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <a href="@Url.Action("Blogs", "Blog", new { id = x.id })" class="btn btn-xs btn-light text-1 text-uppercase">Devamı +</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </article>
+                                            }
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>

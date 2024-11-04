@@ -1,0 +1,20 @@
+﻿@model IEnumerable<Lifena.Models.Entity.TblBlogs>
+
+<div class="container-fluid my-5 py-5">
+    <div class="row px-5 mb-4">
+        @foreach (var blog in Model)
+        {
+            <div class="col appear-animation animated fadeInUpShorter appear-animation-visible" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600" style="animation-delay: 600ms;">
+                <article class="mb-5">
+                    <div class="blog-post-thumbnail text-center mb-3">
+                        <a href="@Url.Action("Blogs", "Blog", new { id = blog.id })">
+                            <img src="~/img/demos/business-consulting-5/blog/@blog.blogimg" class="img-fluid" alt="@blog.blogHeader">
+                        </a>
+                    </div>
+                    <p class="custom-font-secondary text-center text-3 mb-3">@blog.blogForeword</p>
+                    <a href="@Url.Action("Blogs", "Blog", new { id = blog.id })" class="d-block font-weight-semibold text-color-secondary text-color-hover-primary text-decoration-none text-center">DEVAMI +</a>
+                </article>
+            </div>
+        }
+    </div>
+</div>

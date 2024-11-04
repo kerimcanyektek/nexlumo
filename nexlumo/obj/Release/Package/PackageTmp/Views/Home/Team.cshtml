@@ -1,0 +1,69 @@
+﻿@using Lifena.Models.Entity;
+@model List<TblTeamMembers>
+@{
+    ViewBag.Title = "Team";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<body class="alternative-font-7">
+    <div class="body mt-0">
+        <div role="main" class="main">
+            <section class="page-header page-header-modern bg-transparent">
+                <div class="container pt-5 mt-5">
+                    <div class="row py-5">
+                        <div class="col text-center">
+                            <h1 class="text-color-dark text-8 font-weight-bold">Ekibimiz</h1>
+                        </div>
+                        <br /> <br /> <br /> <br />
+                        <div class="row justify-content-center pb-2 mb-3">
+                            <div class="col-md-9 col-lg-12 text-center">
+                                <p class="custom-font-secondary text-4 mb-3 appear-animation animated fadeInUpShorter appear-animation-visible" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400" style="animation-delay: 400ms;">Ekibimiz, yaşam koçluğu alanında kendini geliştirmeye ve insanlara yardımcı olmaya odaklanmış bir grup bireydir. Amacımız, bireylerin hedeflerine ulaşmalarına destek olmak ve yaşamlarını daha anlamlı kılmaktır. Sadece profesyonel değil, aynı zamanda samimi bir yaklaşım benimsiyoruz. Herkesin potansiyelini keşfetmesine yardımcı olmak için buradayız.</p>
+                            </div>
+                        </div>
+                        <div class="row appear-animation animated fadeInUpShorter appear-animation-visible" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600" style="animation-delay: 600ms;">
+                            <div class="col">
+                                <div class="owl-carousel nav-outside nav-arrows-1 appear-animation owl-theme owl-carousel-init owl-loaded owl-drag fadeInUpShorter appear-animation-visible" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750" data-plugin-options="{'responsive': {'0': {'items': 1}, '479': {'items': 1}, '768': {'items': 2}, '979': {'items': 2}, '1199': {'items': 3}}, 'autoplay': false, 'autoplayTimeout': 5000, 'autoplayHoverPause': true, 'dots': false, 'nav': true, 'loop': false, 'margin': 20, 'stagePadding': '0'}" style="height: auto; animation-delay: 750ms; display: flex; justify-content: center;">
+
+                                    <div class="owl-stage-outer">
+                                        <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all; width: 1275px;">
+                                            @foreach (var x in Model)
+                                            {
+                                                <div class="owl-item active" style="width: 220px; margin-right: 10px;">
+                                                    <div>
+                                                        <div class="card custom-card-style-1 custom-card-style-1-variation">
+                                                            <div class="card-body text-center bg-color-light-scale-1 py-5">
+                                                                <div class="custom-card-style-1-image-wrapper bg-primary rounded-circle d-inline-block mb-3">
+                                                                    <img src="~/img/demos/business-consulting-5/about/@x.img" class="img-fluid rounded-circle" alt="" style="width: 150px; height: 150px; object-fit: cover;">
+                                                                </div>
+                                                                <h4 class="text-color-secondary font-weight-bold line-height-1 text-5 mb-0"><a class="text-color-secondary text-color-hover-primary text-decoration-none">@x.fullname</a></h4>
+                                                                <p class="text-2 pb-1 mb-2">@x.mission</p>
+                                                                <ul class="social-icons custom-social-icons social-icons-big">
+                                                                    <li class="social-icons-instagram"><a href="@x.socialMediaLink1" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+                                                                    <li class="social-icons-linkedin mx-2"><a href="@x.socialMediaLink2" target="_blank" title="Linkedin"><i class="fab fa-linkedin"></i></a></li>
+                                                                    <li class="social-icons-github"><a href="@x.socialMediaLink3" target="_blank" title="Github"><i class="fab fa-github"></i></a></li>
+                                                                </ul>
+                                                                <p class="text-2 mb-0">
+                                                                    <a href="@x.website" target="_blank" class="text-color-secondary text-decoration-none">@x.website</a>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            }
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <hr style="border: 3px solid orange;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </div>
+</body>
